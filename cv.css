@@ -560,5 +560,72 @@ form textarea {
     height: 150px;
     resize: none;
 }
+/* ============ RESPONSIVE FIX PACKAGE ============ */
+
+/* Képek sose lógjanak ki, menjen sor alá mobilon */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Globális „össze nem csúszás” */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+/* Szövegek kényelmes méretezése, mobilon sem túl nagy */
+:root {
+  --step-0: clamp(1rem, 0.9rem + 1vw, 1.3rem);
+  --step-1: clamp(1.3rem, 1.1rem + 1.5vw, 2rem);
+  --step-2: clamp(1.7rem, 1.4rem + 2vw, 2.7rem);
+}
+h1 { font-size: var(--step-2); line-height: 1.1; }
+h2 { font-size: var(--step-1); line-height: 1.15; }
+body { font-size: var(--step-0); line-height: 1.5; }
+
+/* Kép-rácsok automatikusan törjenek: Skills, Certificates, Photos */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+/* Szakaszok körüli tér mobilon se szűküljön */
+section {
+  padding-block: clamp(1.5rem, 1rem + 2vw, 3rem);
+  width: min(1100px, 100% - 2rem);
+  margin-inline: auto;
+}
+
+/* Navigáció mobilbarát */
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem;
+  padding: 0;
+  list-style: none;
+}
+nav a {
+  display: block;
+  padding: .5rem .75rem;
+}
+
+/* Mobil optimalizálás – 768px alatt */
+@media (max-width: 768px) {
+  .header img {
+    width: 150px;
+    margin-inline: auto;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
 
 
