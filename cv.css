@@ -527,6 +527,59 @@ button:hover {
         padding: 6px 10px; /* ujjbarát érintés */
     }
 }
+@media (max-width: 768px) {
+
+  /* HERO */
+  .hero-image {
+    height: 40vh; /* fél képernyő */
+    background-position: center top; /* fontos! */
+  }
+  .hero-text h1 {
+    font-size: 22px;
+    line-height: 1.25;
+    padding: 0 10px;
+  }
+
+  /* Logók egységes mobil méret */
+  img.logo,
+  .column img,
+  img[src*="logo"],
+  img[src*="logoliba"],
+  img[src*="logoaronija"] {
+    max-width: 120px;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+  }
+
+  /* Macskák */
+  img[src*="afraid"] {
+    width: 60px !important;
+    height: auto;
+  }
+
+  /* Aronija külön extra, hogy még jobban mutasson */
+  img[src*="logoaronija"] {
+    max-width: 160px;
+  }
+
+  /* Monkéygirl */
+  img[src*="monkeygirl"] {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+  }
+
+  /* Háttérszakaszok padding */
+  #section4,
+  #section5 {
+    padding: 20px 15px;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
 
 
 
