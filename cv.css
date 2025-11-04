@@ -45,7 +45,7 @@
 }
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .header a {
     float: none;
     display: block;
@@ -104,7 +104,7 @@
 }
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .header1 a {
     float: none;
     display: block;
@@ -304,12 +304,12 @@ body, html {
   clear: both;
   display: table;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .column {
     width: 100%;
   }
 }
-	@media screen and (max-width: 500px) {
+	@media screen and (max-width: 600px) {
 	.avatar {
  max-width: 20%;
 }
@@ -589,6 +589,7 @@ button:hover {
     margin-top: 0 !important;
   }
 }
+
 
 
 
