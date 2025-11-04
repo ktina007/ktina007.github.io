@@ -386,6 +386,7 @@ body, html {
 	margin-left: -7.1px;
     margin-right: -7.2px;
 	font-family: 'Shadows Into Light', cursive;
+	padding: 10px 0;
     }
 #myBtn {
   display: none; 
@@ -508,6 +509,7 @@ button:hover {
   color: #008000;
   font-weight: bold;
 }
+
 
 
 
