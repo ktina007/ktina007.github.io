@@ -487,6 +487,21 @@ button:hover {
   background-color: #006622;
   transform: scale(1.05);
 }
+.made-by {
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  color: #000;
+  margin: 20px 0;
+  padding: 8px 0;
+  font-family: 'Shadows Into Light', cursive;
+}
+
+.made-by strong {
+  color: #006622;
+  font-size: 18px;
+  text-decoration: underline;
+}
 
 /* Mobile fix */
 @media(max-width: 768px) {
@@ -507,6 +522,7 @@ button:hover {
   color: #008000;
   font-weight: bold;
 }
+
 
 
 
