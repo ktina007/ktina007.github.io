@@ -495,5 +495,18 @@ button:hover {
     padding: 20px;
   }
 }
+.made-by {
+  text-align: center;
+  font-size: 14px;
+  color: #3c3c3c;
+  margin: 12px 0 20px;
+  font-family: 'Shadows Into Light', cursive;
+  opacity: 0.9;
+}
+.made-by strong {
+  color: #008000;
+  font-weight: bold;
+}
+
 
 
