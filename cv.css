@@ -580,6 +580,16 @@ button:hover {
   }
 }
 
+@media (max-width: 768px) {
+  body {
+    padding-top: 95px !important;
+  }
+  
+  .hero-image {
+    margin-top: 0 !important;
+  }
+}
+
 
 
 
