@@ -120,6 +120,7 @@
 body, html {
     height: 100%;
     background-color: #F2F4D7;
+	padding-top: 65px;
 }
 
 .hero-image {
@@ -507,6 +508,7 @@ button:hover {
   color: #008000;
   font-weight: bold;
 }
+
 
 
 
