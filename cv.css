@@ -509,6 +509,25 @@ button:hover {
   color: #008000;
   font-weight: bold;
 }
+/* Mobil javítás: enyhe belső margó és logó távolság */
+@media screen and (max-width: 600px) {
+
+    .header1 {
+        flex-direction: column;
+        padding: 12px;
+    }
+
+    .header1 a.logo img {
+        margin-bottom: 12px;
+    }
+
+    .header1-right a {
+        display: block;
+        margin: 6px 0;
+        padding: 6px 10px; /* ujjbarát érintés */
+    }
+}
+
 
 
 
