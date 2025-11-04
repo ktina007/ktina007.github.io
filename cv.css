@@ -35,5 +35,31 @@ section { padding-block: clamp(1.2rem, 1rem + 2vw, 3rem); }
   .grid img { width: 100%; height: auto; }
 }
 
-/* Biztonsági igazítások (nem változtatnak stílust, csak ütközés ellen) */
+/* Biztonsági igazítások */
 .header1 { position: sticky; top: 0; z-index: 10; background: inherit; }
+/* LOGO BLOCK FIX –  */
+.logos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* Logók méretezése PC-n */
+.logos img {
+  max-width: 280px;
+  height: auto;
+}
+
+/* Mobilon középre és egymás alá */
+@media (max-width: 768px) {
+  .logos {
+    display: block;
+    text-align: center;
+  }
+  .logos img {
+    margin-inline: auto;
+    max-width: 200px;
+  }
+}
+
