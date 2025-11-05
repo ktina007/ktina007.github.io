@@ -90,7 +90,6 @@
 .header1 a.active {
     background-color: #B6F39A;
     color: black;
-    margin-bottom: -5px;
 }
 
 .header1-right {
@@ -695,6 +694,7 @@ img[src*="pics/maddog"] {
   width: 100% !important;
   box-sizing: border-box !important;
 }
+
 
 
 
