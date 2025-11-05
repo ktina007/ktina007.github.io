@@ -693,6 +693,14 @@ img[src*="pics/maddog"] {
     border-radius: 0 !important;
   }
 }
+/* VÉGLEGES FEJLÉC POZÍCIÓ JAVÍTÁS */
+.header, .header1 {
+  margin: 0 !important;
+  padding: 10px 10px !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
+
 
 
 
