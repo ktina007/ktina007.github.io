@@ -685,6 +685,15 @@ img[src*="pics/maddog"] {
     margin-right: 10px;
   }
 }
+/* ===== Fejléc szélek korrigálása mobilon ===== */
+@media(max-width: 768px) {
+  .header1 {
+    margin: 0 !important;
+    width: 100% !important;
+    border-radius: 0 !important;
+  }
+}
+
 
 
 
