@@ -119,23 +119,7 @@ body, html {
 }
 .hero-text h1 { font-size: clamp(28px, 4vw, 46px) !important; }
 
-/* ===== HERO MOBIL ===== */
-@media (max-width: 768px) {
-    .hero-image {
-        height: 45vh !important;
-        margin-top: 0 !important;
-    }
-    .hero-text {
-        font-size: 22px !important;
-        padding: 0 10px;
-    }
-}
-/* === Mobil + Tablet finomhangolás === */
-@media (max-width: 1024px) {
-  .hero-text h1 {
-      font-size: clamp(26px, 5vw, 36px) !important;
-  }
-}
+
 
 @media (max-width: 600px) {
   .hero-text h1 {
@@ -178,17 +162,6 @@ body {
     height: auto;
 }
 
-/* Tablet (769px–1024px) */
-@media (min-width: 769px) and (max-width: 1024px) {
-    :root {
-        --header-height: 80px;
-    }
-    .hero-image {
-        height: 60vh !important;
-        background-size: cover !important;
-        background-position: center center !important;
-    }
-}
 
 /* Desktop (>=1025px) */
 @media (min-width: 1025px) {
@@ -208,6 +181,43 @@ body {
         --header-height: 70px;
     }
 }
+/* Mobil (0–768px) */
+@media (max-width: 768px) {
+    :root {
+        --header-height: 70px;
+    }
+    .hero-image {
+        height: 45vh !important;
+    }
+    .hero-text h1 {
+        font-size: clamp(22px, 6vw, 32px) !important;
+    }
+}
+
+/* Tablet (769px–1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    :root {
+        --header-height: 80px;
+    }
+    .hero-image {
+        height: 60vh !important;
+    }
+    .hero-text h1 {
+        font-size: clamp(26px, 5vw, 36px) !important;
+    }
+}
+
+/* Desktop (>=1025px) */
+@media (min-width: 1025px) {
+    :root {
+        --header-height: 85px;
+    }
+    .hero-image {
+        height: 70vh !important;
+    }
+}
+
+
 
 
 
