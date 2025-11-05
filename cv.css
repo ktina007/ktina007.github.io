@@ -646,6 +646,47 @@ img[src*="pics/maddog"] {
   }
 }
 
+/* ✅ TÖKÉLETES MOBIL MENÜ FIX */
+@media (max-width: 768px) {
+
+  .header1 {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding: 8px 10px !important;
+    width: 100% !important;
+    overflow: hidden !important;
+  }
+
+  .header1 a {
+    font-size: 14px !important;
+    padding: 4px 6px !important;
+    margin: 0 2px !important;
+    white-space: nowrap !important;
+    float: none !important;
+    display: inline-block !important;
+  }
+
+  .header1-right {
+    display: flex !important;
+    gap: 4px !important;
+    margin: 0 !important;
+    float: none !important;
+  }
+
+  /* Logó kicsit kisebb mobilon */
+  .header1 a.logo img {
+    width: 55px !important;
+    height: auto !important;
+    display: block !important;
+    margin: 0 !important;
+  }
+
+  body {
+    padding-top: 80px !important; /* ne takarja a menü a hero-t */
+  }
+}
+
 
 
 
