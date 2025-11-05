@@ -559,29 +559,6 @@ img[src*="pics/maddog"] {
   }
 }
 
-/* ===== Menüsor mobil optimalizálás ===== */
-@media(max-width: 768px) {
-
-  .header1 {
-    padding: 6px 10px !important;
-    height: auto !important;
-  }
-
-  .header1 a {
-    font-size: 18px !important;
-    line-height: 1.2 !important;
-    padding: 6px 8px !important;
-    margin: 2px 0 !important;
-    float: none !important;
-    display: block !important;
-    text-align: center !important;
-  }
-
-  .header1-right {
-    float: none !important;
-    margin-top: 5px !important;
-  }
-
   /* Logó optimalizálás mobilon */
   .header1 a.logo img {
     width: 120px !important;
@@ -622,21 +599,7 @@ img[src*="pics/maddog"] {
     margin-right: 10px;
   }
 }
-/* ===== Fejléc szélek korrigálása mobilon ===== */
-@media(max-width: 768px) {
-  .header1 {
-    margin: 0 !important;
-    width: 100% !important;
-    border-radius: 0 !important;
-  }
-}
-/* VÉGLEGES FEJLÉC POZÍCIÓ JAVÍTÁS */
-.header1 {
-  margin: 0 !important;
-  padding: 10px 10px !important;
-  width: 100% !important;
-  box-sizing: border-box !important;
-}
+
 /* ✅ Modern mobil menü beállítások */
 @media(max-width: 768px) {
 
@@ -674,6 +637,7 @@ img[src*="pics/maddog"] {
     padding-top: 80px; /* hogy ne takarjon a menü */
   }
 }
+
 
 
 
