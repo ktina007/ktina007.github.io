@@ -637,6 +637,44 @@ img[src*="pics/maddog"] {
   width: 100% !important;
   box-sizing: border-box !important;
 }
+/* ✅ Modern mobil menü beállítások */
+@media(max-width: 768px) {
+
+  .header1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+  }
+
+  .header1 a {
+    font-size: 16px;
+    padding: 6px 8px;
+    margin: 0 4px;
+    white-space: nowrap;
+  }
+
+  .header1-right {
+    display: flex;
+    gap: 4px;
+    float: none;
+    margin: 0;
+  }
+
+  .header1 a.logo img {
+    width: 70px;
+    height: auto;
+  }
+
+  body {
+    padding-top: 80px; /* hogy ne takarjon a menü */
+  }
+}
+
 
 
 
