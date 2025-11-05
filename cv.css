@@ -430,6 +430,49 @@ img[src*="smiley"] {
         padding: 0;
     }
 }
+/* === PROFESSIONAL SKILLS 2-COLUMN FIX === */
+.section2 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 30px 0;
+}
+
+/* Bal oszlop */
+.section2 .column-33 {
+    width: 35%;
+    text-align: center;
+}
+
+.section2 .column-33 img {
+    width: 100%;
+    max-width: 380px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Jobb oszlop */
+.section2 .column-66 {
+    width: 55%;
+    text-align: center;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+    .section2 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .section2 .column-33,
+    .section2 .column-66 {
+        width: 90%;
+    }
+    .section2 .column-33 img {
+        max-width: 300px;
+    }
+}
+
 
 
 
