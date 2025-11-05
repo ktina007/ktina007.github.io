@@ -685,6 +685,52 @@ img[src*="pics/maddog"] {
     padding-top: 80px !important; /* ne takarja a menü a hero-t */
   }
 }
+/* ==== Hamburger menü alapállapot ==== */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* ==== Mobil nézet beállítás ==== */
+@media (max-width: 768px) {
+  
+  /* Hamburger ikon látható */
+  .menu-toggle {
+    display: block;
+    color: black;
+    margin-left: auto;
+  }
+
+  /* Menü alapból elrejtve */
+  .header1-right {
+    display: none;
+    flex-direction: column;
+    background-color: #B6F39A;
+    width: 100%;
+    padding: 10px 0;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    text-align: center;
+  }
+
+  /* Menü megjelenítése gombra */
+  .header1-right.show {
+    display: flex;
+  }
+
+  /* Menü linkek mobilon */
+  .header1-right a {
+    padding: 10px 0;
+    font-size: 18px;
+    margin: 5px 0;
+    width: 100%;
+  }
+}
+
 
 
 
