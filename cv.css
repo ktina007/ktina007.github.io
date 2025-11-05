@@ -281,13 +281,6 @@ body {
     margin-bottom: 15px;
 }
 
-/* A kép méretezése */
-.column-33 img {
-    width: 100%;
-    max-width: 450px;
-    border-radius: 10px;
-    margin-top: 10px;
-}
 
 /* ===== Tablet & Mobil törés ===== */
 @media (max-width: 1024px) {
@@ -313,12 +306,6 @@ body {
         width: 35%;
         text-align: center;
         margin-right: 40px;
-    }
-
-    .column-33 img {
-        max-width: 250px;
-        border-radius: 12px;
-        margin-top: 20px;
     }
 }
 /* --- ABOUT + DOG végleges layout --- */
@@ -367,6 +354,7 @@ img[src*="smiley"] {
     height: auto;
     margin: 5px;
 }
+
 
 
 
