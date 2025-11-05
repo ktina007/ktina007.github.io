@@ -136,6 +136,19 @@ body, html {
         padding: 0 10px;
     }
 }
+/* === Mobil + Tablet finomhangolás === */
+@media (max-width: 1024px) {
+  .hero-text h1 {
+      font-size: clamp(26px, 5vw, 36px) !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-text h1 {
+      font-size: clamp(22px, 6vw, 32px) !important;
+  }
+}
+
 
 /* ===== FOOTER ===== */
 .footer {
@@ -160,6 +173,7 @@ body, html {
   }
 }
 html, body { overflow-x: hidden !important; }
+
 
 
 
