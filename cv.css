@@ -1,61 +1,4 @@
 @charset "utf-8";
-.header {
-    overflow: hidden;
-    background-color: #B6F39A;
-    padding: 10px 5px;
-   
- 
-}
-
-.header a {
-  float: left;
-  color: black;
-  text-align: center;
-  padding: 12px;
-  text-decoration: none;
-  font-size: 35px;
-	font-family: 'Shadows Into Light', cursive;
-  line-height: 25px;
-  border-radius: 4px;
-	
-}
-.header a.logo {
-  font-size: 35px;
-  font-weight: bold;
-	
-}
-
-.header a:hover {
-  background-color: #F0EF7A;
-  color: black;
-	
-}
-
-.header a.active {
-  background-color:#B6F39A;
-  color: black;
-}
-
-.header-right {
-    float: right;
-    margin-top: 20px;
-	
-}
-
-
-@media screen and (max-width: 600px) {
-  .header a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  .header-right {
-    float: none;
-	  
-  }
-}
-
-
 .header1 {
     overflow: hidden;
     background-color: #B6F39A;
@@ -694,6 +637,7 @@ img[src*="pics/maddog"] {
   width: 100% !important;
   box-sizing: border-box !important;
 }
+
 
 
 
