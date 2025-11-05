@@ -401,6 +401,36 @@ img[src*="smiley"] {
 .kids { width: 80%; background-color: #1296ff; }
 .coffee { width: 65%; background-color: #d8c400; }
 .car { width: 20%; background-color: #00cc22; }
+/* --- Professional Skills layout fix --- */
+.section2 .column-33, 
+.section2 .column-66 {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Desktop méretek */
+@media (min-width: 1025px) {
+    .section2 .column-33 {
+        width: 40%;
+        text-align: center;
+        padding-right: 20px;
+    }
+    .section2 .column-66 {
+        width: 55%;
+        padding-left: 20px;
+    }
+}
+
+/* Tablet és mobil: egymás alá */
+@media (max-width: 1024px) {
+    .section2 .column-33,
+    .section2 .column-66 {
+        width: 100% !important;
+        text-align: center;
+        padding: 0;
+    }
+}
+
 
 
 
