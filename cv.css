@@ -570,7 +570,12 @@ button:hover {
     display: block;
     margin: 10px auto;
   }
-
+img[src*="pics/maddog"] {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+  }
   /* Háttérszakaszok padding */
   #section4,
   #section5 {
@@ -589,6 +594,7 @@ button:hover {
     margin-top: 0 !important;
   }
 }
+
 
 
 
