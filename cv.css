@@ -235,7 +235,7 @@ body {
 
 .about-section p {
     font-size: 20px;
-    line-height: 1.6;
+    line-height: 1.5;
     margin-bottom: 14px;
     color: black;
 }
@@ -248,11 +248,11 @@ body {
     }
 
     .about-section h2 {
-        font-size: 28px;
+        font-size: 26px;
     }
 
     .about-section p {
-        font-size: 18px;
+        font-size: 16px;
     }
 }
 /* ===== About me oszlop igazítása ===== */
@@ -277,7 +277,7 @@ body {
     padding: 20px;
 }
 .column-33 h3 {
-    font-size: 24px;
+    font-size: 26px;
     margin-bottom: 15px;
 }
 
@@ -330,6 +330,7 @@ body {
     .column-66 { width: 65%; }
     .column-33 { width: 30%; text-align: center; }
 }
+
 
 
 
