@@ -92,6 +92,15 @@ body, html {
         font-size: 20px !important;
         width: 100% !important;
     }
+      .header1 {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  .header1-right a {
+    margin-left: 2px !important;
+    margin-right: 2px !important;
+  }
 }
 
 /* ===== HERO ===== */
@@ -151,5 +160,6 @@ body, html {
   }
 }
 html, body { overflow-x: hidden !important; }
+
 
 
