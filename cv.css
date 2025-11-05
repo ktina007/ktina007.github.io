@@ -121,7 +121,6 @@ body, html {
     transform: translate(-50%, -50%);
     text-align: center;
     color: #C8F4BC;
-    font-size: 36px;
     font-family: Arial, sans-serif;
 }
 .hero-text h1 { font-size: clamp(22px, 3.2vw, 30px) !important; }
@@ -161,6 +160,7 @@ body, html {
   }
 }
 html, body { overflow-x: hidden !important; }
+
 
 
 
