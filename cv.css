@@ -450,7 +450,6 @@ button:hover {
         padding: 6px 10px; /* ujjbarát érintés */
     }
 	}
-@media (max-width: 768px) {
 
   /* HERO */
   .hero-image {
@@ -686,6 +685,7 @@ img[src*="pics/maddog"] {
     padding-top: 80px !important; /* ne takarja a menü a hero-t */
   }
 }
+
 
 
 
