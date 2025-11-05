@@ -123,6 +123,7 @@ body, html {
     color: #C8F4BC;
     font-size: 36px;
     font-family: Arial, sans-serif;
+    font-size: clamp(20px, 3vw, 28px) !important;
 }
 
 /* ===== HERO MOBIL ===== */
@@ -160,6 +161,7 @@ body, html {
   }
 }
 html, body { overflow-x: hidden !important; }
+
 
 
 
