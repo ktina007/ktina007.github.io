@@ -136,3 +136,18 @@ body, html {
     font-family: 'Shadows Into Light', cursive;
     padding: 10px 0;
 }
+/* HERO DESKTOP FIX */
+@media(min-width: 769px) {
+  .hero-image {
+    height: 70vh !important; /* magasabb lesz */
+    background-position: center center !important;
+    background-size: cover !important;
+    margin: 0 !important;
+    width: 100% !important;
+  }
+
+  body {
+    padding-top: 100px !important; /* ne takarja a menü */
+  }
+}
+
