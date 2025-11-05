@@ -6,7 +6,6 @@
 body, html {
     height: 100%;
     margin: 0;
-    padding-top: 85px;
     background-color: #F2F4D7;
 }
 
@@ -169,10 +168,11 @@ body, html {
   }
 
   body {
-    padding-top: 60px !important; /* ne takarja a menü */
+    padding-top: 85px !important; /* ne takarja a menü */
   }
 }
 html, body { overflow-x: hidden !important; }
+
 
 
 
