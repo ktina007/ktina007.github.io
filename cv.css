@@ -625,6 +625,15 @@ img[src*="pics/maddog"] {
     margin: 0 auto 8px !important;
     display: block;
   }
+@media(max-width: 768px) {
+  body {
+    padding-top: 120px !important;
+  }
+  .hero-image {
+    margin-top: 0 !important;
+  }
+}
+
 
 
 
