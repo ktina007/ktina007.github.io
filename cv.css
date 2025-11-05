@@ -59,7 +59,7 @@ body, html {
     border-radius: 8px;
     cursor: pointer;
 }
-
+@media (max-width: 768px) {
 
     .menu-toggle {
         display: block;
@@ -196,6 +196,7 @@ body {
         --header-height: 70px;
     }
 }
+
 
 
 
