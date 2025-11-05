@@ -618,6 +618,13 @@ img[src*="pics/maddog"] {
     padding-top: 80px; /* hogy ne takarjon a menü */
   }
 }
+  /* Logó optimalizálás mobilon */
+  .header1 a.logo img {
+    width: 120px !important;
+    height: auto !important;
+    margin: 0 auto 8px !important;
+    display: block;
+  }
 
 
 
