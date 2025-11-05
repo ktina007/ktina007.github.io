@@ -287,6 +287,22 @@ body {
         margin-top: 20px;
     }
 }
+/* About + Dog egymás mellé desktopon */
+@media (min-width: 1025px) {
+    .column-66 {
+        width: 65%;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .column-33 {
+        width: 30%;
+        display: inline-block;
+        vertical-align: top;
+        text-align: center;
+    }
+}
+
 
 
 
