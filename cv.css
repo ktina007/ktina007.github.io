@@ -730,6 +730,26 @@ img[src*="pics/maddog"] {
     width: 100%;
   }
 }
+/* Csak mobilon legyen hamburger menü */
+.menu-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  /* Menüpontok eltűnnek mobilon hamburger miatt */
+  .header1-right {
+    display: none;
+  }
+
+  .header1-right.show {
+    display: block;
+  }
+}
+
 
 
 
