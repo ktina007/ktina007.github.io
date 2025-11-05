@@ -594,6 +594,34 @@ img[src*="pics/maddog"] {
     margin-top: 0 !important;
   }
 }
+/* ===== HERO kép mobil fix ===== */
+@media(max-width: 768px) {
+  .hero-image {
+    height: 45vh !important;
+    background-position: center center !important;
+    background-size: cover !important;
+    margin-top: 85px !important; /* Menü elférjen */
+  }
+}
+
+/* ===== Aronija logó nagyobb mobilon ===== */
+@media(max-width: 768px) {
+  img[src*="logoaronija"] {
+    max-width: 220px !important;
+    height: auto !important;
+    margin: 15px auto !important;
+  }
+}
+
+/* ===== Hero szöveg mobil optimalizálás ===== */
+@media(max-width: 768px) {
+  .hero-text h1, .hero-text h2, .hero-text p {
+    font-size: 20px !important;
+    line-height: 1.3 !important;
+    padding: 0 10px !important;
+  }
+}
+
 
 
 
