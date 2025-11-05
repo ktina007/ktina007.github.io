@@ -631,6 +631,20 @@ img[src*="pics/maddog"] {
     margin-top: 0 !important;
   }
 }
+/* ===== HERO FIX DESKTOP ===== */
+@media(min-width: 769px) {
+  body {
+    padding-top: 140px !important;
+  }
+
+  .hero-image {
+    margin-top: 0 !important;
+    height: 60vh !important;
+    background-position: center center !important;
+    width: 100% !important;
+  }
+}
+
 
 
 
