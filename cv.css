@@ -183,6 +183,9 @@ body {
     :root {
         --header-height: 80px;
     }
+       .hero-image {
+        height: 60vh !important;
+    }
 }
 
 /* Mobil */
@@ -191,6 +194,7 @@ body {
         --header-height: 70px;
     }
 }
+
 
 
 
