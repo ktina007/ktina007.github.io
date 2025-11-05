@@ -258,11 +258,18 @@ body {
 /* ===== About me oszlop igazítása ===== */
 .column-66 {
     background-color: #B6F39A;
-    padding: 40px;
+    padding: 45px 60px;
     border-radius: 10px;
     text-align: center;
-    margin-bottom: 40px; /* hogy mobilon legyen tér alatta */
+    margin-bottom: 40px;
+    font-size: 22px; /* ✅ nagyobb szöveg */
+    line-height: 1.7; /* ✅ jobb olvashatóság */
 }
+.column-66 h2 {
+    font-size: 34px; /* ✅ About me cím nagyobb */
+    margin-bottom: 20px;
+}
+
 
 /* Jobb oldali dog blokk */
 .column-33 {
@@ -319,6 +326,7 @@ body {
     .column-66 { width: 65%; }
     .column-33 { width: 30%; text-align: center; }
 }
+
 
 
 
