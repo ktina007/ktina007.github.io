@@ -235,7 +235,7 @@ body {
 
 .about-section p {
     font-size: 20px;
-    line-height: 1.5;
+    line-height: 1.2;
     margin-bottom: 14px;
     color: black;
 }
@@ -330,6 +330,7 @@ body {
     .column-66 { width: 65%; }
     .column-33 { width: 30%; text-align: center; }
 }
+
 
 
 
