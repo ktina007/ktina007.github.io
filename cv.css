@@ -60,11 +60,6 @@ body, html {
     cursor: pointer;
 }
 
-/* ===== RESPONSIVE HEADER ===== */
-@media (max-width: 768px) {
-    body {
-        padding-top: 85px !important;
-    }
 
     .menu-toggle {
         display: block;
@@ -166,12 +161,38 @@ body, html {
     margin: 0 !important;
     width: 100% !important;
   }
-
-  body {
-    padding-top: 85px !important; /* ne takarja a menü */
-  }
 }
 html, body { overflow-x: hidden !important; }
+/* ===== HEADER AUTOMATA MAGASSÁG KEZELÉS ===== */
+:root {
+    --header-height: 85px; /* alap magasság desktop */
+}
+
+/* az oldal tartalma a header alatt kezdődjön */
+body {
+    padding-top: var(--header-height);
+}
+
+/* a header mindig automata méretű marad */
+.header1 {
+    height: auto;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    :root {
+        --header-height: 80px;
+    }
+}
+
+/* Mobil */
+@media (max-width: 768px) {
+    :root {
+        --header-height: 70px;
+    }
+}
+
+
 
 
 
