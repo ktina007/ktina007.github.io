@@ -309,6 +309,49 @@ body {
         margin-top: 20px;
     }
 }
+/* --- ABOUT + DOG végleges layout --- */
+
+.about-dog-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 90%;
+    margin: 40px auto;
+    gap: 40px;
+}
+
+.about-box {
+    width: 65%;
+    background-color: #B6F39A;
+    padding: 40px;
+    border-radius: 12px;
+}
+
+.dog-box {
+    width: 30%;
+    text-align: center;
+}
+
+.dog-box img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 12px;
+}
+
+
+/* Mobil + Tablet */
+@media (max-width: 1024px) {
+    .about-dog-wrapper {
+        display: block;
+        width: 95%;
+    }
+    .about-box,
+    .dog-box {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
 
 
 
