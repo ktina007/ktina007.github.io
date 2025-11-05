@@ -1,764 +1,13 @@
 @charset "utf-8";
-.header1 {
-    overflow: hidden;
-    background-color: #B6F39A;
-    padding: 10px 5px;
-  position: fixed; 
-  top: 0;
-  width: 100%; 
-  transition: 0.2s;
-}
 
-.header1 a {
-  float: left;
-  color: black;
-  text-align: center;
-  padding: 12px;
-  text-decoration: none;
-  font-size: 25px;
-  line-height: 15px;
-  border-radius: 4px;
-	font-family: 'Shadows Into Light', cursive;
-}
-.header1 a.logo {
-  font-size: 25px;
-  font-weight: bold;
-}
-
-.header1 a:hover {
-  background-color: #F0EF7A;
-  color: black;
-}
-
-.header1 a.active {
-    background-color: #B6F39A;
-    color: black;
-}
-
-.header1-right {
-    float: right;
-    margin-top: 20px;
-}
-
-body, html {
-    height: 100%;
-    background-color: #F2F4D7;
-	padding-top: 65px;
-}
-
-.hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("pics/homeoffice1.jpg");
-    height: 50%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    margin-left: -7.2px;
-    margin-right: -7.2px;
-}
-
-.hero-text {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #C8F4BC;
-    text-shadow: 0px 0;
-}
-
-* {box-sizing:border-box}
-
-.container2 {
-  width: 100%; 
-  background-color: #F7F6A7;
-}
-
-.skills {
-  text-align: right; 
-  padding-top: 1px; 
-  padding-bottom: 1px; 
-  color: white; 
-}
-
-.mel {width: 100%; background-color: #f44336;}
-.kids {width: 80%; background-color: #2196F3;}
-.coffee {width: 65%; background-color: #D3CB07;} 
-.car {width: 20%; background-color: #10E71B;}
-
-* {
-  box-sizing: border-box;
-}
-.container {
-  padding: 64px;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both
-}
-
-.column-66 {
-    width: 66.66666%;
-    padding: 20px;
-    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    float: left;
-    text-align: center;
-    background-color: #B6F39A;
-    font-size: large;
-}
-
-.column-33 {
-    width: 33.33333%;
-    padding: 20px;
-    float: left;
-    font-size: 1.05vw;    	
-}
-
-@media screen and (max-width: 1000px) {
-  .column-66 {
-    width: 100%;
-    text-align: center;
-  }
-}
-@media screen and (max-width: 1000px) {
-  .column-33 {
-    width: 100%;
-    text-align: center;
-	  font-size: 18px;
-  }
-}
-#myTable {
-    border-collapse: collapse; 
-    width: 100%; 
-    border: 1px solid #ddd; 
-    font-size: 1vw;
-   
-}
-
-#myTable th, #myTable td {
-  text-align: left; 
-  padding: 12px; 
-}
-
-#myTable tr {
- 
-  border-bottom: 1px solid #ddd;
-}
-
-#myTable tr.header, #myTable tr:hover {
-  background-color: #f1f1f1;
-}
-.col-container {
-    display: table; 
-    width: 100%; 
-    background-image: url("pics/road.jpg");
-    background-attachment: fixed;
-    background-size: cover;
-    color: #000000;
-    text-align: center;
-    font-size: 1.3vw;
-}
-
-.col {
-    display: table-cell;
-    background-image: -webkit-linear-gradient(270deg,rgba(219,249,205,2) 0%,rgba(182,243,154,0.5) 100%);
-    background-image: -moz-linear-gradient(270deg,rgba(219,249,205,2) 0%,rgba(182,243,154,5) 100%);
-    background-image: -o-linear-gradient(270deg,rgba(219,249,205,0.2) 0%,rgba(182,243,154,0.5) 100%);
-    background-image: linear-gradient(180deg,rgba(219,249,205,0.2) 0%,rgba(182,243,154,0.5) 100%);
-    line-height: 2px;
-}
-
-.textcenter {
-    text-align: center;
-	
-}
-@media screen and (max-width: 500px) {
-	.col {
-    display: table; 
-    width: 100%; 
-    font-size: 18px;
-
-}
-}
-.label {
-  color: white;
-  padding: 8px;
-}
-.tablink {
-  background-color: #F0EF7A;
-  color: black;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  font-size: 1.5vw;
-  width: 25%;
-}
-
-
-.tablink:hover {
-  background-color: #F0EF7A;
-}
-
-.tabcontent {
-  color: black;
-  display: none;
-  padding: 50px;
-  text-align: center;
-}
-
-
-#Cleaner {background-color:#B6F39A;}
-#Waitress {background-color:#B6F39A;}
-#Shop {background-color:#B6F39A;}
-#Taxist {background-color: #B6F39A;}
-
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 50px;
-}
-
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
-}
-	@media screen and (max-width: 600px) {
-	.avatar {
- max-width: 20%;
-}
-}
-.avatar {
-  vertical-align: middle;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-}
-
-.panel.body {list-style-position: outside;
-}
-
-.panel-heading {
-    background-color: #6FCC65;
-    text-decoration: underline;
-    font-size: 1.7vw;
-}
-.panel-body {
-    list-style-position: outside;
-}
-@media screen and (max-width: 600px){
-.panel-heading {
-    font-size: 18px;
-}
-}
-.column1 {
-  float: left;
-  width: 25%;
-  padding: 0 5px;
-}
-
-.row {margin: 0 -5px;}
-
-.row:after {
-    content: "";
-    font-size: 1.5vw;
-    display: table;
-    clear: both;
-}
-
-@media screen and (max-width: 600px) {
-  .column1 {
-    width: 100%;
-    display: block;
-    margin-bottom: 10px;
-  }
-
-}
-
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 16px;
-  text-align: center;
-  background-image: url("pics/yellowb.png");
-  color: black;
-	font-size: 1.5vw;
-}
-@media screen and (max-width: 600px) {
-.card {
-		font-size: 18px;}
-}
-.fa {font-size:1.5vw;}
-.header1 {
-    text-align: center;
-}
-
-
-.footer {
-    text-align: center;
-    background-color: #B6F39A;
-    color: #000000;
-	margin-left: -7.1px;
-    margin-right: -7.2px;
-	font-family: 'Shadows Into Light', cursive;
-	padding: 10px 0;
-    }
-#myBtn {
-  display: none; 
-  position: fixed; 
-  bottom: 15px; 
-  right: 30px; 
-  z-index: 99; 
-  border: none; 
-  outline: none; 
-  background-color: yellowgreen; 
-  color: black; 
-  cursor: pointer; 
-  padding: 15px; 
-  border-radius: 20px; /* Rounded corners */
-  font-size: 18px; 
-}
-
-#myBtn:hover {
-  background-color: yellow; 
-}
-.arrow {
-  border: solid black;
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  padding: 3px;
-}
-
-.right {
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-}.row2 {
-    padding-top: 120px;
-    padding-bottom: 120px;
-    background-size: cover;
-    background-position: center;
-}
-.col-container {
-    padding: 120px 40px;
-    background-size: cover;
-    background-position: center;
-}
-.col {
-    background-color: rgba(255, 255, 255, 0.5);
-    padding: 40px 20px;
-    border-radius: 6px;
-}
-/* ==== FORM STYLING ==== */
-
-section#section6 {
-  padding: 40px 20px;
-  text-align: center;
-  background-color: #d5f7bc;
-}
-
-.container2 {
-  max-width: 600px;
-  margin: auto;
-  background: #ffffffaa;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 0 15px #00000020;
-}
-
-label {
-  display: block;
-  font-weight: bold;
-  margin: 10px 0 6px;
-  font-size: 18px;
-}
-
-input, textarea {
-  width: 100%;
-  padding: 12px;
-  margin-bottom: 18px;
-  border: 2px solid #009933;
-  border-radius: 8px;
-  font-size: 16px;
-  font-family: inherit;
-  outline: none;
-}
-
-input:focus, textarea:focus {
-  border-color: #006622;
-  box-shadow: 0 0 6px #00662255;
-}
-
-button {
-  background-color: #009933;
-  color: white;
-  padding: 14px 26px;
-  border: none;
-  font-size: 18px;
-  cursor: pointer;
-  border-radius: 8px;
-  font-weight: bold;
-  transition: 0.2s;
-}
-
-button:hover {
-  background-color: #006622;
-  transform: scale(1.05);
-}
-
-/* Mobile fix */
-@media(max-width: 768px) {
-  .container2 {
-    width: 95vw;
-    padding: 20px;
-  }
-}
-.made-by {
-  text-align: center;
-  font-size: 14px;
-  color: #3c3c3c;
-  margin: 12px 0 20px;
-  font-family: 'Shadows Into Light', cursive;
-  opacity: 0.9;
-}
-.made-by strong {
-  color: #008000;
-  font-weight: bold;
-}
-/* Mobil javítás: enyhe belső margó és logó távolság */
-@media screen and (max-width: 600px) {
-
-    .header1 {
-        flex-direction: column;
-        padding: 12px;
-    }
-
-    .header1 a.logo img {
-        margin-bottom: 12px;
-    }
-
-    .header1-right a {
-        display: block;
-        margin: 6px 0;
-        padding: 6px 10px; /* ujjbarát érintés */
-    }
-	}
-
-  /* HERO */
-  .hero-image {
-    height: 40vh; /* fél képernyő */
-    background-position: center top; /* fontos! */
-  }
-  .hero-text h1 {
-    font-size: 22px;
-    line-height: 1.25;
-    padding: 0 10px;
-  }
-
-  /* Logók egységes mobil méret */
-  img.logo,
-  .column img,
-  img[src*="logo"],
-  img[src*="logoliba"],
-  img[src*="logoaronija"] {
-    max-width: 120px;
-    height: auto;
-    display: block;
-    margin: 10px auto;
-  }
-
-  /* Macskák */
-  img[src*="afraid"] {
-    width: 60px !important;
-    height: auto;
-  }
-
-  /* Aronija külön extra, hogy még jobban mutasson */
-  img[src*="logoaronija"] {
-    max-width: 160px;
-  }
-
-  /* Monkéygirl */
-  img[src*="monkeygirl"] {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 10px auto;
-  }
-img[src*="pics/maddog"] {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 10px auto;
-  }
-  /* Háttérszakaszok padding */
-  #section4,
-  #section5 {
-    padding: 20px 15px;
-    background-size: cover;
-    background-position: center;
-  }
-}
-
-@media (max-width: 768px) {
-  body {
-    padding-top: 95px !important;
-  }
-  
-  .hero-image {
-    margin-top: 0 !important;
-  }
-}
-/* ===== HERO kép mobil fix ===== */
-@media(max-width: 768px) {
-  .hero-image {
-    height: 45vh !important;
-    background-position: center center !important;
-    background-size: cover !important;
-    margin-top: 85px !important; /* Menü elférjen */
-  }
-}
-
-/* ===== Aronija logó nagyobb mobilon ===== */
-@media(max-width: 768px) {
-  img[src*="logoaronija"] {
-    max-width: 220px !important;
-    height: auto !important;
-    margin: 15px auto !important;
-  }
-}
-
-/* ===== Hero szöveg mobil optimalizálás ===== */
-@media(max-width: 768px) {
-  .hero-text h1, .hero-text h2, .hero-text p {
-    font-size: 20px !important;
-    line-height: 1.3 !important;
-    padding: 0 10px !important;
-  }
-}
-
-
-}
-/* ===== Mobil menü: minden egy vonalban ===== */
-@media(max-width: 768px) {
-
-  .header1 {
-    padding: 4px 6px !important;
-    height: auto !important;
-    display: flex !important;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .header1 a {
-    font-size: 16px !important;
-    padding: 4px 6px !important;
-    margin: 0 3px !important;
-    line-height: 1.2 !important;
-    white-space: nowrap; /* ne törjön új sorba! */
-  }
-
-  .header1-right {
-    display: flex !important;
-    gap: 4px !important;
-    float: none !important;
-    margin: 0 !important;
-  }
-
-  .header1 a.logo img {
-    width: 50px !important;
-    height: auto !important;
-    margin-right: 10px;
-  }
-}
-
-/* ✅ Modern mobil menü beállítások */
-@media(max-width: 768px) {
-
-  .header1 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 6px 10px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 999;
-  }
-
-  .header1 a {
-    font-size: 16px;
-    padding: 6px 8px;
-    margin: 0 4px;
-    white-space: nowrap;
-  }
-
-  .header1-right {
-    display: flex;
-    gap: 4px;
-    float: none;
-    margin: 0;
-  }
-
-  .header1 a.logo img {
-    width: 70px;
-    height: auto;
-  }
-
-  body {
-    padding-top: 80px; /* hogy ne takarjon a menü */
-  }
-}
-  /* Logó optimalizálás mobilon */
-  .header1 a.logo img {
-    width: 120px !important;
-    height: auto !important;
-    margin: 0 auto 8px !important;
-    display: block;
-  }
-@media(max-width: 768px) {
-  body {
-    padding-top: 120px !important;
-  }
-  .hero-image {
-    margin-top: 0 !important;
-  }
-}
-/* ===== HERO FIX DESKTOP ===== */
-@media(min-width: 769px) {
-  body {
-    padding-top: 140px !important;
-  }
-
-  .hero-image {
-    margin-top: 0 !important;
-    height: 60vh !important;
-    background-position: center center !important;
-    width: 100% !important;
-  }
-}
-
-/* ✅ TÖKÉLETES MOBIL MENÜ FIX */
-@media (max-width: 768px) {
-
-  .header1 {
-    display: flex !important;
-    justify-content: space-between !important;
-    align-items: center !important;
-    padding: 8px 10px !important;
-    width: 100% !important;
-    overflow: hidden !important;
-  }
-
-  .header1 a {
-    font-size: 14px !important;
-    padding: 4px 6px !important;
-    margin: 0 2px !important;
-    white-space: nowrap !important;
-    float: none !important;
-    display: inline-block !important;
-  }
-
-  .header1-right {
-    display: flex !important;
-    gap: 4px !important;
-    margin: 0 !important;
-    float: none !important;
-  }
-
-  /* Logó kicsit kisebb mobilon */
-  .header1 a.logo img {
-    width: 55px !important;
-    height: auto !important;
-    display: block !important;
-    margin: 0 !important;
-  }
-
-  body {
-    padding-top: 80px !important; /* ne takarja a menü a hero-t */
-  }
-}
-/* ==== Hamburger menü alapállapot ==== */
-.menu-toggle {
-  display: none;
-  background: none;
-  border: none;
-  font-size: 28px;
-  cursor: pointer;
-}
-
-/* ==== Mobil nézet beállítás ==== */
-@media (max-width: 768px) {
-  
-  /* Hamburger ikon látható */
-  .menu-toggle {
-    display: block;
-    color: black;
-    margin-left: auto;
-  }
-
-  /* Menü alapból elrejtve */
-  .header1-right {
-    display: none;
-    flex-direction: column;
-    background-color: #B6F39A;
-    width: 100%;
-    padding: 10px 0;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    text-align: center;
-  }
-
-  /* Menü megjelenítése gombra */
-  .header1-right.show {
-    display: flex;
-  }
-
-  /* Menü linkek mobilon */
-  .header1-right a {
-    padding: 10px 0;
-    font-size: 18px;
-    margin: 5px 0;
-    width: 100%;
-  }
-}
-/* Csak mobilon legyen hamburger menü */
-.menu-toggle {
-  display: none;
-}
-
-@media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-  }
-
-  /* Menüpontok eltűnnek mobilon hamburger miatt */
-  .header1-right {
-    display: none;
-  }
-
-  .header1-right.show {
-    display: block;
-  }
-}
-@charset "utf-8";
-
-/* ===== GLOBAL ===== */
+/* ===== GLOBAL RESET ===== */
 * { box-sizing: border-box; }
 
 body, html {
     height: 100%;
-    background-color: #F2F4D7;
-    padding-top: 90px; /* hogy a fix menü ne takarjon rá */
     margin: 0;
+    padding-top: 90px;
+    background-color: #F2F4D7;
 }
 
 /* ===== HEADER ===== */
@@ -767,6 +16,7 @@ body, html {
     position: fixed;
     top: 0;
     width: 100%;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -777,9 +27,10 @@ body, html {
 .header1 a {
     text-decoration: none;
     font-family: 'Shadows Into Light', cursive;
-    font-size: 24px;
     color: black;
+    font-size: 24px;
     padding: 8px 12px;
+    line-height: 1.2;
 }
 
 .header1 a:hover {
@@ -789,10 +40,10 @@ body, html {
 .header1 a.logo img {
     width: 75px;
     height: auto;
-    border-radius: 50%;
+    border-radius: 50%; /* kör alak */
 }
 
-/* Menü elem jobbra */
+/* Menü jobbra */
 .header1-right {
     display: flex;
     gap: 14px;
@@ -810,11 +61,10 @@ body, html {
     cursor: pointer;
 }
 
-/* ===== RESPONSIVE ===== */
+/* ===== RESPONSIVE HEADER ===== */
 @media (max-width: 768px) {
-
     body {
-        padding-top: 85px;
+        padding-top: 85px !important;
     }
 
     .menu-toggle {
@@ -834,21 +84,20 @@ body, html {
         padding: 10px 0;
         gap: 4px;
     }
-
     .header1-right.show {
-        display: flex;
+        display: flex !important;
     }
 
     .header1 a {
-        font-size: 20px;
-        padding: 10px;
-        width: 100%;
+        font-size: 20px !important;
+        width: 100% !important;
     }
 }
 
 /* ===== HERO ===== */
 .hero-image {
-    background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url("pics/homeoffice1.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), 
+                      url("pics/homeoffice1.jpg");
     width: 100%;
     height: 70vh;
     background-size: cover;
@@ -867,36 +116,23 @@ body, html {
     font-family: Arial, sans-serif;
 }
 
+/* ===== HERO MOBIL ===== */
+@media (max-width: 768px) {
+    .hero-image {
+        height: 45vh !important;
+        margin-top: 0 !important;
+    }
+    .hero-text {
+        font-size: 22px !important;
+        padding: 0 10px;
+    }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* ===== FOOTER ===== */
+.footer {
+    text-align: center;
+    background-color: #B6F39A;
+    color: black;
+    font-family: 'Shadows Into Light', cursive;
+    padding: 10px 0;
+}
