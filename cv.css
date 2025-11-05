@@ -339,6 +339,46 @@ img[src*="smiley"] {
     height: auto;
     margin: 5px;
 }
+/* ===== SKILLS KÉTOSZLOPOS LAYOUT ===== */
+
+/* Zöld háttér box a skill sávoknak */
+.section2 .column-66 {
+    background-color: #B6F39A;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+/* Kép + szöveg bal oldalon */
+.section2 .column-33 {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Asztali elrendezés: 2 oszlop egymás mellett */
+@media (min-width: 1025px) {
+    .section2 .column-66,
+    .section2 .column-33 {
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .section2 .column-66 {
+        width: 65%;
+    }
+
+    .section2 .column-33 {
+        width: 30%;
+    }
+}
+
+/* Majmos kép nagyobb legyen asztalin */
+.section2 img[src*="monkeygirl"] {
+    max-width: 450px;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
 
 
 
