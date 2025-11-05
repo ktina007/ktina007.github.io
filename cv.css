@@ -472,6 +472,57 @@ img[src*="smiley"] {
         max-width: 300px;
     }
 }
+/* === PROFESSIONAL SKILLS – 2 COLUMN LAYOUT === */
+
+.section2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    padding: 40px 0;
+}
+
+/* Bal oszlop – kép */
+.section2 .column-33 {
+    width: 35%;
+    text-align: center;
+}
+
+.section2 .column-33 img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Jobb oszlop – skill sávok */
+.section2 .column-66 {
+    width: 55%;
+    text-align: center;
+    background: #b6f39a;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Responsive – 1 oszlop mobilon */
+@media(max-width: 1024px) {
+    .section2 {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .section2 .column-33,
+    .section2 .column-66 {
+        width: 100%;
+    }
+
+    .section2 .column-33 img {
+        max-width: 300px;
+    }
+}
+
+
 
 
 
