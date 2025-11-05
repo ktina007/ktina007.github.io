@@ -185,6 +185,8 @@ body {
     }
        .hero-image {
         height: 60vh !important;
+        background-size: cover !important;
+        background-position: center center !important;
     }
 }
 
@@ -194,6 +196,7 @@ body {
         --header-height: 70px;
     }
 }
+
 
 
 
