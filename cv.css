@@ -39,19 +39,6 @@
     float: right;
     margin-top: 20px;
 }
-
-
-@media screen and (max-width: 600px) {
-  .header1 a {
-    float: none;
-    display: block;
-    text-align: left;
-	  font-size: 15px;
-	  
-  }
-  .header1-right {
-    float: none;
-  }
 }
 
 body, html {
@@ -637,6 +624,7 @@ img[src*="pics/maddog"] {
     padding-top: 80px; /* hogy ne takarjon a menü */
   }
 }
+
 
 
 
