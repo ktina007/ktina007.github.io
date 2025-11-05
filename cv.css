@@ -178,13 +178,25 @@ body {
     height: auto;
 }
 
-/* Tablet */
-@media (max-width: 1024px) {
+/* Tablet (769px–1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
     :root {
         --header-height: 80px;
     }
-       .hero-image {
+    .hero-image {
         height: 60vh !important;
+        background-size: cover !important;
+        background-position: center center !important;
+    }
+}
+
+/* Desktop (>=1025px) */
+@media (min-width: 1025px) {
+    :root {
+        --header-height: 85px;
+    }
+    .hero-image {
+        height: 70vh !important;
         background-size: cover !important;
         background-position: center center !important;
     }
@@ -196,6 +208,7 @@ body {
         --header-height: 70px;
     }
 }
+
 
 
 
