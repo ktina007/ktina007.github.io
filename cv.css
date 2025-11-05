@@ -287,21 +287,29 @@ body {
         margin-top: 20px;
     }
 }
-/* About + Dog egymás mellé desktopon */
+/* Desktop two-column width fix */
 @media (min-width: 1025px) {
     .column-66 {
-        width: 65%;
-        display: inline-block;
-        vertical-align: top;
+        width: 55%;
+        background-color: #B6F39A;
+        padding: 40px;
+        border-radius: 10px;
+        margin-left: 40px;
     }
 
     .column-33 {
-        width: 30%;
-        display: inline-block;
-        vertical-align: top;
+        width: 35%;
         text-align: center;
+        margin-right: 40px;
+    }
+
+    .column-33 img {
+        max-width: 250px;
+        border-radius: 12px;
+        margin-top: 20px;
     }
 }
+
 
 
 
