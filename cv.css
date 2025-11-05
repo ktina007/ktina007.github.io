@@ -169,10 +169,11 @@ body, html {
   }
 
   body {
-    padding-top: 85px !important; /* ne takarja a menü */
+    padding-top: 60px !important; /* ne takarja a menü */
   }
 }
 html, body { overflow-x: hidden !important; }
+
 
 
 
