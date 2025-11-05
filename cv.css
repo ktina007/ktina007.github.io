@@ -284,8 +284,10 @@ body {
 /* A kép méretezése */
 .column-33 img {
     width: 100%;
-    max-width: 300px;
-    border-radius: 10px;
+    max-width: 380px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.3);
+    margin-top: 20px;
 }
 
 /* ===== Tablet & Mobil törés ===== */
@@ -330,6 +332,7 @@ body {
     .column-66 { width: 65%; }
     .column-33 { width: 30%; text-align: center; }
 }
+
 
 
 
