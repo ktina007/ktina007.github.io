@@ -39,7 +39,6 @@
     float: right;
     margin-top: 20px;
 }
-}
 
 body, html {
     height: 100%;
@@ -633,6 +632,7 @@ img[src*="pics/maddog"] {
     margin-top: 0 !important;
   }
 }
+
 
 
 
