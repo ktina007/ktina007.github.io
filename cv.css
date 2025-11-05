@@ -622,6 +622,38 @@ img[src*="pics/maddog"] {
   }
 }
 
+/* ===== Menüsor mobil optimalizálás ===== */
+@media(max-width: 768px) {
+
+  .header1 {
+    padding: 6px 10px !important;
+    height: auto !important;
+  }
+
+  .header1 a {
+    font-size: 18px !important;
+    line-height: 1.2 !important;
+    padding: 6px 8px !important;
+    margin: 2px 0 !important;
+    float: none !important;
+    display: block !important;
+    text-align: center !important;
+  }
+
+  .header1-right {
+    float: none !important;
+    margin-top: 5px !important;
+  }
+
+  /* Logó optimalizálás mobilon */
+  .header1 a.logo img {
+    width: 120px !important;
+    height: auto !important;
+    margin: 0 auto 8px !important;
+    display: block;
+  }
+}
+
 
 
 
