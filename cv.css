@@ -255,6 +255,39 @@ body {
         font-size: 18px;
     }
 }
+/* ===== About me oszlop igazítása ===== */
+.column-66 {
+    background-color: #B6F39A;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 40px; /* hogy mobilon legyen tér alatta */
+}
+
+/* Jobb oldali dog blokk */
+.column-33 {
+    text-align: center;
+    padding: 20px;
+}
+
+/* A kép méretezése */
+.column-33 img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+/* ===== Tablet & Mobil törés ===== */
+@media (max-width: 1024px) {
+    .column-66, .column-33 {
+        width: 100%;
+        text-align: center;
+    }
+    .column-33 {
+        margin-top: 20px;
+    }
+}
+
 
 
 
