@@ -378,6 +378,30 @@ img[src*="smiley"] {
     margin-top: 10px;
     border-radius: 10px;
 }
+/* === SKILLS BARS === */
+
+.container2 {
+  width: 90%;
+  margin: 12px auto;
+  background-color: #e4ffd0;
+  border-radius: 12px;
+  padding: 8px;
+}
+
+.skills {
+  text-align: right;
+  padding: 12px;
+  font-weight: bold;
+  color: white;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+.mel { width: 100%; background-color: #ff4433; }
+.kids { width: 80%; background-color: #1296ff; }
+.coffee { width: 65%; background-color: #d8c400; }
+.car { width: 20%; background-color: #00cc22; }
+
 
 
 
