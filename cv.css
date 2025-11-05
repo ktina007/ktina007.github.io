@@ -331,6 +331,43 @@ body {
     .column-66 { width: 65%; }
     .column-33 { width: 30%; text-align: center; }
 }
+/* ===== IMAGE SIZE FIX ===== */
+
+/* Kutya kép – About me section */
+.column-33 img[src*="maddog"] {
+    max-width: 350px;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
+
+/* Majmos kép – Professional Skills */
+.column-33 img[src*="monkeygirl"],
+.column-66 img[src*="monkeygirl"] {
+    max-width: 350px;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
+
+/* Kis logók */
+img[src*="logo"],
+img[src*="logoliba"],
+img[src*="logoaronija"] {
+    max-width: 120px;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
+
+/* Macska arcok – Nightmares */
+img[src*="afraid"],
+img[src*="smiley"] {
+    width: 60px !important;
+    height: auto;
+    margin: 5px;
+}
+
 
 
 
