@@ -150,4 +150,6 @@ body, html {
     padding-top: 100px !important; /* ne takarja a menü */
   }
 }
+html, body { overflow-x: hidden !important; }
+
 
