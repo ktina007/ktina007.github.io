@@ -351,6 +351,15 @@ body {
         margin-bottom: 30px;
     }
 }
+@media (min-width: 1025px) {
+    .column-66, .column-33 {
+        display: inline-block;
+        vertical-align: top;
+    }
+    .column-66 { width: 65%; }
+    .column-33 { width: 30%; text-align: center; }
+}
+
 
 
 
