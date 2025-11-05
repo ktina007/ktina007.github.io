@@ -653,6 +653,39 @@ img[src*="pics/maddog"] {
     display: block;
   }
 }
+/* ===== Mobil menü: minden egy vonalban ===== */
+@media(max-width: 768px) {
+
+  .header1 {
+    padding: 4px 6px !important;
+    height: auto !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header1 a {
+    font-size: 16px !important;
+    padding: 4px 6px !important;
+    margin: 0 3px !important;
+    line-height: 1.2 !important;
+    white-space: nowrap; /* ne törjön új sorba! */
+  }
+
+  .header1-right {
+    display: flex !important;
+    gap: 4px !important;
+    float: none !important;
+    margin: 0 !important;
+  }
+
+  .header1 a.logo img {
+    width: 50px !important;
+    height: auto !important;
+    margin-right: 10px;
+  }
+}
+
 
 
 
