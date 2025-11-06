@@ -1026,7 +1026,6 @@ button.tablink {
     width: 100%;
     height: auto; /* ne torzuljon, megtartja az arányokat */
     max-height: 350px; /* így nem lesz túl nagy */
-	 width: 250px;
     border-radius: 12px;
     display: block;
     margin: 0 auto;
@@ -1038,6 +1037,7 @@ button.tablink {
 	text-align: center;
     margin-bottom: 15px;
 }
+
 
 
 
