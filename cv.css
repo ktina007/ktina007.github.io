@@ -1134,6 +1134,33 @@ img[src*="logoaronija"] {
     align-items: center !important;
     justify-content: space-between;
 }
+#section-weaknesses .col-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 40px 20px;
+}
+
+#section-weaknesses .col {
+    width: 24%;
+    background: rgba(255,255,255,0.45);
+    border-radius: 18px;
+    text-align: center;
+    padding: 20px;
+}
+
+#section-weaknesses h3 {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+#section-weaknesses img.avatar {
+    width: 45px;
+    height: auto;
+    margin: 5px;
+}
+
 
 
 
