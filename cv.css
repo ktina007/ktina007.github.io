@@ -933,6 +933,25 @@ img[src*="pics/maddog"] {
 .section4 .column-33 {
   text-align: center;
 }
+.section4 .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.section4 .column-66,
+.section4 .column-33 {
+  width: 50%;
+  text-align: center;
+}
+
+.section4 img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 10px;
+}
+
 
 
 
