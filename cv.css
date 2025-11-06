@@ -920,6 +920,21 @@ img[src*="pics/maddog"] {
     width: 100%;
   }
 }
+/* ===== WORK EXPERIENCE SECTION STYLE ===== */
+.section4 {
+  width: 90%;
+  max-width: 1200px;
+  margin: 50px auto;
+  background-color: #B6F39A;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.section4 .column-66,
+.section4 .column-33 {
+  text-align: center;
+}
+
 
 
 
