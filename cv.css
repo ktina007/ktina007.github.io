@@ -1,6 +1,8 @@
+
 @charset "utf-8";
 
-/* ===== GLOBAL RESET ===== */
+
+/* ===== ALAP JAVÍTÁS — SCROLL & ELCSÚSZÁSGÁTLÓ ===== */
 * { box-sizing: border-box; }
 
 html, body {
@@ -8,23 +10,36 @@ html, body {
     overflow-x: hidden;
     margin: 0;
     padding: 0;
-    background-color: #F2F4D7;
 }
 
-/* ===== HEADER ===== */
+/* ===== HEADER FIX — NE LÓGJON BE A TARTALOMBA ===== */
+body {
+    padding-top: 20px;
+}
+
+/* ===== HERO KÉP FIX — NE CSÚSZON EL BALRA ===== */
+.hero-image {
+    width: 100%;
+    margin: 0 !important;
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+}
+
+/* ===== FEJLÉC — VÉGSŐ STABIL VERZIÓ ===== */
+
 .header1 {
     background-color: #B6F39A;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 70px;
+    height: 70px; /* <<< fix magasság hogy ne ugorjon */
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
     z-index: 5000;
-    text-align: center;
 }
 
 .header1 a {
@@ -33,13 +48,6 @@ html, body {
     text-decoration: none;
     color: black;
     padding: 6px 10px;
-}
-
-.header1 a.logo img {
-    width: 55px;
-    height: auto;
-    border-radius: 50%;
-    display: block;
 }
 
 .header1 a:hover {
@@ -53,16 +61,61 @@ html, body {
     gap: 10px;
 }
 
-/* ===== HERO ===== */
+.header1 a.logo img {
+    width: 55px; /* <<< végleges méret */
+    height: auto;
+    border-radius: 50%;
+    display: block;
+}
+
+/* ===== MOBIL ===== */
+@media(max-width: 768px) {
+
+    body {
+        padding-top: 80px !important;
+    }
+
+    .header1 {
+        height: 85px; /* kicsit nagyobb mobilon */
+        padding: 8px 12px;
+    }
+
+    .header1 a {
+        font-size: 16px;
+        padding: 4px 8px;
+    }
+
+    .header1-right {
+        gap: 6px;
+    }
+
+    .header1 a.logo img {
+        width: 50px;
+    }
+
+    .hero-image {
+        margin-top: 85px !important;
+    }
+}
+
+/* ===== FEJLÉC ALATT TARTALOM NE TAKARODJON ===== */
+
+body, html {
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden;
+    background-color: #F2F4D7;
+}
+
 .hero-image {
-    width: 100%;
-    height: 60vh;
-    background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("pics/homeoffice1.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    margin: 0 !important;
+  background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("pics/homeoffice1.jpg");
+  width: 100%;
+  height: 60vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin: 0 !important;
 }
 
 .hero-text {
@@ -72,87 +125,768 @@ html, body {
     left: 50%;
     transform: translate(-50%, -50%);
     color: #C8F4BC;
+    text-shadow: 0px 0;
 }
 
-/* ===== SKILLS SECTION ===== */
-.container2 { width: 100%; background-color: #F7F6A7; }
-.skills { text-align: right; padding: 1px 0; color: white; }
+* {box-sizing:border-box}
+
+.container2 {
+  width: 100%; 
+  background-color: #F7F6A7;
+}
+
+.skills {
+  text-align: right; 
+  padding-top: 1px; 
+  padding-bottom: 1px; 
+  color: white; 
+}
+
 .mel {width: 100%; background-color: #f44336;}
 .kids {width: 80%; background-color: #2196F3;}
 .coffee {width: 65%; background-color: #D3CB07;} 
 .car {width: 20%; background-color: #10E71B;}
 
-/* ===== ABOUT SECTION ===== */
-.container { padding: 64px; }
+* {
+  box-sizing: border-box;
+}
+.container {
+  padding: 64px;
+}
 
-.row:after { content: ""; display: table; clear: both; }
-
-.column-66, .column-33 {
-    float: left;
-    width: 48%;
-    padding: 20px;
-    text-align: center;
+.row:after {
+  content: "";
+  display: table;
+  clear: both
 }
 
 .column-66 {
+    width: 66.66666%;
+    padding: 20px;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    float: left;
+    text-align: center;
     background-color: #B6F39A;
     font-size: large;
+	display: inline-block;
+vertical-align: top;
+width: 48%;
+	margin-right: 2%;
+
 }
 
-.column-33 { font-size: 1.05vw; }
+.column-33 {
+    width: 33.33333%;
+    padding: 20px;
+    float: left;
+    font-size: 1.05vw; 
+	display: inline-block;
+vertical-align: top;
+width: 48%;
 
-/* RESPONSIVE */
-@media(max-width: 1000px) {
-    .column-66, .column-33 { width: 100%; font-size: 18px; }
 }
 
-/* ===== TABLE ===== */
-#myTable {
-    border-collapse: collapse;
+@media screen and (max-width: 1000px) {
+  .column-66 {
     width: 100%;
-    font-size: 1vw;
-}
-#myTable th, #myTable td { padding: 12px; }
-#myTable tr { border-bottom: 1px solid #ddd; }
-#myTable tr.header, #myTable tr:hover { background-color: #f1f1f1; }
-
-/* ===== WORK EXPERIENCE ===== */
-.section4 {
-    width: 100%;
-    background-color: #B6F39A;
-    padding: 40px 0;
     text-align: center;
-    margin-top: -80px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .column-33 {
+    width: 100%;
+    text-align: center;
+	  font-size: 18px;
+  }
+}
+#myTable {
+    border-collapse: collapse; 
+    width: 100%; 
+    border: 1px solid #ddd; 
+    font-size: 1vw;
+   
 }
 
-.tablink {
-    font-size: 24px;
-    padding: 15px 30px;
-    margin: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    border: none;
-    width: 220px;
-    font-family: 'Shadows Into Light', cursive;
+#myTable th, #myTable td {
+  text-align: left; 
+  padding: 12px; 
 }
+
+#myTable tr {
+ 
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+.col-container {
+    display: table; 
+    width: 100%; 
+    background-image: url("pics/road.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    color: #000000;
+    text-align: center;
+    font-size: 1.3vw;
+}
+
+.col {
+    display: table-cell;
+    background-image: -webkit-linear-gradient(270deg,rgba(219,249,205,2) 0%,rgba(182,243,154,0.5) 100%);
+    background-image: -moz-linear-gradient(270deg,rgba(219,249,205,2) 0%,rgba(182,243,154,5) 100%);
+    background-image: -o-linear-gradient(270deg,rgba(219,249,205,0.2) 0%,rgba(182,243,154,0.5) 100%);
+    background-image: linear-gradient(180deg,rgba(219,249,205,0.2) 0%,rgba(182,243,154,0.5) 100%);
+    line-height: 2px;
+}
+
+.textcenter {
+    text-align: center;
+	
+}
+@media screen and (max-width: 500px) {
+	.col {
+    display: table; 
+    width: 100%; 
+    font-size: 18px;
+
+}
+}
+.label {
+  color: white;
+  padding: 8px;
+}
+.tablink {
+  background-color: #F0EF7A;
+  color: black;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 1.5vw;
+  width: 25%;
+}
+
 
 .tablink:hover {
-    background-color: #d4ff8a;
-    transform: scale(1.05);
+  background-color: #F0EF7A;
 }
 
 .tabcontent {
-    max-width: 950px;
-    margin: auto;
-    padding: 20px 40px;
+  color: black;
+  display: none;
+  padding: 50px;
+  text-align: center;
 }
 
-/* ===== FAMILY SECTION ===== */
+
+#Cleaner {background-color:#B6F39A;}
+#Waitress {background-color:#B6F39A;}
+#Shop {background-color:#B6F39A;}
+#Taxist {background-color: #B6F39A;}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 50px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+	@media screen and (max-width: 600px) {
+	.avatar {
+ max-width: 20%;
+}
+}
+.avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.panel.body {list-style-position: outside;
+}
+
+.panel-heading {
+    background-color: #6FCC65;
+    text-decoration: underline;
+    font-size: 1.7vw;
+}
+.panel-body {
+    list-style-position: outside;
+}
+@media screen and (max-width: 600px){
+.panel-heading {
+    font-size: 18px;
+}
+}
+.column1 {
+  float: left;
+  width: 25%;
+  padding: 0 5px;
+}
+
+.row {margin: 0 -5px;}
+
+.row:after {
+    content: "";
+    font-size: 1.5vw;
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column1 {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-image: url("pics/yellowb.png");
+  color: black;
+	font-size: 1.5vw;
+}
+@media screen and (max-width: 600px) {
+.card {
+		font-size: 18px;}
+}
+.fa {font-size:1.5vw;}
+.header1 {
+    text-align: center;
+}
+
+
+.footer {
+    text-align: center;
+    background-color: #B6F39A;
+    color: #000000;
+	margin-left: -7.1px;
+    margin-right: -7.2px;
+	font-family: 'Shadows Into Light', cursive;
+	padding: 10px 0;
+    }
+#myBtn {
+  display: none; 
+  position: fixed; 
+  bottom: 15px; 
+  right: 30px; 
+  z-index: 99; 
+  border: none; 
+  outline: none; 
+  background-color: yellowgreen; 
+  color: black; 
+  cursor: pointer; 
+  padding: 15px; 
+  border-radius: 20px; /* Rounded corners */
+  font-size: 18px; 
+}
+
+#myBtn:hover {
+  background-color: yellow; 
+}
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}.row2 {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background-size: cover;
+    background-position: center;
+}
+.col-container {
+    padding: 120px 40px;
+    background-size: cover;
+    background-position: center;
+}
+.col {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 40px 20px;
+    border-radius: 6px;
+}
+/* ==== FORM STYLING ==== */
+
+section#section6 {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #d5f7bc;
+}
+
+.container2 {
+  max-width: 600px;
+  margin: auto;
+  background: #ffffffaa;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px #00000020;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin: 10px 0 6px;
+  font-size: 18px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 18px;
+  border: 2px solid #009933;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: inherit;
+  outline: none;
+}
+
+input:focus, textarea:focus {
+  border-color: #006622;
+  box-shadow: 0 0 6px #00662255;
+}
+
+button {
+  background-color: #009933;
+  color: white;
+  padding: 14px 26px;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+button:hover {
+  background-color: #006622;
+  transform: scale(1.05);
+}
+
+/* Mobile fix */
+@media(max-width: 768px) {
+  .container2 {
+    width: 95vw;
+    padding: 20px;
+  }
+}
+.made-by {
+  text-align: center;
+  font-size: 14px;
+  color: #3c3c3c;
+  margin: 12px 0 20px;
+  font-family: 'Shadows Into Light', cursive;
+  opacity: 0.9;
+}
+.made-by strong {
+  color: #008000;
+  font-weight: bold;
+}
+/* Mobil javítás: enyhe belső margó és logó távolság */
+@media screen and (max-width: 600px) {
+
+    .header1 {
+        flex-direction: column;
+        padding: 12px;
+    }
+
+    .header1 a.logo img {
+        margin-bottom: 12px;
+    }
+
+    .header1-right a {
+        display: block;
+        margin: 6px 0;
+        padding: 6px 10px; /* ujjbarát érintés */
+    }
+	}
+
+  /* HERO */
+  .hero-image {
+    height: 40vh; /* fél képernyő */
+    background-position: center top; /* fontos! */
+  }
+  .hero-text h1 {
+    font-size: 22px;
+    line-height: 1.25;
+    padding: 0 10px;
+  }
+
+
+  /* Macskák */
+  img[src*="afraid"] {
+    width: 60px !important;
+    height: auto;
+  }
+
+  /* Aronija külön extra, hogy még jobban mutasson */
+  img[src*="logoaronija"] {
+    max-width: 160px;
+  }
+
+  /* Monkéygirl */
+  img[src*="monkeygirl"] {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+  }
+img[src*="pics/maddog"] {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+  }
+  /* Háttérszakaszok padding */
+  #section4,
+  #section5 {
+    padding: 20px 15px;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-top: 95px !important;
+  }
+  
+  .hero-image {
+    margin-top: 0 !important;
+  }
+}
+/* ===== HERO kép mobil fix ===== */
+@media(max-width: 768px) {
+  .hero-image {
+    height: 45vh !important;
+    background-position: center center !important;
+    background-size: cover !important;
+    margin-top: 85px !important; /* Menü elférjen */
+  }
+}
+
+/* ===== Aronija logó nagyobb mobilon ===== */
+@media(max-width: 768px) {
+  img[src*="logoaronija"] {
+    max-width: 220px !important;
+    height: auto !important;
+    margin: 15px auto !important;
+  }
+}
+
+/* ===== Hero szöveg mobil optimalizálás ===== */
+@media(max-width: 768px) {
+  .hero-text h1, .hero-text h2, .hero-text p {
+    font-size: 20px !important;
+    line-height: 1.3 !important;
+    padding: 0 10px !important;
+  }
+}
+
+
+}
+@media(max-width: 768px) {
+  body {
+    padding-top: 120px !important;
+  }
+  .hero-image {
+    margin-top: 0 !important;
+  }
+}
+/* ===== HERO FIX DESKTOP ===== */
+@media(min-width: 769px) {
+  body {
+    padding-top: 140px !important;
+  }
+
+  .hero-image {
+    margin-top: 0 !important;
+    height: 60vh !important;
+    background-position: center center !important;
+    width: 100% !important;
+  }
+}
+
+  body {
+    padding-top: 80px !important; /* ne takarja a menü a hero-t */
+  }
+}
+/* ==== Hamburger menü alapállapot ==== */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* ==== Mobil nézet beállítás ==== */
+@media (max-width: 768px) {
+  
+  /* Hamburger ikon látható */
+  .menu-toggle {
+    display: block;
+    color: black;
+    margin-left: auto;
+  }
+
+/* Csak mobilon legyen hamburger menü */
+.menu-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+/* ===== ABOUT ME ESZTÉTIKAI IGAZÍTÁS ===== */
+.section1 {
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.section1 .column-66,
+.section1 .column-33 {
+  background-color: #B6F39A;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.section1 .column-33 img {
+  width: 100%;
+  max-width: 360px;
+  border-radius: 10px;
+}
+
+.section1 h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 900px) {
+  .section1 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .section1 .column-66,
+  .section1 .column-33 {
+    width: 90% !important;
+    margin: auto;
+  }
+}
+/* ===== PROFESSIONAL SKILLS HUMOR LAYOUT ===== */
+.section2 {
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.section2 .column-33,
+.section2 .column-66 {
+  background-color: #B6F39A;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+/* kép igazítása */
+.section2 .column-33 img {
+  width: 100%;
+  max-width: 300px;
+  margin: 15px auto;
+  display: block;
+  border-radius: 10px;
+}
+
+/* skill sávok egyenlő belső margó */
+.container2 {
+  background-color: #C7EFA5;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* címsor középre */
+.section2 h2,
+.section2 h3 {
+  text-align: center;
+}
+
+/* ===== MOBIL NÉZET ===== */
+@media (max-width: 900px) {
+  .section2 {
+    flex-direction: column;
+  }
+
+  .section2 .column-33,
+  .section2 .column-66 {
+    width: 100% !important;
+    margin: auto;
+  }
+
+  .section2 .column-33 img {
+    max-width: 200px;
+  }
+}
+/* ===== STUDIES SECTION STYLE ===== */
+.section3 {
+  width: 100%;
+  margin: 0;
+  background-color: #B6F39A;
+  padding: 60px 0;
+  text-align: center;
+}
+
+
+.section3 .col-container {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin: 30px auto;
+  width: 100%;
+}
+
+
+.section3 .col {
+  background-color: #F2F4D7;
+  padding: 20px;
+  border-radius: 10px;
+  width: 22%;
+}
+
+/* Mobil */
+@media(max-width: 900px) {
+  .section3 .col {
+    width: 45%;
+  }
+}
+@media(max-width: 600px) {
+  .section3 .col {
+    width: 100%;
+  }
+}
+/* ===== WORK EXPERIENCE SECTION STYLE ===== */
+.section4 {
+  width: 100%;
+  margin: 0;
+  background-color: #B6F39A;
+  border-radius: 0;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+}
+
+.section4 .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+#section4 .container {
+    padding-top: 0;
+}
+#section4 h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#section4 .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.section4 .column-66,
+.section4 .column-33 {
+  width: 50%;
+  text-align: center;
+}
+#section4 .column-66 {
+    width: 100% !important;
+    max-width: 1100px; /* vagy amit szeretnél */
+    margin: 0 auto;
+}
+
+.section4 img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 10px;
+}
+.section4 {
+  text-align: center;
+	margin-top: -80px;
+}
+
+.tablink {
+  font-size: 24px;
+  padding: 15px 30px;
+  margin: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  font-family: 'Shadows Into Light', cursive;
+	display: inline-block;
+    width: 220px; /* Egyforma szélesség */
+    text-align: center;
+}
+
+.tablink:hover {
+  background-color: #d4ff8a;
+  transform: scale(1.05);
+  transition: 0.2s;
+}
+
+.tablink.active {
+  background-color: #B6F39A;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}
+.tabcontent {
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 40px;
+}
+.tabcontent + button,
+button.tablink {
+    margin: 10px;
+}
+/* ✅ FAMILY PHOTOS – KÉPMÉRET OVERRIDE */
 .family-row-title {
+    width: 100%;
+    text-align: center;
     font-size: 42px;
     margin: 60px 0 40px;
-    text-align: center;
     font-family: 'Shadows Into Light', cursive;
+    font-weight: bold;
 }
 
 .row.family-row {
@@ -160,58 +894,186 @@ html, body {
     justify-content: center;
     align-items: flex-start;
     gap: 80px;
+    flex-wrap: nowrap;
+}
+
+.row.family-row .column {
+    width: auto;
+    text-align: center;
+    padding: 0;
 }
 
 .row.family-row .column img {
     width: 500px;
+    height: auto;
     border-radius: 16px;
     display: block;
-    margin: auto;
+    margin: 0 auto;
 }
 
-/* RESPONSIVE FAMILY */
+.row.family-row h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+.family-row-title {
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+.row.family-row .column img {
+    margin-bottom: 20px;
+}
+
+.row.family-row h3 {
+    margin-bottom: 25px;
+}
+
+
 @media(max-width: 768px) {
-    .row.family-row {
-        flex-wrap: wrap;
-        gap: 30px;
-    }
-    .row.family-row .column img {
-        width: 90% !important;
-        max-width: 260px !important;
-    }
-}
 
-/* ===== FORMS ===== */
-section#section6 {
-    padding: 40px 20px;
-    background-color: #d5f7bc;
-    text-align: center;
-}
+  .row.family-row {
+    gap: 30px;
+    margin-top: 30px;
+  }
 
-.container2 {
-    max-width: 600px;
-    margin: auto;
-    background: #ffffffaa;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 0 15px #00000020;
-}
+  .row.family-row .column {
+    width: 100%;
+  }
 
-/* ===== FOOTER ===== */
-.footer {
-    text-align: center;
-    background-color: #B6F39A;
-    padding: 10px 0;
+  .row.family-row .column img {
+    width: 90% !important;
+    max-width: 260px !important;
+  }
+
+
+  .row.family-row h3 {
+    font-size: 22px;
+  }
+
+  .family-row-title {
+    font-size: 32px !important;
+    margin-top: 40px;
+  }
+
+}
+@media(max-width: 900px) {
+  .row.family-row {
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  .row.family-row .column {
+    width: 100%;
+  }
+}
+/* ===== STUDIES & WORK EXPERIENCES TITLE STYLE ===== */
+.section3 h2, 
+.section4 h2 {
     font-family: 'Shadows Into Light', cursive;
-    color: #000;
+    text-align: center;
+    font-size: 48px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    color: black;
+}
+/* ✅ Aronija logo fix */
+img[src*="logoaronija"] {
+    max-width: 350px !important;
+    width: 100%;
+    height: auto !important;
+    display: block;
+    margin: 30px auto;
+}
+.hero-text h1,
+.hero-text h2 {
+    font-size: clamp(26px, 3vw, 38px) !important;
+    line-height: 1.25 !important;
 }
 
-/* ===== MOBILE MENU ===== */
-@media(max-width: 768px) {
-    body { padding-top: 85px !important; }
-    .header1 { height: 85px; padding: 8px 12px; }
-    .header1 a { font-size: 16px; padding: 4px 8px; }
-    .header1-right { gap: 6px; }
-    .header1 a.logo img { width: 50px; }
-    .hero-image { height: 45vh !important; }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
