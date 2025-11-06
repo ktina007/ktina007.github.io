@@ -1149,8 +1149,13 @@ img[src*="logoaronija"] {
 .weak-title {
     font-family: 'Shadows Into Light', cursive;
     font-size: 48px;
-    margin-bottom: 40px;
     color: black;
+	  background-color: rgba(235, 255, 215, 0.6); /* Világos zöldes áttetsző */
+    display: inline-block;
+    padding: 20px 40px;
+    border-radius: 18px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.15);
 }
 
 /* Container */
@@ -1220,6 +1225,7 @@ img[src*="logoaronija"] {
         font-size: 38px;
     }
 }
+
 
 
 
