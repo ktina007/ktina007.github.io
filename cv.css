@@ -1226,53 +1226,58 @@ img[src*="logoaronija"] {
         font-size: 38px;
     }
 }
-/* SECTION 5 – Igazítás a Weaknesses elrendezéshez */
-#section5 {
+/* ===== SECTION 5 LAYOUT ===== */
+.section5 {
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 50px;
-    margin: 100px auto;
-    width: 100%;
-}
-
-/* Bal oszlop (2 doboz egymás alatt) */
-#section5 .column-66 {
-    display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 80px 40px;
     gap: 40px;
 }
 
-/* Jobb oszlop (Laptop + cím) */
-#section5 .column-33 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/* Bal oldal (tulajdonságok + fizetés) */
+.column-66 {
+    width: 55%;
 }
 
-#section5 img {
-    max-width: 380px;
-    height: auto;
-}
-
-/* Panel egységesítés */
-#section5 .panel-default {
-    background: rgba(210, 255, 180, 0.72);
+.panel-group {
+    background: rgba(200, 255, 200, 0.7);
     border-radius: 30px;
     padding: 30px;
     text-align: center;
-    width: 600px;
 }
 
-/* Mobil optimalizálás */
-@media (max-width: 1100px) {
-    #section5 {
-        flex-direction: column;
-        gap: 60px;
-    }
-    #section5 .panel-default {
-        width: 90%;
-    }
+/* Cím dobozokat megformázzuk */
+.panel-heading {
+    background: #74cf6b;
+    border-radius: 20px;
+    padding: 12px;
+    margin-bottom: 20px;
 }
 
+.panel-heading h3 {
+    font-size: 32px;
+    margin: 0;
+}
 
+/* Szöveg */
+.panel-body p {
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+/* Jobb oldal doboza */
+.column-33 {
+    width: 40%;
+    background: rgba(200, 255, 200, 0.7);
+    border-radius: 30px;
+    padding: 30px;
+    text-align: center;
+}
+
+/* Laptop kép */
+.column-33 img {
+    width: 70%;
+    margin-top: 20px;
+}
