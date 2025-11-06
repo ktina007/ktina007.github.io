@@ -1045,6 +1045,33 @@ button.tablink {
     font-family: 'Shadows Into Light', cursive;
     font-weight: bold;
 }
+@media(max-width: 768px) {
+
+  .row.family-row {
+    gap: 30px;
+    margin-top: 30px;
+  }
+
+  .row.family-row .column {
+    width: 100%;
+  }
+
+  .row.family-row .column img {
+    width: 90% !important;
+    max-width: 260px !important;
+  }
+
+  .row.family-row h3 {
+    font-size: 22px;
+  }
+
+  .family-row-title {
+    font-size: 32px !important;
+    margin-top: 40px;
+  }
+
+}
+
 
 
 
