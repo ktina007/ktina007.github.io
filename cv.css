@@ -1226,76 +1226,53 @@ img[src*="logoaronija"] {
         font-size: 38px;
     }
 }
-/* === SECTION 5 igazítás hogy olyan legyen mint a Weaknesses === */
-
+/* SECTION 5 – Igazítás a Weaknesses elrendezéshez */
 #section5 {
     display: flex;
     justify-content: center;
-    gap: 40px;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    align-items: flex-start;
+    gap: 50px;
+    margin: 100px auto;
+    width: 100%;
 }
 
-/* Kisebb tartó, hogy ne húzza széjjel a layoutot */
-#section5 .column-66,
+/* Bal oszlop (2 doboz egymás alatt) */
+#section5 .column-66 {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* Jobb oszlop (Laptop + cím) */
 #section5 .column-33 {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-/* Panel dobozok igazítása és méret egységesítés */
-#section5 .panel-default {
-    width: 80%;
-    max-width: 700px;
-    background: rgba(210, 255, 180, 0.75);
-    padding: 25px 35px;
-    border-radius: 25px;
-    text-align: center;
-    backdrop-filter: blur(3px);
-}
-
-/* Címek szebben */
-#section5 .panel-heading h3 {
-    font-size: 32px;
-    margin-bottom: 12px;
-}
-
-/* Nincs extra bal oldali szövegigazítás */
-#section5 .panel-body p {
-    text-align: center !important;
-}
-
-/* Laptop kép középre és kisebbre */
 #section5 img {
-    width: 100%;
     max-width: 380px;
     height: auto;
-    margin: 0 auto;
 }
 
-/* Mobil */
-@media (max-width: 900px) {
+/* Panel egységesítés */
+#section5 .panel-default {
+    background: rgba(210, 255, 180, 0.72);
+    border-radius: 30px;
+    padding: 30px;
+    text-align: center;
+    width: 600px;
+}
+
+/* Mobil optimalizálás */
+@media (max-width: 1100px) {
     #section5 {
         flex-direction: column;
-        align-items: center;
+        gap: 60px;
     }
     #section5 .panel-default {
         width: 90%;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
