@@ -1134,112 +1134,93 @@ img[src*="logoaronija"] {
     align-items: center !important;
     justify-content: space-between;
 }
-.weak-title {
-    width: 100%;
-    text-align: center;
-    font-size: 48px;
-    font-family: 'Shadows Into Light', cursive;
-    color: #000;
-	margin-bottom: 40px;
-}
-
+/* === WEAKNESSES SECTION === */
 #section-weaknesses {
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
     width: 100%;
-    padding: 20px 40px 80px;
-    gap: 25px;
-	margin-top: 60px;
-}
-
-#section-weaknesses .col {
-    flex: 1;
-    background: rgba(182, 243, 154, 0.65);
-    border-radius: 20px;
-    text-align: center;
-    padding: 40px 20px 30px;
-    backdrop-filter: blur(4px);
-}
-
-#section-weaknesses h3 {
-    font-size: 32px;
-    margin-bottom: 15px;
-}
-
-#section-weaknesses p {
-    padding: 0 10px;
-    font-size: 22px;
-}
-
-/* ikonok tartása */
-#section-weaknesses img.avatar {
-    width: 50px;
-    margin: 4px;
-}
-
-/* Mobil nézet */
-@media(max-width: 900px) {
-    #section-weaknesses {
-        flex-direction: column;
-        padding: 20px 0;
-    }
-    #section-weaknesses .col {
-        width: 92%;
-        margin: 10px auto;
-    }
-}
-#section-weaknesses {
-    margin-top: 80px;
+    padding: 60px 20px;
+    background-image: url("pics/road.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     text-align: center;
 }
 
+/* Section Title */
 .weak-title {
     font-family: 'Shadows Into Light', cursive;
     font-size: 48px;
     margin-bottom: 40px;
+    color: black;
 }
 
+/* Container */
 .weak-container {
     display: flex;
     justify-content: center;
     gap: 25px;
     flex-wrap: wrap;
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
 }
 
+/* Cards */
 .weak-card {
-    background-color: rgba(182, 243, 154, 0.65);
-    border-radius: 18px;
+    background-color: rgba(214, 255, 189, 0.75);
     width: 22%;
-    padding: 25px;
-}
-
-.weak-card h3 {
-    font-size: 28px;
-    margin-bottom: 12px;
-}
-
-.weak-card p {
+    min-width: 260px;
+    padding: 25px 20px;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
     font-size: 18px;
 }
 
-.icons img {
-    width: 55px;
-    margin: 0 5px;
+/* Headings in cards */
+.weak-card h3 {
+    font-size: 26px;
+    margin-bottom: 15px;
+    color: black;
 }
 
-/* MOBIL */
-@media (max-width: 900px) {
+/* P text */
+.weak-card p {
+    font-size: 18px;
+    padding: 0 5px;
+    color: black;
+}
+
+/* Icons Row */
+.icons {
+    margin: 12px 0;
+}
+
+.icons img {
+    width: 65px;
+    height: auto;
+    display: inline-block;
+    margin: 0 4px;
+}
+
+/* === RESPONSIVE === */
+@media(max-width: 992px) {
     .weak-card {
         width: 45%;
     }
 }
 
-@media (max-width: 600px) {
+@media(max-width: 600px) {
     .weak-card {
-        width: 90%;
+        width: 100%;
+    }
+    .icons img {
+        width: 50px;
+    }
+    .weak-title {
+        font-size: 38px;
     }
 }
+
 
 
 
