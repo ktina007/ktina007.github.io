@@ -1134,32 +1134,45 @@ img[src*="logoaronija"] {
     align-items: center !important;
     justify-content: space-between;
 }
-#section-weaknesses .col-container {
+#section-weaknesses {
     display: flex;
     justify-content: space-between;
+    align-items: stretch;
     width: 100%;
-    padding: 40px 20px;
+    padding: 40px 30px;
+    gap: 20px;
 }
 
 #section-weaknesses .col {
     width: 24%;
-    background: rgba(182, 243, 154, 0.45); /* világoszöld átlátszó */
-    border-radius: 18px;
+    background: rgba(182, 243, 154, 0.65); /* kicsit kevésbé átlátszó */
+    border-radius: 16px;
     text-align: center;
-    padding: 20px;
+    padding: 25px 20px;
+    backdrop-filter: blur(4px);
+    min-height: 350px; /* fix minimális magasság */
 }
 
-#section-weaknesses h3 {
-    font-family: 'Shadows Into Light', cursive;
-    font-size: 32px;
-    margin-bottom: 15px;
+#section-weaknesses h2, 
+#section-weaknesses h3,
+#section-weaknesses p {
+    margin: 12px 0;
+    color: #000;
 }
 
-#section-weaknesses img.avatar {
-    width: 45px;
-    height: auto;
-    margin: 5px;
+/* Mobil – szépen egymás alatt */
+@media(max-width: 900px) {
+    #section-weaknesses {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #section-weaknesses .col {
+        width: 90% !important;
+    }
 }
+
+
 
 
 
