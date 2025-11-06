@@ -922,18 +922,18 @@ img[src*="pics/maddog"] {
 }
 /* ===== WORK EXPERIENCE SECTION STYLE ===== */
 .section4 {
-  width: 90%;
-  max-width: 1200px;
-  margin: 50px auto;
+  width: 100%;
+  margin: 0;
   background-color: #B6F39A;
-  padding: 40px;
-  border-radius: 10px;
+  padding: 60px 0;
+  border-radius: 0;
 }
 
 .section4 .column-66,
 .section4 .column-33 {
   text-align: center;
 }
+
 
 
 
