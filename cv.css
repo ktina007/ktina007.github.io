@@ -40,11 +40,11 @@ body {
 text-decoration: none;
     font-family: 'Shadows Into Light', cursive;
     color: black;
-    font-size: 24px;
-    padding: 8px 12px;
+    font-size: 22px;
+    padding: 6px 10px;
 }
 .header1 a.logo img {
-  width: 75px;
+  width: 60px;
   height: auto;
   border-radius: 50%;
   display: block;
@@ -64,7 +64,7 @@ text-decoration: none;
 .header1-right {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 6px;
   margin: 0;
 }
 
@@ -1101,6 +1101,7 @@ img[src*="logoaronija"] {
     display: block;
     margin: 30px auto;
 }
+
 
 
 
