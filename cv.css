@@ -1101,6 +1101,22 @@ img[src*="logoaronija"] {
     display: block;
     margin: 30px auto;
 }
+/* ✅ Logó mérete minden eszközön */
+.header1 a.logo img {
+    width: 55px !important;
+    height: auto !important;
+    border-radius: 50% !important;
+    display: block;
+}
+.header1-right {
+    gap: 6px !important;
+}
+.hero-text h1,
+.hero-text h2 {
+    font-size: clamp(26px, 3vw, 38px) !important;
+    line-height: 1.25 !important;
+}
+
 
 
 
