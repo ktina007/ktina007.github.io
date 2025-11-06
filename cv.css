@@ -2,6 +2,10 @@
 .header1 {
     height: 70px;
 }
+.header1 .logo img {
+    width: 55px;
+    height: auto;
+}
 
 /* ===== ALAP JAVÍTÁS — SCROLL & ELCSÚSZÁSGÁTLÓ ===== */
 * { box-sizing: border-box; }
@@ -1128,6 +1132,7 @@ img[src*="logoaronija"] {
     align-items: center !important;
     justify-content: space-between;
 }
+
 
 
 
