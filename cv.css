@@ -545,6 +545,43 @@ img[src*="smiley"] {
     width: 140px;
   }
 }
+.skills-text-block {
+    width: 45%;
+    float: right;
+    padding: 50px;
+    text-align: left;
+    font-family: Georgia, serif;
+    font-size: 18px;
+}
+
+.skills-text-block h4 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.aronija-side-logo {
+    width: 200px;
+    height: auto;
+    margin-top: 15px;
+}
+
+/* ✅ Mobilon legyen szépen alatta */
+@media(max-width: 768px) {
+    .skills-text-block {
+        width: 100%;
+        float: none;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .aronija-side-logo {
+        width: 150px;
+        margin: 12px auto 0;
+        display: block;
+    }
+}
+
 
 
 
