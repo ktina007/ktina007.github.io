@@ -894,11 +894,13 @@ img[src*="pics/maddog"] {
 
 .section3 .col-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   gap: 25px;
   flex-wrap: wrap;
-  margin-top: 20px;
+  margin: 30px auto;
+  width: 100%;
 }
+
 
 .section3 .col {
   background-color: #F2F4D7;
@@ -918,6 +920,7 @@ img[src*="pics/maddog"] {
     width: 100%;
   }
 }
+
 
 
 
