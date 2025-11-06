@@ -1083,6 +1083,17 @@ button.tablink {
     width: 100%;
   }
 }
+/* ===== STUDIES & WORK EXPERIENCES TITLE STYLE ===== */
+.section3 h2, 
+.section4 h2 {
+    font-family: 'Shadows Into Light', cursive;
+    text-align: center;
+    font-size: 48px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    color: black;
+}
+
 
 
 
