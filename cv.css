@@ -1012,27 +1012,29 @@ button.tablink {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    gap: 60px;
+    gap: 120px; /* nagyobb távolság */
     flex-wrap: wrap;
-    margin-top: 40px;
+    margin-top: 60px;
 }
 
 .family-row .column {
-    width: 300px;
+    width: 360px; /* szélesebb képtartó */
     text-align: center;
 }
 
 .family-row img {
     width: 100%;
-    height: 220px;
-    object-fit: cover;
+    height: auto; /* ne torzuljon, megtartja az arányokat */
     border-radius: 18px;
+    max-height: 350px; /* így nem lesz túl nagy */
 }
 
 .family-row h3 {
-    margin-bottom: 14px;
-    font-size: 24px;
+    margin-bottom: 18px;
+    font-size: 26px;
 }
+
+
 
 
 
