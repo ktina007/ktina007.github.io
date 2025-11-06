@@ -1024,13 +1024,14 @@ button.tablink {
 }
 
 .row.family-row .column img {
-  width: 320px !important;
-  max-width: 320px !important;
-  height: auto !important;
-  border-radius: 12px;
-  display: block;
-  margin: 0 auto;
+    width: 420px !important;
+    max-width: 100% !important;
+    height: auto !important;
+    border-radius: 16px;
+    display: block;
+    margin: 20px auto;
 }
+
 
 .row.family-row h3 {
   font-size: 30px;
@@ -1071,6 +1072,7 @@ button.tablink {
   }
 
 }
+
 
 
 
