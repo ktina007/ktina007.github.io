@@ -521,6 +521,32 @@ img[src*="smiley"] {
         max-width: 300px;
     }
 }
+/* ===== LOGO GALÉRIA RENDEZÉS ===== */
+.logo-gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+/* Logo képek egységes méret */
+.logo-gallery img {
+  width: 180px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Mobil fix */
+@media (max-width: 600px) {
+  .logo-gallery img {
+    width: 140px;
+  }
+}
+
+
 
 
 
