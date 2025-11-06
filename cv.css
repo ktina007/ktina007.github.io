@@ -884,14 +884,13 @@ img[src*="pics/maddog"] {
 }
 /* ===== STUDIES SECTION STYLE ===== */
 .section3 {
-  width: 90%;
-  max-width: 1200px;
-  margin: 50px auto;
+  width: 100%;
+  margin: 0;
   background-color: #B6F39A;
-  padding: 30px;
-  border-radius: 10px;
+  padding: 60px 0;
   text-align: center;
 }
+
 
 .section3 .col-container {
   display: flex;
@@ -919,6 +918,7 @@ img[src*="pics/maddog"] {
     width: 100%;
   }
 }
+
 
 
 
