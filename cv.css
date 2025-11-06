@@ -929,10 +929,6 @@ img[src*="pics/maddog"] {
   border-radius: 0;
 }
 
-.section4 .column-66,
-.section4 .column-33 {
-  text-align: center;
-}
 .section4 .row {
   display: flex;
   align-items: center;
@@ -944,6 +940,11 @@ img[src*="pics/maddog"] {
 .section4 .column-33 {
   width: 50%;
   text-align: center;
+}
+#section4 .column-66 {
+    width: 100% !important;
+    max-width: 1100px; /* vagy amit szeretnél */
+    margin: 0 auto;
 }
 
 .section4 img {
@@ -982,6 +983,7 @@ img[src*="pics/maddog"] {
     text-align: center;
     padding: 20px 40px;
 }
+
 
 
 
