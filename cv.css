@@ -999,19 +999,19 @@ button.tablink {
 /* ✅ FAMILY PHOTOS – KÉPMÉRET OVERRIDE */
 .row.family-row {
   display: flex;
+  justify-content: center;
   align-items: flex-start;
-  flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-top: 50px;
-    gap: 60px;
-
+  gap: 80px;
+  flex-wrap: nowrap; /* NE törje új sorba */
+  margin-top: 50px;
 }
 
 .row.family-row .column {
-  width: 100%;
+  width: auto; /* NE vegyen fel 100% szélt */
   text-align: center;
   padding: 0;
 }
+
 
 .row.family-row .column img {
     width: 420px !important;
@@ -1063,6 +1063,17 @@ button.tablink {
   }
 
 }
+@media(max-width: 900px) {
+  .row.family-row {
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  .row.family-row .column {
+    width: 100%;
+  }
+}
+
 
 
 
