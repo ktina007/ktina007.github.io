@@ -3,9 +3,10 @@
 /* ===== GLOBAL RESET ===== */
 * { box-sizing: border-box; }
 
-body, html {
+html, body {
     height: 100%;
     margin: 0;
+    overflow-x: hidden;
     background-color: #F2F4D7;
 }
 
@@ -15,7 +16,6 @@ body, html {
     position: fixed;
     top: 0;
     width: 100%;
-    height: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -29,7 +29,6 @@ body, html {
     color: black;
     font-size: 24px;
     padding: 8px 12px;
-    line-height: 1.2;
 }
 
 .header1 a:hover {
@@ -39,7 +38,7 @@ body, html {
 .header1 a.logo img {
     width: 75px;
     height: auto;
-    border-radius: 50%; /* kör alak */
+    border-radius: 50%;
 }
 
 /* Menü jobbra */
@@ -59,47 +58,10 @@ body, html {
     border-radius: 8px;
     cursor: pointer;
 }
-@media (max-width: 768px) {
-
-    .menu-toggle {
-        display: block;
-        margin-left: auto;
-    }
-
-    .header1-right {
-        display: none;
-        flex-direction: column;
-        background-color: #B6F39A;
-        width: 100%;
-        position: absolute;
-        top: 74px;
-        left: 0;
-        text-align: center;
-        padding: 10px 0;
-        gap: 4px;
-    }
-    .header1-right.show {
-        display: flex !important;
-    }
-
-    .header1 a {
-        font-size: 20px !important;
-        width: 100% !important;
-    }
-      .header1 {
-    padding-left: 10px !important;
-    padding-right: 10px !important;
-  }
-
-  .header1-right a {
-    margin-left: 2px !important;
-    margin-right: 2px !important;
-  }
-}
 
 /* ===== HERO ===== */
 .hero-image {
-    background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), 
+    background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
                       url("pics/homeoffice1.jpg");
     width: 100%;
     height: 70vh;
@@ -117,16 +79,10 @@ body, html {
     color: #C8F4BC;
     font-family: Arial, sans-serif;
 }
-.hero-text h1 { font-size: clamp(28px, 4vw, 46px) !important; }
 
-
-
-@media (max-width: 600px) {
-  .hero-text h1 {
-      font-size: clamp(22px, 6vw, 32px) !important;
-  }
+.hero-text h1 {
+    font-size: clamp(28px, 4vw, 46px);
 }
-
 
 /* ===== FOOTER ===== */
 .footer {
@@ -136,86 +92,11 @@ body, html {
     font-family: 'Shadows Into Light', cursive;
     padding: 10px 0;
 }
-/* HERO DESKTOP FIX */
-@media(min-width: 769px) {
-  .hero-image {
-    height: 70vh !important; /* magasabb lesz */
-    background-position: center center !important;
-    background-size: cover !important;
-    margin: 0 !important;
-    width: 100% !important;
-  }
-}
-html, body { overflow-x: hidden !important; }
-/* ===== HEADER AUTOMATA MAGASSÁG KEZELÉS ===== */
-:root {
-    --header-height: 85px; /* alap magasság desktop */
-}
 
-/* az oldal tartalma a header alatt kezdődjön */
-body {
-    padding-top: var(--header-height);
-}
+/* ===== HEADER MAGASSÁG ===== */
+:root { --header-height: 85px; }
+body { padding-top: var(--header-height); }
 
-/* a header mindig automata méretű marad */
-.header1 {
-    height: auto;
-}
-
-
-/* Desktop (>=1025px) */
-@media (min-width: 1025px) {
-    :root {
-        --header-height: 85px;
-    }
-    .hero-image {
-        height: 70vh !important;
-        background-size: cover !important;
-        background-position: center center !important;
-    }
-}
-
-/* Mobil */
-@media (max-width: 768px) {
-    :root {
-        --header-height: 70px;
-    }
-}
-/* Mobil (0–768px) */
-@media (max-width: 768px) {
-    :root {
-        --header-height: 70px;
-    }
-    .hero-image {
-        height: 45vh !important;
-    }
-    .hero-text h1 {
-        font-size: clamp(22px, 6vw, 32px) !important;
-    }
-}
-
-/* Tablet (769px–1024px) */
-@media (min-width: 769px) and (max-width: 1024px) {
-    :root {
-        --header-height: 80px;
-    }
-    .hero-image {
-        height: 60vh !important;
-    }
-    .hero-text h1 {
-        font-size: clamp(26px, 5vw, 36px) !important;
-    }
-}
-
-/* Desktop (>=1025px) */
-@media (min-width: 1025px) {
-    :root {
-        --header-height: 85px;
-    }
-    .hero-image {
-        height: 70vh !important;
-    }
-}
 /* ===== ABOUT SECTION ===== */
 .about-section {
     max-width: 900px;
@@ -235,453 +116,109 @@ body {
 
 .about-section p {
     font-size: 20px;
-    line-height: 1.2;
-    margin-bottom: 14px;
+    line-height: 1.4;
     color: black;
 }
 
-/* ===== Mobil & Tablet ===== */
-@media (max-width: 768px) {
-    .about-section {
-        max-width: 95%;
-        padding: 20px;
-    }
-
-    .about-section h2 {
-        font-size: 26px;
-    }
-
-    .about-section p {
-        font-size: 16px;
-    }
-}
-/* ===== About me oszlop igazítása ===== */
-.column-66 {
-    background-color: #B6F39A;
-    padding: 45px 60px;
-    border-radius: 10px;
-    text-align: center;
-    margin-bottom: 40px;
-    font-size: 20px; /* ✅ nagyobb szöveg */
-    line-height: 1.6; /* ✅ jobb olvashatóság */
-}
-.column-66 h2 {
-    font-size: 32px; /* ✅ About me cím nagyobb */
-    margin-bottom: 20px;
-}
-
-
-/* Jobb oldali dog blokk */
-.column-33 {
-    text-align: center;
-    padding: 20px;
-}
-.column-33 h3 {
-    font-size: 26px;
-    margin-bottom: 15px;
-}
-
-
-/* ===== Tablet & Mobil törés ===== */
-@media (max-width: 1024px) {
-    .column-66, .column-33 {
-        width: 100%;
-        text-align: center;
-    }
-    .column-33 {
-        margin-top: 20px;
-    }
-}
-
-/* --- ABOUT + DOG végleges layout --- */
-
-@media (min-width: 1025px) {
-    .column-66, .column-33 {
-        display: inline-block;
-        vertical-align: top;
-    }
-    .column-66 { width: 65%; }
-    .column-33 { width: 30%; text-align: center; }
-}
-/* ===== IMAGE SIZE FIX ===== */
-
-/* Kutya kép – About me section */
-.column-33 img[src*="maddog"] {
-    max-width: 350px;
-    height: auto;
-    display: block;
-    margin: 10px auto;
-}
-
-/* Majmos kép – Professional Skills */
-.column-33 img[src*="monkeygirl"],
-.column-66 img[src*="monkeygirl"] {
-    max-width: 350px;
-    height: auto;
-    display: block;
-    margin: 10px auto;
-}
-
-/* Kis logók */
-img[src*="logo"],
-img[src*="logoliba"],
-img[src*="logoaronija"] {
-    max-width: 120px;
-    height: auto;
-    display: block;
-    margin: 10px auto;
-}
-
-/* Macska arcok – Nightmares */
-img[src*="afraid"],
-img[src*="smiley"] {
-    width: 60px !important;
-    height: auto;
-    margin: 5px;
-}
-/* ===== SKILLS KÉTOSZLOPOS LAYOUT ===== */
-
-/* Zöld háttér box a skill sávoknak */
-.section2 .column-66 {
-    background-color: #B6F39A;
-    padding: 40px;
-    border-radius: 10px;
-}
-
-/* Kép + szöveg bal oldalon */
-.section2 .column-33 {
-    padding: 20px;
-    text-align: center;
-}
-
-/* Asztali elrendezés: 2 oszlop egymás mellett */
-@media (min-width: 1025px) {
-    .section2 .column-66,
-    .section2 .column-33 {
-        display: inline-block;
-        vertical-align: top;
-    }
-
-    .section2 .column-66 {
-        width: 65%;
-    }
-
-    .section2 .column-33 {
-        width: 30%;
-    }
-}
-
-/* Majmos kép nagyobb legyen asztalin */
-.section2 img[src*="monkeygirl"] {
-    max-width: 450px;
-    height: auto;
-    margin-top: 10px;
-    border-radius: 10px;
-}
-/* === SKILLS BARS === */
-
-.container2 {
-  width: 90%;
-  margin: 12px auto;
-  background-color: #e4ffd0;
-  border-radius: 12px;
-  padding: 8px;
-}
-
-.skills {
-  text-align: right;
-  padding: 12px;
-  font-weight: bold;
-  color: white;
-  border-radius: 10px;
-  font-size: 18px;
-}
-
-.mel { width: 100%; background-color: #ff4433; }
-.kids { width: 80%; background-color: #1296ff; }
-.coffee { width: 65%; background-color: #d8c400; }
-.car { width: 20%; background-color: #00cc22; }
-/* --- Professional Skills layout fix --- */
-.section2 .column-33, 
-.section2 .column-66 {
-    display: inline-block;
-    vertical-align: top;
-}
-
-/* Desktop méretek */
-@media (min-width: 1025px) {
-    .section2 .column-33 {
-        width: 40%;
-        text-align: center;
-        padding-right: 20px;
-    }
-    .section2 .column-66 {
-        width: 55%;
-        padding-left: 20px;
-    }
-}
-
-/* Tablet és mobil: egymás alá */
-@media (max-width: 1024px) {
-    .section2 .column-33,
-    .section2 .column-66 {
-        width: 100% !important;
-        text-align: center;
-        padding: 0;
-    }
-}
-/* === PROFESSIONAL SKILLS 2-COLUMN FIX === */
+/* ===== SKILLS SECTION ===== */
 .section2 {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    gap: 40px;
-    padding: 30px 0;
-}
-
-/* Bal oszlop */
-.section2 .column-33 {
-    width: 35%;
-    text-align: center;
-}
-
-.section2 .column-33 img {
-    width: 100%;
-    max-width: 380px;
-    height: auto;
-    border-radius: 10px;
-}
-
-/* Jobb oszlop */
-.section2 .column-66 {
-    width: 55%;
-    text-align: center;
-}
-
-/* ===== RESPONSIVE ===== */
-@media (max-width: 1024px) {
-    .section2 {
-        flex-direction: column;
-        align-items: center;
-    }
-    .section2 .column-33,
-    .section2 .column-66 {
-        width: 90%;
-    }
-    .section2 .column-33 img {
-        max-width: 300px;
-    }
-}
-/* === PROFESSIONAL SKILLS – 2 COLUMN LAYOUT === */
-
-.section2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 40px;
     width: 100%;
     padding: 40px 0;
 }
 
-/* Bal oszlop – kép */
-.section2 .column-33 {
-    width: 35%;
+/* Bal oszlop – lista */
+.section2 .column-66 {
+    width: 45%;
+    background-color: #B6F39A;
+    padding: 40px;
+    border-radius: 10px;
     text-align: center;
+    font-size: 20px;
+}
+
+/* Jobb oszlop – Aronija box */
+.section2 .column-33 {
+    width: 40%;
+    background-color: #f7f7d8;
+    padding: 40px 30px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 0 18px rgba(0,0,0,0.12);
 }
 
 .section2 .column-33 img {
-    width: 100%;
-    max-width: 350px;
-    height: auto;
-    border-radius: 10px;
-}
-
-/* Jobb oszlop – skill sávok */
-.section2 .column-66 {
-    width: 55%;
-    text-align: center;
-    background: #b6f39a;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-/* Responsive – 1 oszlop mobilon */
-@media(max-width: 1024px) {
-    .section2 {
-        flex-direction: column;
-        gap: 20px;
-    }
-    
-    .section2 .column-33,
-    .section2 .column-66 {
-        width: 100%;
-    }
-
-    .section2 .column-33 img {
-        max-width: 300px;
-    }
-}
-/* ===== LOGO GALÉRIA RENDEZÉS ===== */
-.logo-gallery {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  flex-wrap: wrap;
-  margin-top: 40px;
-}
-
-/* Logo képek egységes méret */
-.logo-gallery img {
-  width: 180px;
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* Mobil fix */
-@media (max-width: 600px) {
-  .logo-gallery img {
-    width: 140px;
-  }
-}
-.skills-text-block {
-    width: 45%;
-    float: right;
-    padding: 50px;
-    text-align: left;
-    font-family: Georgia, serif;
-    font-size: 18px;
-}
-
-.skills-text-block h4 {
-    font-size: 22px;
-    font-weight: bold;
-    margin-bottom: 15px;
-}
-
-.aronija-side-logo {
-    width: 200px;
+    width: 150px;
     height: auto;
     margin-top: 15px;
 }
 
-/* ✅ Mobilon legyen szépen alatta */
-@media(max-width: 768px) {
-    .skills-text-block {
-        width: 100%;
-        float: none;
-        padding: 20px;
-        text-align: center;
-    }
-    
-    .aronija-side-logo {
-        width: 150px;
-        margin: 12px auto 0;
-        display: block;
-    }
-}
-.logo-text-right {
-    width: 33%;
-    float: right;
-    padding: 20px;
-    text-align: center;
-    font-size: 20px;
-    background-color: #F2F4D7;
+/* ===== LOGO GALÉRIA ===== */
+.logo-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 40px;
 }
 
-.aronija-right {
-    width: 300px;
+.logo-gallery img {
+    width: 180px;
     height: auto;
-    display: block;
-    margin: 20px auto;
 }
 
-/* ✅ Mobil nézet */
-@media(max-width: 900px){
-    .logo-text-right {
+@media (max-width: 600px) {
+    .logo-gallery img { width: 140px; }
+}
+
+/* ===== RESPONSIVE ===== */
+
+/* Mobil (0–768px) */
+@media (max-width: 768px) {
+
+    :root { --header-height: 70px; }
+
+    .menu-toggle { display: block; margin-left: auto; }
+
+    .header1-right {
+        display: none;
+        flex-direction: column;
+        background-color: #B6F39A;
         width: 100%;
-        float: none;
-        margin-top: 20px;
+        position: absolute;
+        top: calc(var(--header-height));
+        left: 0;
+        padding: 10px 0;
+    }
+    .header1-right.show { display: flex !important; }
+
+    .header1 a { font-size: 20px !important; width: 100%; }
+
+    .hero-image { height: 45vh; }
+    .hero-text h1 { font-size: clamp(22px, 6vw, 32px); }
+
+    .section2 {
+        flex-direction: column;
+        align-items: center;
     }
 
-    .aronija-right {
-        width: 200px;
+    .section2 .column-66,
+    .section2 .column-33 {
+        width: 90% !important;
     }
 }
-.skills-right-box {
-  position: absolute;
-  right: 5%;
-  top: 20%;
-  width: 360px;
-  background: #f7f7d8;
-  padding: 25px;
-  text-align: center;
-  border-radius: 10px;
-  font-size: 20px;
-  box-shadow: 0 0 12px rgba(0,0,0,0.15);
+
+/* Tablet (769–1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    :root { --header-height: 80px; }
+    .hero-image { height: 60vh; }
+    .hero-text h1 { font-size: clamp(26px, 5vw, 36px); }
 }
 
-.skills-right-box img.right-aroni {
-  width: 130px;
-  margin-top: 15px;
+/* Desktop (>=1025px) */
+@media (min-width: 1025px) {
+    :root { --header-height: 85px; }
+    .hero-image { height: 70vh; }
 }
-
-/* Telefonon NE menjen jobbra */
-@media(max-width: 900px) {
-  .skills-right-box {
-    position: static;
-    width: 90%;
-    margin: 20px auto;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
