@@ -18,10 +18,6 @@ html, body {
     padding: 0;
 }
 
-/* ===== HEADER FIX — NE LÓGJON BE A TARTALOMBA ===== */
-body {
-    padding-top: 20px;
-}
 
 /* ===== HERO KÉP FIX — NE CSÚSZON EL BALRA ===== */
 .hero-image {
@@ -1281,3 +1277,4 @@ img[src*="logoaronija"] {
     width: 70%;
     margin-top: 20px;
 }
+
