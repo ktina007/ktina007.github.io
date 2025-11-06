@@ -581,6 +581,35 @@ img[src*="smiley"] {
         display: block;
     }
 }
+.logo-text-right {
+    width: 33%;
+    float: right;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    background-color: #F2F4D7;
+}
+
+.aronija-right {
+    width: 300px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+/* ✅ Mobil nézet */
+@media(max-width: 900px){
+    .logo-text-right {
+        width: 100%;
+        float: none;
+        margin-top: 20px;
+    }
+
+    .aronija-right {
+        width: 200px;
+    }
+}
+
 
 
 
