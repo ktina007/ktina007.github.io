@@ -882,6 +882,44 @@ img[src*="pics/maddog"] {
     max-width: 200px;
   }
 }
+/* ===== STUDIES SECTION STYLE ===== */
+.section3 {
+  width: 90%;
+  max-width: 1200px;
+  margin: 50px auto;
+  background-color: #B6F39A;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.section3 .col-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.section3 .col {
+  background-color: #F2F4D7;
+  padding: 20px;
+  border-radius: 10px;
+  width: 22%;
+}
+
+/* Mobil */
+@media(max-width: 900px) {
+  .section3 .col {
+    width: 45%;
+  }
+}
+@media(max-width: 600px) {
+  .section3 .col {
+    width: 100%;
+  }
+}
+
 
 
 
