@@ -1189,6 +1189,58 @@ img[src*="logoaronija"] {
         margin: 10px auto;
     }
 }
+#section-weaknesses {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.weak-title {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 48px;
+    margin-bottom: 40px;
+}
+
+.weak-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.weak-card {
+    background-color: rgba(182, 243, 154, 0.65);
+    border-radius: 18px;
+    width: 22%;
+    padding: 25px;
+}
+
+.weak-card h3 {
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+.weak-card p {
+    font-size: 18px;
+}
+
+.icons img {
+    width: 55px;
+    margin: 0 5px;
+}
+
+/* MOBIL */
+@media (max-width: 900px) {
+    .weak-card {
+        width: 45%;
+    }
+}
+
+@media (max-width: 600px) {
+    .weak-card {
+        width: 90%;
+    }
+}
+
 
 
 
