@@ -827,6 +827,62 @@ img[src*="pics/maddog"] {
     margin: auto;
   }
 }
+/* ===== PROFESSIONAL SKILLS HUMOR LAYOUT ===== */
+.section2 {
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.section2 .column-33,
+.section2 .column-66 {
+  background-color: #B6F39A;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+/* kép igazítása */
+.section2 .column-33 img {
+  width: 100%;
+  max-width: 300px;
+  margin: 15px auto;
+  display: block;
+  border-radius: 10px;
+}
+
+/* skill sávok egyenlő belső margó */
+.container2 {
+  background-color: #C7EFA5;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* címsor középre */
+.section2 h2,
+.section2 h3 {
+  text-align: center;
+}
+
+/* ===== MOBIL NÉZET ===== */
+@media (max-width: 900px) {
+  .section2 {
+    flex-direction: column;
+  }
+
+  .section2 .column-33,
+  .section2 .column-66 {
+    width: 100% !important;
+    margin: auto;
+  }
+
+  .section2 .column-33 img {
+    max-width: 200px;
+  }
+}
+
 
 
 
