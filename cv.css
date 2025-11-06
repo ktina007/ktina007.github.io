@@ -1277,4 +1277,35 @@ img[src*="logoaronija"] {
     width: 70%;
     margin-top: 20px;
 }
+/* ===== VÉGSŐ HEADER–HERO JAVÍTÁS ===== */
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  background-color: #F2F4D7;
+}
+
+.header1 {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  background-color: #B6F39A;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 999;
+}
+
+.hero-image {
+  margin: 0 !important;
+  padding: 0 !important;
+  background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("pics/homeoffice1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 60vh;
+  width: 100%;
+  display: block;
+}
+
 
