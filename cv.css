@@ -997,45 +997,42 @@ button.tablink {
     margin: 10px;
 }
 /* ✅ FAMILY PHOTOS – KÉPMÉRET OVERRIDE */
-.row.family-row {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 80px;
-  flex-wrap: nowrap; /* NE törje új sorba */
-  margin-top: 50px;
-}
-
-.row.family-row .column {
-  width: auto; /* NE vegyen fel 100% szélt */
-  text-align: center;
-  padding: 0;
-}
-
-
-.row.family-row .column img {
-    width: 420px !important;
-    max-width: 100% !important;
-    height: auto !important;
-    border-radius: 16px;
-    display: block;
-    margin: 20px auto;
-}
-
-
-.row.family-row h3 {
-  font-size: 30px;
-  margin-bottom: 18px;
-}
 .family-row-title {
     width: 100%;
     text-align: center;
-    font-size: 40px;
-    margin-bottom: 20px;
-    margin-top: 60px;
+    font-size: 42px;
+    margin: 60px 0 40px;
     font-family: 'Shadows Into Light', cursive;
     font-weight: bold;
 }
+
+.row.family-row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 80px;
+    flex-wrap: nowrap;
+}
+
+.row.family-row .column {
+    width: auto;
+    text-align: center;
+    padding: 0;
+}
+
+.row.family-row .column img {
+    width: 400px;
+    height: auto;
+    border-radius: 16px;
+    display: block;
+    margin: 0 auto;
+}
+
+.row.family-row h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
 @media(max-width: 768px) {
 
   .row.family-row {
@@ -1073,6 +1070,7 @@ button.tablink {
     width: 100%;
   }
 }
+
 
 
 
