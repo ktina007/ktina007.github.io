@@ -942,7 +942,7 @@ img[src*="pics/maddog"] {
 
 .section4 .column-66,
 .section4 .column-33 {
-  width: 50%;
+  width: 60%;
   text-align: center;
 }
 
@@ -975,6 +975,7 @@ img[src*="pics/maddog"] {
   background-color: #B6F39A;
   box-shadow: 0 0 10px rgba(0,0,0,0.15);
 }
+
 
 
 
