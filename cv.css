@@ -904,7 +904,8 @@ img[src*="pics/maddog"] {
   padding: 20px;
   border-radius: 10px;
   width: 22%;
-	background: rgba(182, 243, 154, 0.45); /* világoszöld átlátszó */
+	background: rgba(235, 255, 215, 0.6);  /* világoszöld átlátszó */
+		box-shadow: 0 0 15px rgba(0,0,0,0.15);
 }
 
 /* Mobil */
@@ -1225,6 +1226,7 @@ img[src*="logoaronija"] {
         font-size: 38px;
     }
 }
+
 
 
 
