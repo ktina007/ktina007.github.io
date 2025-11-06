@@ -940,6 +940,17 @@ img[src*="pics/maddog"] {
 #section4 .container {
     padding-top: 0;
 }
+#section4 h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#section4 .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
 
 .section4 .column-66,
 .section4 .column-33 {
@@ -996,6 +1007,7 @@ img[src*="pics/maddog"] {
 button.tablink {
     margin: 10px;
 }
+
 
 
 
