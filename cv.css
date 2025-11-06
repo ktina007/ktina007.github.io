@@ -964,6 +964,9 @@ img[src*="pics/maddog"] {
   cursor: pointer;
   border: none;
   font-family: 'Shadows Into Light', cursive;
+	display: inline-block;
+    width: 220px; /* Egyforma szélesség */
+    text-align: center;
 }
 
 .tablink:hover {
@@ -982,6 +985,10 @@ img[src*="pics/maddog"] {
     margin: 0 auto;
     text-align: center;
     padding: 20px 40px;
+}
+.tabcontent + button,
+button.tablink {
+    margin: 10px;
 }
 
 
