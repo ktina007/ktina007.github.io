@@ -1007,29 +1007,17 @@ img[src*="pics/maddog"] {
 button.tablink {
     margin: 10px;
 }
-/* ===== FAMILY PHOTOS SECTION ===== */
-.textcenter {
-    text-align: center;
-    font-size: 34px;
-    margin-bottom: 50px;
-}
-
-.row {
+/* ===== FAMILY PHOTOS SECTION ONLY ===== */
+.family-row {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     gap: 60px;
     flex-wrap: wrap;
 }
-
 .column {
     width: 300px;
     text-align: center;
-}
-
-.column h3 {
-    font-size: 22px;
-    margin-bottom: 15px;
 }
 
 .column img {
@@ -1038,6 +1026,13 @@ button.tablink {
     object-fit: cover;
     border-radius: 18px;
 }
+
+.textcenter {
+    text-align: center;
+    font-size: 34px;
+    margin-bottom: 50px;
+}
+
 
 
 
