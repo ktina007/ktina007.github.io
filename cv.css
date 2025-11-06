@@ -1021,7 +1021,7 @@ button.tablink {
 }
 
 .row.family-row .column img {
-    width: 400px;
+    width: 500px;
     height: auto;
     border-radius: 16px;
     display: block;
@@ -1083,6 +1083,7 @@ button.tablink {
     width: 100%;
   }
 }
+
 
 
 
