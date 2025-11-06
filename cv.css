@@ -937,6 +937,9 @@ img[src*="pics/maddog"] {
   justify-content: center;
   gap: 50px;
 }
+#section4 .container {
+    padding-top: 0;
+}
 
 .section4 .column-66,
 .section4 .column-33 {
@@ -956,6 +959,7 @@ img[src*="pics/maddog"] {
 }
 .section4 {
   text-align: center;
+	margin-top: -80px;
 }
 
 .tablink {
@@ -992,6 +996,7 @@ img[src*="pics/maddog"] {
 button.tablink {
     margin: 10px;
 }
+
 
 
 
