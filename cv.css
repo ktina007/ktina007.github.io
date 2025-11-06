@@ -501,17 +501,6 @@ button:hover {
     padding: 0 10px;
   }
 
-  /* Logók egységes mobil méret */
-  img.logo,
-  .column img,
-  img[src*="logo"],
-  img[src*="logoliba"],
-  img[src*="logoaronija"] {
-    max-width: 120px;
-    height: auto;
-    display: block;
-    margin: 10px auto;
-  }
 
   /* Macskák */
   img[src*="afraid"] {
@@ -1074,6 +1063,7 @@ button.tablink {
   }
 
 }
+
 
 
 
