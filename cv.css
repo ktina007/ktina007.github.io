@@ -1,5 +1,8 @@
-
 @charset "utf-8";
+.header1 {
+    height: 70px;
+}
+
 /* ===== ALAP JAVÍTÁS — SCROLL & ELCSÚSZÁSGÁTLÓ ===== */
 * { box-sizing: border-box; }
 
@@ -1125,6 +1128,7 @@ img[src*="logoaronija"] {
     align-items: center !important;
     justify-content: space-between;
 }
+
 
 
 
