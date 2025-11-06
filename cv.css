@@ -1012,13 +1012,13 @@ button.tablink {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 120px;
+  gap: 30px;
   flex-wrap: wrap;
-  margin: 60px auto 20px;
+  margin: 30px auto 20px;
 }
 
 .row.family-row .column {
-  width: 360px;
+  width: 100%;
   text-align: center;
   padding: 0;
 }
@@ -1073,6 +1073,7 @@ button.tablink {
   }
 
 }
+
 
 
 
