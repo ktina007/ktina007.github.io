@@ -140,6 +140,7 @@ body, html {
 	display: inline-block;
 vertical-align: top;
 width: 48%;
+	margin-right: 2%;
 
 }
 
@@ -787,6 +788,7 @@ img[src*="pics/maddog"] {
     display: block;
   }
 }
+
 
 
 
