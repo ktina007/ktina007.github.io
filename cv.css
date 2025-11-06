@@ -1093,12 +1093,15 @@ button.tablink {
     margin-bottom: 40px;
     color: black;
 }
-img[src*="aronija"] {
-    max-width: 320px;
-    height: auto;
+/* ✅ Aronija logo fix */
+img[src*="logoaronija"] {
+    max-width: 350px !important;
+    width: 100%;
+    height: auto !important;
     display: block;
-    margin: 40px auto;
+    margin: 30px auto;
 }
+
 
 
 
