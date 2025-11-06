@@ -1,11 +1,5 @@
 @charset "utf-8";
-.header1 {
-    height: 70px;
-}
-.header1 .logo img {
-    width: 55px;
-    height: auto;
-}
+
 
 /* ===== ALAP JAVÍTÁS — SCROLL & ELCSÚSZÁSGÁTLÓ ===== */
 * { box-sizing: border-box; }
@@ -31,50 +25,79 @@ body {
     background-position: center;
 }
 
+/* ===== FEJLÉC — VÉGSŐ STABIL VERZIÓ ===== */
+
 .header1 {
-     background-color: #B6F39A;
+    background-color: #B6F39A;
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
+    height: 70px; /* <<< fix magasság hogy ne ugorjon */
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 8px 20px;
-    z-index: 999;
+    padding: 0 20px;
+    z-index: 5000;
 }
 
 .header1 a {
-text-decoration: none;
     font-family: 'Shadows Into Light', cursive;
-    color: black;
     font-size: 22px;
+    text-decoration: none;
+    color: black;
     padding: 6px 10px;
 }
-.header1 a.logo img {
-  width: 60px;
-  height: auto;
-  border-radius: 50%;
-  display: block;
-}
-
 
 .header1 a:hover {
-  background-color: #F0EF7A;
-  color: black;
-}
-
-.header1 a.active {
-    background-color: #B6F39A;
-    color: black;
+    background-color: #F0EF7A;
+    border-radius: 6px;
 }
 
 .header1-right {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
+.header1 a.logo img {
+    width: 55px; /* <<< végleges méret */
+    height: auto;
+    border-radius: 50%;
+    display: block;
+}
+
+/* ===== MOBIL ===== */
+@media(max-width: 768px) {
+
+    body {
+        padding-top: 80px !important;
+    }
+
+    .header1 {
+        height: 85px; /* kicsit nagyobb mobilon */
+        padding: 8px 12px;
+    }
+
+    .header1 a {
+        font-size: 16px;
+        padding: 4px 8px;
+    }
+
+    .header1-right {
+        gap: 6px;
+    }
+
+    .header1 a.logo img {
+        width: 50px;
+    }
+
+    .hero-image {
+        margin-top: 85px !important;
+    }
+}
+
+/* ===== FEJLÉC ALATT TARTALOM NE TAKARODJON ===== */
 
 body, html {
     height: 100%;
@@ -581,83 +604,6 @@ img[src*="pics/maddog"] {
 
 
 }
-/* ===== Mobil menü: minden egy vonalban ===== */
-@media(max-width: 768px) {
-
-  .header1 {
-    padding: 4px 6px !important;
-    height: auto !important;
-    display: flex !important;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .header1 a {
-    font-size: 16px !important;
-    padding: 4px 6px !important;
-    margin: 0 3px !important;
-    line-height: 1.2 !important;
-    white-space: nowrap; /* ne törjön új sorba! */
-  }
-
-  .header1-right {
-    display: flex !important;
-    gap: 4px !important;
-    float: none !important;
-    margin: 0 !important;
-  }
-
-  .header1 a.logo img {
-    width: 50px !important;
-    height: auto !important;
-    margin-right: 10px;
-  }
-}
-
-/* ✅ Modern mobil menü beállítások */
-@media(max-width: 768px) {
-
-  .header1 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 6px 10px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 999;
-  }
-
-  .header1 a {
-    font-size: 16px;
-    padding: 6px 8px;
-    margin: 0 4px;
-    white-space: nowrap;
-  }
-
-  .header1-right {
-    display: flex;
-    gap: 4px;
-    float: none;
-    margin: 0;
-  }
-
-  .header1 a.logo img {
-    width: 70px;
-    height: auto;
-  }
-
-  body {
-    padding-top: 80px; /* hogy ne takarjon a menü */
-  }
-}
-  /* Logó optimalizálás mobilon */
-  .header1 a.logo img {
-    width: 120px !important;
-    height: auto !important;
-    margin: 0 auto 8px !important;
-    display: block;
-  }
 @media(max-width: 768px) {
   body {
     padding-top: 120px !important;
@@ -679,42 +625,6 @@ img[src*="pics/maddog"] {
     width: 100% !important;
   }
 }
-
-/* ✅ TÖKÉLETES MOBIL MENÜ FIX */
-@media (max-width: 768px) {
-
-  .header1 {
-    display: flex !important;
-    justify-content: space-between !important;
-    align-items: center !important;
-    padding: 8px 10px !important;
-    width: 100% !important;
-    overflow: hidden !important;
-  }
-
-  .header1 a {
-    font-size: 14px !important;
-    padding: 4px 6px !important;
-    margin: 0 2px !important;
-    white-space: nowrap !important;
-    float: none !important;
-    display: inline-block !important;
-  }
-
-  .header1-right {
-    display: flex !important;
-    gap: 4px !important;
-    margin: 0 !important;
-    float: none !important;
-  }
-
-  /* Logó kicsit kisebb mobilon */
-  .header1 a.logo img {
-    width: 55px !important;
-    height: auto !important;
-    display: block !important;
-    margin: 0 !important;
-  }
 
   body {
     padding-top: 80px !important; /* ne takarja a menü a hero-t */
@@ -739,32 +649,6 @@ img[src*="pics/maddog"] {
     margin-left: auto;
   }
 
-  /* Menü alapból elrejtve */
-  .header1-right {
-    display: none;
-    flex-direction: column;
-    background-color: #B6F39A;
-    width: 100%;
-    padding: 10px 0;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    text-align: center;
-  }
-
-  /* Menü megjelenítése gombra */
-  .header1-right.show {
-    display: flex;
-  }
-
-  /* Menü linkek mobilon */
-  .header1-right a {
-    padding: 10px 0;
-    font-size: 18px;
-    margin: 5px 0;
-    width: 100%;
-  }
-}
 /* Csak mobilon legyen hamburger menü */
 .menu-toggle {
   display: none;
@@ -775,15 +659,6 @@ img[src*="pics/maddog"] {
     display: block;
   }
 
-  /* Menüpontok eltűnnek mobilon hamburger miatt */
-  .header1-right {
-    display: none;
-  }
-
-  .header1-right.show {
-    display: block;
-  }
-}
 /* ===== ABOUT ME ESZTÉTIKAI IGAZÍTÁS ===== */
 .section1 {
   width: 90%;
@@ -1108,30 +983,13 @@ img[src*="logoaronija"] {
     display: block;
     margin: 30px auto;
 }
-/* ✅ Logó mérete minden eszközön */
-.header1 a.logo img {
-    width: 55px !important;
-    height: auto !important;
-    border-radius: 50% !important;
-    display: block;
-	vertical-align: middle;
-}
-.header1-right {
-    gap: 6px !important;
-}
 .hero-text h1,
 .hero-text h2 {
     font-size: clamp(26px, 3vw, 38px) !important;
     line-height: 1.25 !important;
 }
-/* ===== HEADER VERTIKÁLIS KÖZÉPRE IGAZÍTÁS ===== */
-.header1 {
-    padding: 4px 20px !important;
-    height: 70px !important;
-    display: flex;
-    align-items: center !important;
-    justify-content: space-between;
-}
+
+
 
 
 
