@@ -137,13 +137,21 @@ body, html {
     text-align: center;
     background-color: #B6F39A;
     font-size: large;
+	display: inline-block;
+vertical-align: top;
+width: 48%;
+
 }
 
 .column-33 {
     width: 33.33333%;
     padding: 20px;
     float: left;
-    font-size: 1.05vw;    	
+    font-size: 1.05vw; 
+	display: inline-block;
+vertical-align: top;
+width: 48%;
+
 }
 
 @media screen and (max-width: 1000px) {
@@ -779,6 +787,7 @@ img[src*="pics/maddog"] {
     display: block;
   }
 }
+
 
 
 
