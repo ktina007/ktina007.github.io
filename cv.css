@@ -12,7 +12,7 @@ html, body {
 
 /* ===== HEADER FIX — NE LÓGJON BE A TARTALOMBA ===== */
 body {
-    padding-top: 90px;
+    padding-top: 20px;
 }
 
 /* ===== HERO KÉP FIX — NE CSÚSZON EL BALRA ===== */
@@ -925,8 +925,10 @@ img[src*="pics/maddog"] {
   width: 100%;
   margin: 0;
   background-color: #B6F39A;
-  padding: 60px 0;
   border-radius: 0;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
 }
 
 .section4 .row {
@@ -990,6 +992,7 @@ img[src*="pics/maddog"] {
 button.tablink {
     margin: 10px;
 }
+
 
 
 
