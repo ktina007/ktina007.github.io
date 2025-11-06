@@ -609,6 +609,33 @@ img[src*="smiley"] {
         width: 200px;
     }
 }
+.skills-right-box {
+  position: absolute;
+  right: 5%;
+  top: 20%;
+  width: 360px;
+  background: #f7f7d8;
+  padding: 25px;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 20px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.15);
+}
+
+.skills-right-box img.right-aroni {
+  width: 130px;
+  margin-top: 15px;
+}
+
+/* Telefonon NE menjen jobbra */
+@media(max-width: 900px) {
+  .skills-right-box {
+    position: static;
+    width: 90%;
+    margin: 20px auto;
+  }
+}
+
 
 
 
