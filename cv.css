@@ -43,11 +43,13 @@ text-decoration: none;
     font-size: 24px;
     padding: 8px 12px;
 }
-.header1 a.logo {
+.header1 a.logo img {
   width: 75px;
-    height: auto;
-    border-radius: 50%;
+  height: auto;
+  border-radius: 50%;
+  display: block;
 }
+
 
 .header1 a:hover {
   background-color: #F0EF7A;
@@ -60,9 +62,12 @@ text-decoration: none;
 }
 
 .header1-right {
-    float: right;
-    margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 0;
 }
+
 
 body, html {
     height: 100%;
@@ -72,14 +77,14 @@ body, html {
 }
 
 .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("pics/homeoffice1.jpg");
-    height: 50%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    margin-left: -7.2px;
-    margin-right: -7.2px;
+  background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("pics/homeoffice1.jpg");
+  width: 100%;
+  height: 60vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin: 0 !important;
 }
 
 .hero-text {
@@ -774,6 +779,7 @@ img[src*="pics/maddog"] {
     display: block;
   }
 }
+
 
 
 
