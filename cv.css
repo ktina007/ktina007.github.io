@@ -1093,6 +1093,13 @@ button.tablink {
     margin-bottom: 40px;
     color: black;
 }
+img[src*="aronija"] {
+    max-width: 320px;
+    height: auto;
+    display: block;
+    margin: 40px auto;
+}
+
 
 
 
