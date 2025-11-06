@@ -1010,11 +1010,12 @@ button.tablink {
 /* ✅ FAMILY PHOTOS – KÉPMÉRET OVERRIDE */
 .row.family-row {
   display: flex;
-  justify-content: center;
   align-items: flex-start;
-  gap: 30px;
   flex-wrap: wrap;
-  margin: 30px auto 20px;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    gap: 60px;
+
 }
 
 .row.family-row .column {
@@ -1073,6 +1074,7 @@ button.tablink {
   }
 
 }
+
 
 
 
