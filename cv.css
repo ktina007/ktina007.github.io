@@ -1193,6 +1193,94 @@ img[src*="logoaronija"] {
     padding: 10px !important;
   }
 }
+/* ===== MOBIL HEADER ÉS SECTION4 JAVÍTÁS ===== */
+@media (max-width: 768px) {
+
+  /* --- HEADER igazítás --- */
+  .header1 {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding: 10px 20px !important;
+  }
+
+  .header1 a.logo img {
+    width: 60px !important;
+    height: auto !important;
+    border-radius: 50% !important;
+  }
+
+  .menu-toggle {
+    display: block !important;
+    font-size: 30px !important;
+    background: none !important;
+    border: none !important;
+    cursor: pointer;
+    margin-left: auto !important;
+  }
+
+  .header1-right {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #B6F39A;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    text-align: center;
+  }
+
+  .header1-right.show {
+    display: flex !important;
+  }
+
+  .header1-right a {
+    font-size: 18px;
+    padding: 12px 0;
+    width: 100%;
+  }
+
+  /* --- SECTION4 (Business owner) javítás --- */
+  .section4 .column-66,
+  .section4 .column-33 {
+    width: 100% !important;
+    max-width: 100% !important;
+    float: none !important;
+    display: block !important;
+    text-align: center !important;
+    margin: 0 auto 20px auto !important;
+    padding: 25px 15px !important;
+  }
+
+  .section4 .column-33 h2,
+  .section4 .column-33 h3,
+  .section4 .column-33 p {
+    font-size: 20px !important;
+    line-height: 1.4 !important;
+  }
+
+  .section4 .column-33 {
+    background-color: #B6F39A !important;
+    border-radius: 16px !important;
+  }
+}
+
+/* --- TABLET finomítás --- */
+@media (min-width: 769px) and (max-width: 992px) {
+  .header1 {
+    padding: 12px 25px !important;
+  }
+
+  .header1 a.logo img {
+    width: 70px !important;
+  }
+
+  .section4 .column-33 {
+    width: 90% !important;
+    margin: 0 auto !important;
+  }
+}
+
 
 
 
