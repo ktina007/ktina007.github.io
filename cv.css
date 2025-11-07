@@ -472,7 +472,6 @@ button:hover {
   margin: 0;
   padding: 80px 20px;
   text-align: center;
-  background-image: url("pics/road.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1053,6 +1052,7 @@ img[src*="logoaronija"] {
     margin-top: 0 !important;
   }
 }
+
 
 
 
