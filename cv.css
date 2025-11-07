@@ -503,11 +503,12 @@ button:hover {
 .section4 {
   width: 100%;
   margin: 0;
-  background-color: #B6F39A;
-  padding: 40px 0;
-  text-align: center;
-  border-top: 6px solid #A7E08F; /* kissé sötétebb zöld */
+  background-color: #A5E58E; /* új, kontrasztosabb zöld */
+  border-radius: 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
+
 
 .section4 h2 {
   font-family: 'Shadows Into Light', cursive;
@@ -966,6 +967,7 @@ img[src*="logoaronija"] {
     width: 100% !important;
   }
 }
+
 
 
 
