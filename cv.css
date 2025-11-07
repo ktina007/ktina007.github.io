@@ -968,6 +968,46 @@ img[src*="logoaronija"] {
     width: 100% !important;
   }
 }
+/* ===== MOBIL NÉZET JAVÍTÁS – OSZLOPOK ALÁRENDEZÉSE ===== */
+@media (max-width: 768px) {
+
+  /* Minden section egymás alá */
+  .section1, .section2, .section3, .section4, .section5 {
+    display: block !important;
+    flex-direction: column !important;
+    width: 100% !important;
+  }
+
+  /* Minden oszlop teljes szélességben */
+  .column, .column-33, .column-66, .col {
+    width: 100% !important;
+    float: none !important;
+    display: block !important;
+    margin: 0 auto 20px auto !important;
+  }
+
+  /* Képek középre és arányosan */
+  img {
+    max-width: 100% !important;
+    height: auto !important;
+    display: block !important;
+    margin: 0 auto !important;
+  }
+
+  /* Szövegek ne törjenek furán */
+  .panel-body, .panel-heading, p, h2, h3 {
+    text-align: center !important;
+  }
+
+  /* Hero és header fix */
+  body {
+    padding-top: 100px !important;
+  }
+  .hero-image {
+    margin-top: 0 !important;
+  }
+}
+
 
 
 
