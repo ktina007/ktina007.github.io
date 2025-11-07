@@ -1,57 +1,958 @@
-/* ===== EGYSÉGES MOBIL + TABLET VÉGLEGES JAVÍTÁS ===== */
+
+@charset "utf-8";
+
+/* ===== ALAP BEÁLLÍTÁSOK ===== */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  overflow-x: hidden;
+  height: 100%;
+  background-color: #F2F4D7;
+}
+
+/* ===== HEADER ===== */
+.header1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  padding: 8px 20px;
+  background-color: #B6F39A;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 999;
+  text-align: center;
+}
+
+.header1 a {
+  text-decoration: none;
+  font-family: 'Shadows Into Light', cursive;
+  color: black;
+  font-size: 22px;
+  padding: 6px 10px;
+}
+
+.header1 a.logo img {
+  width: 55px;
+  height: auto;
+  border-radius: 50%;
+  display: block;
+  vertical-align: middle;
+}
+
+.header1 a:hover {
+  background-color: #F0EF7A;
+  color: black;
+}
+
+.header1 a.active {
+  background-color: #B6F39A;
+  color: black;
+}
+
+.header1-right {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0;
+}
+
+/* ===== HAMBURGER MENU (HTML: .menu-toggle + .header1-right.show) ===== */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* ===== HERO ===== */
+.hero-image {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100%;
+  height: 60vh;
+  display: block;
+  background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("pics/homeoffice1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #C8F4BC;
+}
+
+.hero-text h1,
+.hero-text h2 {
+  font-size: clamp(26px, 3vw, 38px);
+  line-height: 1.25;
+}
+
+/* ===== SKILLS BAR (PIROS-KÉK-SÁRGA-ZÖLD) ===== */
+.container2 {
+  width: 100%;
+  background-color: #F7F6A7;
+}
+
+.skills {
+  text-align: right;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  color: white;
+}
+
+.mel { width: 100%; background-color: #f44336; }
+.kids { width: 80%; background-color: #2196F3; }
+.coffee { width: 65%; background-color: #D3CB07; }
+.car { width: 20%; background-color: #10E71B; }
+
+/* ===== ALAP LAYOUT ELEMEK ===== */
+.container {
+  padding: 64px;
+}
+
+.row {
+  margin: 0 -5px;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Általános 66/33 oszlop — több helyen használod */
+.column-66 {
+  width: 66.6666%;
+  padding: 20px;
+  font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  float: left;
+  text-align: center;
+  background-color: #B6F39A;
+  font-size: large;
+}
+
+.column-33 {
+  width: 33.3333%;
+  padding: 20px;
+  float: left;
+  font-size: 1.05vw;
+}
+
+/* 3 oszlopos layout */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 50px;
+}
+
+/* 4 oszlopos layout kártyákhoz */
+.column1 {
+  float: left;
+  width: 25%;
+  padding: 0 5px;
+}
+
+/* Avatar */
+.avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+/* ===== TÁBLÁZAT ===== */
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 1vw;
+}
+
+#myTable th,
+#myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header,
+#myTable tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* ===== ROAD HÁTTÉR BLOKK ===== */
+.col-container {
+  display: table;
+  width: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+  color: #000;
+  text-align: center;
+  font-size: 1.6vw;
+  padding: 120px 40px;
+}
+
+.col {
+  display: table-cell;
+  background-image: linear-gradient(180deg, rgba(219, 249, 205, 0.2) 0%, rgba(182, 243, 154, 0.5) 100%);
+  padding: 40px 20px;
+  border-radius: 6px;
+}
+
+.textcenter {
+  text-align: center;
+}
+
+/* ===== TAB BUTTONS (WORK EXPERIENCE) ===== */
+.tablink {
+  background-color: #F0EF7A;
+  color: black;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 15px 30px;
+  margin: 5px;
+  font-size: 24px;
+  font-family: 'Shadows Into Light', cursive;
+  border-radius: 10px;
+  display: inline-block;
+  width: 220px;
+  text-align: center;
+}
+
+.tablink:hover {
+  background-color: #d4ff8a;
+  transform: scale(1.05);
+  transition: 0.2s;
+}
+
+.tablink.active {
+  background-color: #B6F39A;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.tabcontent {
+  color: black;
+  display: none;
+  width: 100%;
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 20px 40px;
+  text-align: center;
+}
+
+/* Tab specifikus hátterek */
+#Cleaner,
+#Waitress,
+#Shop,
+#Taxist {
+  background-color: #B6F39A;
+}
+
+/* ===== KÁRTYÁK ===== */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-image: url("pics/yellowb.png");
+  color: black;
+  font-size: 1.5vw;
+}
+
+.fa {
+  font-size: 1.5vw;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  text-align: center;
+  background-color: #B6F39A;
+  color: #000;
+  margin-left: -7.1px;
+  margin-right: -7.2px;
+  font-family: 'Shadows Into Light', cursive;
+  padding: 10px 0;
+}
+
+/* ===== SCROLL TO TOP BUTTON ===== */
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 15px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: yellowgreen;
+  color: black;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 20px;
+  font-size: 18px;
+}
+
+#myBtn:hover {
+  background-color: yellow;
+}
+
+/* ===== EGYÉB APRÓK ===== */
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.row2 {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-size: cover;
+  background-position: center;
+}
+
+/* ===== CONTACT FORM (SECTION 6) ===== */
+section#section6 {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #d5f7bc;
+}
+
+section#section6 .container2 {
+  max-width: 600px;
+  margin: auto;
+  background: #ffffffaa;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px #00000020;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin: 10px 0 6px;
+  font-size: 18px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 18px;
+  border: 2px solid #009933;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: inherit;
+  outline: none;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #006622;
+  box-shadow: 0 0 6px #00662255;
+}
+
+button {
+  background-color: #009933;
+  color: white;
+  padding: 14px 26px;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+button:hover {
+  background-color: #006622;
+  transform: scale(1.05);
+}
+
+.made-by {
+  text-align: center;
+  font-size: 14px;
+  color: #3c3c3c;
+  margin: 12px 0 20px;
+  font-family: 'Shadows Into Light', cursive;
+  opacity: 0.9;
+}
+
+.made-by strong {
+  color: #008000;
+  font-weight: bold;
+}
+
+/* ===== ABOUT ME (SECTION1) ===== */
+.section1 {
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.section1 .column-66,
+.section1 .column-33 {
+  background-color: #B6F39A;
+  border-radius: 10px;
+  padding: 30px;
+  float: none;
+}
+
+.section1 .column-33 img {
+  width: 100%;
+  max-width: 360px;
+  border-radius: 10px;
+}
+
+.section1 h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* ===== PROFESSIONAL SKILLS (SECTION2) ===== */
+.section2 {
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.section2 .column-33,
+.section2 .column-66 {
+  background-color: #B6F39A;
+  border-radius: 10px;
+  padding: 30px;
+  float: none;
+}
+
+.section2 .column-33 img {
+  width: 100%;
+  max-width: 300px;
+  margin: 15px auto;
+  display: block;
+  border-radius: 10px;
+}
+
+.section2 h2,
+.section2 h3 {
+  text-align: center;
+}
+
+/* ===== STUDIES SECTION ===== */
+.section3 {
+  width: 100%;
+  margin: 0;
+  padding: 100px 20px;
+  text-align: center;
+  background-image: url("pics/road.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+/* Címsor */
+.section3 h2 {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 48px;
+  color: black;
+  background-color: rgba(235, 255, 215, 0.6);
+  display: inline-block;
+  padding: 20px 40px;
+  border-radius: 18px;
+  margin-bottom: 60px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Kártyák konténer */
+.section3 .col-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  background: none !important; /* FONTOS! */
+}
+
+/* Kártyák */
+.section3 .col {
+  background-color: rgba(214, 255, 189, 0.8);
+  width: 22%;
+  min-width: 260px;
+  padding: 25px 20px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Szövegformázás */
+.section3 .col h3 {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.section3 .col p {
+  font-size: 20px;
+  line-height: 1.4;
+  color: black;
+}
+
+/* ===== RESPONSIVE ===== */
 @media (max-width: 992px) {
-  /* HERO középre */
-  .hero-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 90%;
-    text-align: center;
-    padding: 10px 20px;
-  }
-
-  /* SECTION4 (Work Experiences) */
-  .section4 h2 {
-    font-size: 34px !important;
-    margin-bottom: 25px;
-  }
-
-  .section4 .column-66,
-  .section4 .column-33 {
-    width: 100% !important;
-    max-width: 600px !important;
-    margin: 0 auto 25px auto !important;
-    padding: 25px 20px !important;
-    border-radius: 20px;
-    background-color: rgba(182, 243, 154, 0.85);
-  }
-
-  /* Studies és Weaknesses egységesítés */
-  .section3 .col,
-  .weak-card {
+  .section3 .col {
     width: 45%;
-    min-width: 280px;
-    background-color: rgba(214, 255, 189, 0.85);
-    border-radius: 18px;
-    margin-bottom: 25px;
-  }
-
-  /* Címek */
-  .section3 h2,
-  .section4 h2,
-  .weak-title {
-    font-size: 36px !important;
   }
 }
 
-/* ===== MOBILNÉZET (max 768px) ===== */
+@media (max-width: 600px) {
+  .section3 .col {
+    width: 100%;
+  }
+  .section3 h2 {
+    font-size: 36px;
+  }
+}
+
+
+/* ===== WORK EXPERIENCES (SECTION4) ===== */
+.section4 {
+  width: 100%;
+  margin: 0;
+  background-color: #A5E58E; /* új, kontrasztosabb zöld */
+  border-radius: 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+
+.section4 h2 {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 48px;
+  margin: 20px 0 40px;
+  color: black;
+}
+
+.section4 .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.section4 .column-66,
+.section4 .column-33 {
+  width: 50%;
+  text-align: center;
+  float: none;
+}
+
+.section4 .column-66 {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.section4 img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* ===== FAMILY PHOTOS ===== */
+.family-row-title {
+  width: 100%;
+  text-align: center;
+  font-size: 42px;
+  margin: 60px 0 40px;
+  font-family: 'Shadows Into Light', cursive;
+  font-weight: bold;
+}
+
+.row.family-row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 80px;
+  flex-wrap: nowrap;
+}
+
+.row.family-row .column {
+  width: auto;
+  text-align: center;
+  padding: 0;
+}
+
+.row.family-row .column img {
+  width: 500px;
+  height: auto;
+  border-radius: 16px;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+.row.family-row h3 {
+  font-size: 28px;
+  margin-bottom: 25px;
+}
+
+/* ===== WEAKNESSES SECTION ===== */
+#section-weaknesses {
+  width: 100%;
+  padding: 60px 20px;
+  background-image: url("pics/road.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  text-align: center;
+}
+
+.weak-title {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 48px;
+  color: black;
+  background-color: rgba(235, 255, 215, 0.6);
+  display: inline-block;
+  padding: 20px 40px;
+  border-radius: 18px;
+  margin-bottom: 30px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+}
+
+.weak-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.weak-card {
+  background-color: rgba(214, 255, 189, 0.75);
+  width: 22%;
+  min-width: 260px;
+  padding: 25px 20px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  font-size: 18px;
+}
+
+.weak-card h3 {
+  font-size: 26px;
+  margin-bottom: 15px;
+  color: black;
+}
+
+.weak-card p {
+  font-size: 18px;
+  padding: 0 5px;
+  color: black;
+}
+
+.icons {
+  margin: 12px 0;
+}
+
+.icons img {
+  width: 65px;
+  height: auto;
+  display: inline-block;
+  margin: 0 4px;
+}
+
+/* ===== SECTION5 (TULAJDONSÁGOK + FIZU) ===== */
+.section5 {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 80px 40px;
+  gap: 40px;
+}
+
+.section5 .column-66 {
+  width: 55%;
+  float: none;
+}
+
+.section5 .panel-group {
+  background: rgba(200, 255, 200, 0.7);
+  border-radius: 30px;
+  padding: 30px;
+  text-align: center;
+}
+
+.section5 .panel-heading {
+  background: #74cf6b;
+  border-radius: 20px;
+  padding: 12px;
+  margin-bottom: 20px;
+  text-decoration: underline;
+  font-size: 1.7vw;
+}
+
+.section5 .panel-heading h3 {
+  font-size: 32px;
+  margin: 0;
+}
+
+.section5 .panel-body {
+  list-style-position: outside;
+}
+
+.section5 .panel-body p {
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.section5 .column-33 {
+  width: 40%;
+  float: none;
+  background: rgba(200, 255, 200, 0.7);
+  border-radius: 30px;
+  padding: 30px;
+  text-align: center;
+}
+
+.section5 .column-33 img {
+  width: 70%;
+  margin-top: 20px;
+}
+
+/* ===== LOGO KÜLÖN (ARONIJA) ===== */
+img[src*="logoaronija"] {
+  max-width: 350px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 30px auto;
+}
+
+/* ===== RESPONSIVE ===== */
+
+/* 1000px alatt a 66/33 oszlopok egymás alatt */
+@media (max-width: 1000px) {
+  .column-66,
+  .column-33,
+  .column,
+  .column1 {
+    width: 100%;
+    float: none;
+    font-size: 18px;
+  }
+}
+
+/* FAMILY, STUDIES kártyák */
+@media (max-width: 900px) {
+  .section3 .col {
+    width: 45%;
+  }
+
+  .row.family-row {
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  .row.family-row .column {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+
+  /* BODY offset a fix header miatt */
+  body {
+    padding-top: 90px;
+  }
+
+  /* HEADER + MENÜ */
+  .header1 {
+    padding: 8px 10px;
+    height: auto;
+  }
+
+  .header1 a {
+    font-size: 14px;
+    padding: 4px 6px;
+    margin: 0 2px;
+    white-space: nowrap;
+  }
+
+  .menu-toggle {
+    display: block;
+    margin-left: auto;
+    color: black;
+  }
+
+  .header1-right {
+    display: none;
+    flex-direction: column;
+    background-color: #B6F39A;
+    width: 100%;
+    padding: 10px 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    text-align: center;
+    gap: 0;
+  }
+
+  .header1-right.show {
+    display: flex;
+  }
+
+  .header1-right a {
+    padding: 10px 0;
+    margin: 0;
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .header1 a.logo img {
+    width: 55px;
+    margin: 0;
+  }
+
+  /* HERO */
+  .hero-image {
+    height: 45vh;
+    margin-top: 0 !important;
+    background-position: center center;
+  }
+
+  .hero-text h1,
+  .hero-text h2,
+  .hero-text p {
+    font-size: 20px;
+    line-height: 1.3;
+    padding: 0 10px;
+  }
+
+  /* SECTION1–2 stack */
+  .section1,
+  .section2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section1 .column-66,
+  .section1 .column-33,
+  .section2 .column-66,
+  .section2 .column-33 {
+    width: 90%;
+    margin: 0 auto 20px;
+  }
+
+  /* STUDIES kártyák */
+  .section3 .col {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  /* WORK EXPERIENCE tab gombok szépen egymás alatt */
+  .tablink {
+    width: 90%;
+    font-size: 20px;
+  }
+
+  .tabcontent {
+    padding: 20px;
+  }
+
+  /* FAMILY képek */
+  .family-row-title {
+    font-size: 32px;
+    margin-top: 40px;
+  }
+
+  .row.family-row {
+    gap: 30px;
+    margin-top: 30px;
+  }
+
+  .row.family-row .column img {
+    width: 90%;
+    max-width: 260px;
+  }
+
+  .row.family-row h3 {
+    font-size: 22px;
+  }
+
+  /* WEAKNESSES kártyák */
+  .weak-card {
+    width: 100%;
+  }
+
+  .weak-title {
+    font-size: 38px;
+  }
+
+  /* SECTION5 egymás alatt */
+  .section5 {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .section5 .column-66,
+  .section5 .column-33 {
+    width: 100%;
+  }
+
+  /* CONTACT form */
+  section#section6 .container2 {
+    width: 95vw;
+    padding: 20px;
+  }
+
+  /* Kártya szövegek mobilon olvasható méret */
+  .card {
+    font-size: 18px;
+  }
+}
+/* ===== MOBIL RENDEZÉS – EGYSZERŰ, STABIL ===== */
 @media (max-width: 768px) {
   body {
     padding-top: 100px !important;
   }
 
-  /* HERO */
+  /* HEADER és HERO */
   .hero-image {
     height: auto !important;
     min-height: 45vh;
@@ -61,42 +962,22 @@
   .hero-text {
     position: relative !important;
     transform: none !important;
-    padding: 25px 15px;
-    width: 90%;
-    text-align: center;
-    font-size: 18px;
+    padding: 20px 15px;
   }
 
-  /* SECTION egységes beállítás */
-  section,
-  .section1, .section2, .section3, .section4, .section5, #section-weaknesses {
+  /* SECTIONS egymás alatt, de megtartva a háttérképeket */
+  .section1, .section2, .section3, .section4, .section5 {
     display: block;
     width: 100%;
-    padding: 40px 15px !important;
-    text-align: center !important;
   }
 
-  section h2, section h3, .weak-title {
-    font-size: 26px !important;
-    margin-bottom: 20px !important;
+  /* Kártyák szépen egymás alatt */
+  .section3 .col, .weak-card {
+    width: 100%;
+    margin-bottom: 20px;
   }
 
-  section p {
-    font-size: 18px !important;
-    line-height: 1.6 !important;
-  }
-
-  /* Zöld dobozok, kártyák */
-  .col, .weak-card, .section4 .column-33, .section4 .column-66, .section5 .column-33, .section5 .column-66 {
-    width: 100% !important;
-    max-width: 520px !important;
-    margin: 0 auto 25px auto !important;
-    padding: 25px 20px !important;
-    border-radius: 20px !important;
-    background-color: rgba(214, 255, 189, 0.85) !important;
-  }
-
-  /* Family */
+  /* FAMILY képek is középre */
   .row.family-row {
     flex-wrap: wrap;
     gap: 30px;
@@ -105,28 +986,86 @@
   .row.family-row img {
     width: 90%;
     max-width: 260px;
-    margin: 0 auto;
+  }
+}
+/* ===== WORK EXPERIENCES mobil és tablet javítás ===== */
+@media (max-width: 992px) {
+  /* kisebb címek */
+  .section4 h2 {
+    font-size: 34px !important;
+    margin-bottom: 25px;
+  }
+
+  /* zöld hátterek nagyobb magasság, kényelmesebb elrendezés */
+  .section4 .column-66,
+  .section4 .column-33 {
+    padding: 25px !important;
+    min-height: 300px !important;
+    border-radius: 20px;
+  }
+
+  /* Business Owner doboz */
+  .section4 .column-33 {
+    width: 100% !important;
+    max-width: 500px;
+    margin: 0 auto 20px auto;
+    text-align: center;
+  }
+
+  /* Hero text középre igazítás */
+  .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 10px 20px;
+    width: 90%;
   }
 }
 
-/* ===== KIS MOBIL (max 480px) ===== */
-@media (max-width: 480px) {
-  .hero-text h1,
-  .hero-text h2 {
-    font-size: 22px;
+/* ===== MOBIL NÉZET (600px alatt) ===== */
+@media (max-width: 600px) {
+  /* címsorok kisebbek */
+  .section4 h2 {
+    font-size: 26px !important;
   }
 
-  .section3 h2,
-  .section4 h2,
-  .weak-title {
-    font-size: 24px !important;
+  /* nagyobb zöld dobozok, olvasható szövegek */
+  .section4 .column-66,
+  .section4 .column-33 {
+    width: 100% !important;
+    padding: 30px 15px !important;
+    border-radius: 24px;
+    min-height: 350px !important;
   }
 
-  section p {
-    font-size: 16px !important;
-  }
-
-  .col, .weak-card {
-    padding: 20px 15px !important;
+  /* Hero text ne csússzon ki oldalra */
+  .hero-text {
+    width: 95%;
+    font-size: 18px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    top: 45%;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
