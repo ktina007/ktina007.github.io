@@ -944,56 +944,13 @@ img[src*="logoaronija"] {
     font-size: 18px;
   }
 }
-/* ===== VÉGSŐ MOBIL RENDEZÉS — MINDEN EGYMÁS ALATT ===== */
+/* ===== MOBIL RENDEZÉS – EGYSZERŰ, STABIL ===== */
 @media (max-width: 768px) {
-
-  /* minden oszlop egymás alá */
-  .row,
-  .columns,
-  .section1,
-  .section2,
-  .section4,
-  .section5,
-  .col-container {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    justify-content: center !important;
+  body {
+    padding-top: 100px !important;
   }
 
-  /* minden oszlop 100% széles */
-  .column,
-  .column1,
-  .column-33,
-  .column-66,
-  .col {
-    width: 100% !important;
-    max-width: 100% !important;
-    float: none !important;
-    display: block !important;
-    margin: 0 auto 20px auto !important;
-  }
-
-  /* képek középre */
-  img {
-    display: block;
-    margin: 0 auto 15px auto !important;
-    max-width: 100% !important;
-    height: auto !important;
-  }
-
-  /* szövegek középre */
-  h1, h2, h3, h4, h5, p {
-    text-align: center !important;
-  }
-
-  /* tab gombok, kártyák középre */
-  .tablink, .card, .panel-group, .weak-card {
-    width: 90% !important;
-    margin: 10px auto !important;
-  }
-
-  /* hero */
+  /* HEADER és HERO */
   .hero-image {
     height: auto !important;
     min-height: 45vh;
@@ -1002,64 +959,33 @@ img[src*="logoaronija"] {
 
   .hero-text {
     position: relative !important;
-    top: auto;
-    left: auto;
     transform: none !important;
-    padding: 30px 15px;
+    padding: 20px 15px;
   }
 
-  /* section5 100%-os dobozok */
-  .section5 .column-66,
-  .section5 .column-33 {
-    width: 100% !important;
-  }
-}
-/* ===== MOBIL NÉZET JAVÍTÁS – OSZLOPOK ALÁRENDEZÉSE ===== */
-@media (max-width: 768px) {
-
-  /* Minden section egymás alá */
+  /* SECTIONS egymás alatt, de megtartva a háttérképeket */
   .section1, .section2, .section3, .section4, .section5 {
-    display: block !important;
-    flex-direction: column !important;
-    width: 100% !important;
+    display: block;
+    width: 100%;
   }
 
-  /* Minden oszlop teljes szélességben */
-  .column, .column-33, .column-66, .col {
-    width: 100% !important;
-    float: none !important;
-    display: block !important;
-    margin: 0 auto 20px auto !important;
+  /* Kártyák szépen egymás alatt */
+  .section3 .col, .weak-card {
+    width: 100%;
+    margin-bottom: 20px;
   }
 
-  /* Képek középre és arányosan */
-  img {
-    max-width: 100% !important;
-    height: auto !important;
-    display: block !important;
-    margin: 0 auto !important;
+  /* FAMILY képek is középre */
+  .row.family-row {
+    flex-wrap: wrap;
+    gap: 30px;
   }
 
-  /* Szövegek ne törjenek furán */
-  .panel-body, .panel-heading, p, h2, h3 {
-    text-align: center !important;
-  }
-
-  /* Hero és header fix */
-  body {
-    padding-top: 100px !important;
-  }
-  .hero-image {
-    margin-top: 0 !important;
+  .row.family-row img {
+    width: 90%;
+    max-width: 260px;
   }
 }
-
-
-
-
-
-
-
 
 
 
