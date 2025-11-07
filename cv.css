@@ -1397,6 +1397,7 @@ img[src*="logoaronija"] {
     font-size: 18px !important;
     border-top: 1px solid #d0f5b8;
   }
+   }
 
 /* ===== HERO FIX – MOBIL + TABLET (100% működő verzió) ===== */
 @media (max-width: 992px) {
@@ -1490,6 +1491,7 @@ img[src*="logoaronija"] {
     padding-top: 0 !important;
   }
 }
+
 
 
 
