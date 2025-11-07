@@ -506,7 +506,7 @@ button:hover {
   background-color: #B6F39A;
   padding: 40px 0;
   text-align: center;
-  background: linear-gradient(to bottom, #baf8a5 0%, #B6F39A 50%);
+  box-shadow: 0 -8px 15px rgba(0, 0, 0, 0.1);
 }
 
 .section4 h2 {
@@ -966,6 +966,7 @@ img[src*="logoaronija"] {
     width: 100% !important;
   }
 }
+
 
 
 
