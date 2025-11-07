@@ -507,6 +507,7 @@ button:hover {
   border-radius: 0;
   padding-top: 40px;
   padding-bottom: 40px;
+  text-align: center;
 }
 
 
@@ -967,6 +968,7 @@ img[src*="logoaronija"] {
     width: 100% !important;
   }
 }
+
 
 
 
