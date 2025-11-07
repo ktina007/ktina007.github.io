@@ -202,7 +202,6 @@ body {
 .col-container {
   display: table;
   width: 100%;
-  background-image: url("pics/road.jpg");
   background-attachment: fixed;
   background-size: cover;
   color: #000;
@@ -988,6 +987,7 @@ img[src*="logoaronija"] {
     max-width: 260px;
   }
 }
+
 
 
 
