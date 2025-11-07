@@ -987,6 +987,69 @@ img[src*="logoaronija"] {
     max-width: 260px;
   }
 }
+/* ===== WORK EXPERIENCES mobil és tablet javítás ===== */
+@media (max-width: 992px) {
+  /* kisebb címek */
+  .section4 h2 {
+    font-size: 34px !important;
+    margin-bottom: 25px;
+  }
+
+  /* zöld hátterek nagyobb magasság, kényelmesebb elrendezés */
+  .section4 .column-66,
+  .section4 .column-33 {
+    padding: 25px !important;
+    min-height: 300px !important;
+    border-radius: 20px;
+  }
+
+  /* Business Owner doboz */
+  .section4 .column-33 {
+    width: 100% !important;
+    max-width: 500px;
+    margin: 0 auto 20px auto;
+    text-align: center;
+  }
+
+  /* Hero text középre igazítás */
+  .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 10px 20px;
+    width: 90%;
+  }
+}
+
+/* ===== MOBIL NÉZET (600px alatt) ===== */
+@media (max-width: 600px) {
+  /* címsorok kisebbek */
+  .section4 h2 {
+    font-size: 26px !important;
+  }
+
+  /* nagyobb zöld dobozok, olvasható szövegek */
+  .section4 .column-66,
+  .section4 .column-33 {
+    width: 100% !important;
+    padding: 30px 15px !important;
+    border-radius: 24px;
+    min-height: 350px !important;
+  }
+
+  /* Hero text ne csússzon ki oldalra */
+  .hero-text {
+    width: 95%;
+    font-size: 18px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    top: 45%;
+  }
+}
+
 
 
 
