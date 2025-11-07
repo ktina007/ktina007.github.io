@@ -466,7 +466,7 @@ button:hover {
   text-align: center;
 }
 
-/* ===== STUDIES SECTION – tökéletesen egyezik a WEAKNESSES-szel ===== */
+/* ===== STUDIES SECTION (ugyanaz mint WEAKNESSES) ===== */
 .section3 {
   width: 100%;
   margin: 0;
@@ -474,13 +474,11 @@ button:hover {
   text-align: center;
   background-image: url("pics/road.jpg");
   background-size: cover;
-  background-position: center center;
+  background-position: center;
   background-repeat: no-repeat;
-  /* FONTOS: fixed helyett scroll – így nem duplázza a képet */
-  background-attachment: scroll;
 }
 
-/* Címsor */
+/* Cím */
 .section3 h2 {
   font-family: 'Shadows Into Light', cursive;
   font-size: 48px;
@@ -1055,6 +1053,7 @@ img[src*="logoaronija"] {
     margin-top: 0 !important;
   }
 }
+
 
 
 
