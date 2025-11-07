@@ -1419,48 +1419,34 @@ img[src*="logoaronija"] {
     font-size: 32px !important;
   }
 }
-/* ===== HERO MÉRET JAVÍTÁS MOBIL + TABLET ===== */
+/* ===== HERO KITÖLTÉS CSAK MOBIL + TABLET ===== */
 @media (max-width: 992px) {
   .hero-image {
-    height: 40vh !important;           /* kisebb, de még látványos */
-    min-height: 280px !important;      /* biztonsági minimum */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45vh !important;
+    min-height: 320px !important;
     background-size: cover !important;
     background-position: center center !important;
+    background-repeat: no-repeat !important;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
   }
 
   .hero-text {
-    top: 50% !important;
-    transform: translate(-50%, -50%) !important;
-    text-align: center !important;
-    width: 90% !important;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: #EAF7E0;
   }
 
-  .hero-text h1 {
-    font-size: clamp(18px, 4vw, 26px) !important;
-    line-height: 1.2 !important;
-    margin: 0 0 8px 0 !important;
-  }
-
-  .hero-text h2 {
-    font-size: clamp(16px, 3.5vw, 22px) !important;
-    line-height: 1.3 !important;
-    margin: 0 !important;
+  .section1 {
+    margin-top: 0 !important;
+    padding-top: 40px !important;
   }
 }
 
-/* Extra kis képernyő (max 600px) */
-@media (max-width: 600px) {
-  .hero-image {
-    height: 35vh !important;
-    min-height: 220px !important;
-  }
-
-  .hero-text h1,
-  .hero-text h2 {
-    font-size: clamp(16px, 5vw, 22px) !important;
-    line-height: 1.2 !important;
-  }
-}
 
 
 
