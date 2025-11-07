@@ -1340,6 +1340,86 @@ img[src*="logoaronija"] {
     padding: 10px !important;
   }
 }
+/* ===== VÉGSŐ MOBIL + TABLET JAVÍTÁS ===== */
+
+/* HEADER finomhangolás */
+@media (max-width: 768px) {
+
+  .header1 {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding: 8px 16px !important;
+    background-color: #B6F39A !important;
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+  }
+
+  /* logó – középre igazítás */
+  .header1 a.logo img {
+    width: 58px !important;
+    height: auto !important;
+    border-radius: 50% !important;
+    margin: 0 !important;
+  }
+
+  /* hamburger gomb jobbra */
+  .menu-toggle {
+    display: block !important;
+    margin-left: auto !important;
+    font-size: 30px !important;
+    background: none !important;
+    border: none !important;
+    cursor: pointer !important;
+  }
+
+  /* lenyíló menü */
+  .header1-right {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #B6F39A;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    text-align: center;
+  }
+
+  .header1-right.show {
+    display: flex !important;
+  }
+
+  .header1-right a {
+    padding: 12px 0 !important;
+    font-size: 18px !important;
+    border-top: 1px solid #d0f5b8;
+  }
+
+  /* Hero ne csússzon a logó alá */
+  .hero-image {
+    margin-top: 80px !important;
+  }
+}
+
+/* TABLET (max 992px) */
+@media (min-width: 769px) and (max-width: 992px) {
+
+  .header1 {
+    padding: 10px 25px !important;
+  }
+
+  .header1 a.logo img {
+    width: 70px !important;
+  }
+
+  .menu-toggle {
+    font-size: 32px !important;
+  }
+}
+
 
 
 
