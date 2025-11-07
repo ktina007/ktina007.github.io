@@ -506,7 +506,7 @@ button:hover {
   background-color: #B6F39A;
   padding: 40px 0;
   text-align: center;
-  box-shadow: 0 -8px 15px rgba(0, 0, 0, 0.1);
+ border-top: 6px solid #A7E08F; /* kissé sötétebb zöld */
 }
 
 .section4 h2 {
@@ -966,6 +966,7 @@ img[src*="logoaronija"] {
     width: 100% !important;
   }
 }
+
 
 
 
