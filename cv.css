@@ -470,10 +470,7 @@ button:hover {
 .section3 {
   width: 100%;
   margin: 0;
-  background-image: url("pics/road.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  background: transparent; /* háttér nem a szekcióban van */
   text-align: center;
   padding: 80px 20px;
 }
@@ -491,7 +488,7 @@ button:hover {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
 }
 
-/* Tartalomdobozok konténer */
+/* Kártyák tartója */
 .section3 .col-container {
   display: flex;
   justify-content: center;
@@ -1052,6 +1049,7 @@ img[src*="logoaronija"] {
     margin-top: 0 !important;
   }
 }
+
 
 
 
