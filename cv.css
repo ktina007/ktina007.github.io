@@ -524,8 +524,8 @@ button:hover {
 }
 
 .section3 .col p {
-  font-size: 18px;
-  line-height: 1.4;
+  font-size: 22px;
+  line-height: 1.6;
   color: black;
 }
 
@@ -987,6 +987,7 @@ img[src*="logoaronija"] {
     max-width: 260px;
   }
 }
+
 
 
 
