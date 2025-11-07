@@ -466,16 +466,18 @@ button:hover {
   text-align: center;
 }
 
-/* ===== STUDIES SECTION – azonos stílus mint WEAKNESSES ===== */
+/* ===== STUDIES SECTION ===== */
 .section3 {
   width: 100%;
   margin: 0;
-  padding: 80px 20px;
+  padding: 100px 20px;
   text-align: center;
   background-image: url("pics/road.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
 }
 
 /* Címsor */
@@ -487,7 +489,7 @@ button:hover {
   display: inline-block;
   padding: 20px 40px;
   border-radius: 18px;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
 }
 
@@ -500,11 +502,12 @@ button:hover {
   width: 100%;
   max-width: 1400px;
   margin: 0 auto;
+  background: none !important; /* FONTOS! */
 }
 
-/* Egyes kártyák */
+/* Kártyák */
 .section3 .col {
-  background-color: rgba(214, 255, 189, 0.75);
+  background-color: rgba(214, 255, 189, 0.8);
   width: 22%;
   min-width: 260px;
   padding: 25px 20px;
@@ -542,7 +545,6 @@ button:hover {
     font-size: 36px;
   }
 }
-
 
 
 /* ===== WORK EXPERIENCES (SECTION4) ===== */
@@ -986,6 +988,7 @@ img[src*="logoaronija"] {
     max-width: 260px;
   }
 }
+
 
 
 
