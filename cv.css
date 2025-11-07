@@ -1419,33 +1419,53 @@ img[src*="logoaronija"] {
     font-size: 32px !important;
   }
 }
-/* ===== HERO KITÖLTÉS CSAK MOBIL + TABLET ===== */
+/* ===== HERO JAVÍTÁS CSAK MOBIL + TABLET ===== */
 @media (max-width: 992px) {
+
   .hero-image {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 45vh !important;
-    min-height: 320px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
     background-size: cover !important;
     background-position: center center !important;
     background-repeat: no-repeat !important;
-    margin-bottom: 0 !important;
-    padding-bottom: 0 !important;
+
+    height: 45vh !important;         /* arányosan kisebb kép */
+    min-height: 300px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
   }
 
   .hero-text {
-    position: relative;
-    z-index: 2;
-    text-align: center;
-    color: #EAF7E0;
+    position: relative !important;
+    text-align: center !important;
+    z-index: 2 !important;
+    width: 90% !important;
+    margin: 0 auto !important;
+    color: #EAF7E0 !important;
   }
 
+  .hero-text h1,
+  .hero-text h2 {
+    font-size: clamp(18px, 4vw, 26px) !important;
+    line-height: 1.3 !important;
+    margin: 4px 0 !important;
+  }
+
+  /* az About me rész közvetlenül utána kezdődjön */
   .section1 {
     margin-top: 0 !important;
     padding-top: 40px !important;
   }
+
+  /* eltávolítja az esetleges fehér-sárga részt */
+  body, html {
+    background-color: #B6F39A !important;
+  }
 }
+
+
 
 
 
