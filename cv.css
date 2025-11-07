@@ -1050,6 +1050,150 @@ img[src*="logoaronija"] {
     top: 45%;
   }
 }
+/* ===== MOBIL + TABLET FINOMHANGOLÁS (NINCS EGYÉB VÁLTOZTATÁS) ===== */
+
+/* --- TABLET (max 992px) --- */
+@media (max-width: 992px) {
+
+  body {
+    padding-top: 90px !important;
+  }
+
+  .header1 {
+    flex-wrap: wrap;
+    padding: 10px 15px;
+  }
+
+  .header1 a {
+    font-size: 18px;
+    padding: 6px 8px;
+  }
+
+  .hero-image {
+    height: 50vh;
+    background-position: center center !important;
+  }
+
+  .hero-text h1, .hero-text h2 {
+    font-size: 24px !important;
+  }
+
+  .section1, .section2, .section5 {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .section1 .column-66,
+  .section1 .column-33,
+  .section2 .column-66,
+  .section2 .column-33,
+  .section5 .column-66,
+  .section5 .column-33 {
+    width: 100% !important;
+    float: none !important;
+    margin: 10px 0 !important;
+  }
+
+  .section3 .col,
+  .weak-card {
+    width: 45% !important;
+    margin: 10px auto !important;
+  }
+
+  .tablink {
+    width: 80% !important;
+    font-size: 20px !important;
+  }
+
+  .family-row-title {
+    font-size: 36px !important;
+  }
+
+  .row.family-row {
+    flex-wrap: wrap !important;
+    gap: 40px !important;
+  }
+
+  .row.family-row .column img {
+    width: 80% !important;
+    height: auto !important;
+  }
+
+  .footer {
+    font-size: 16px !important;
+  }
+}
+
+/* --- MOBIL (max 600px) --- */
+@media (max-width: 600px) {
+
+  body {
+    padding-top: 100px !important;
+  }
+
+  .header1 {
+    flex-direction: column !important;
+    height: auto !important;
+    text-align: center !important;
+  }
+
+  .header1-right {
+    width: 100% !important;
+    flex-direction: column !important;
+  }
+
+  .hero-image {
+    height: auto !important;
+    min-height: 45vh !important;
+  }
+
+  .hero-text {
+    position: relative !important;
+    transform: none !important;
+    padding: 15px !important;
+    text-align: center !important;
+  }
+
+  .hero-text h1, .hero-text h2 {
+    font-size: 20px !important;
+    line-height: 1.3 !important;
+  }
+
+  .section3 .col,
+  .weak-card {
+    width: 100% !important;
+    margin-bottom: 20px !important;
+  }
+
+  .family-row-title {
+    font-size: 30px !important;
+  }
+
+  .row.family-row img {
+    width: 90% !important;
+    max-width: 260px !important;
+  }
+
+  .section4 h2 {
+    font-size: 26px !important;
+  }
+
+  .section5 {
+    flex-direction: column !important;
+    padding: 40px 20px !important;
+  }
+
+  .card {
+    font-size: 18px !important;
+  }
+
+  .footer {
+    font-size: 14px !important;
+    padding: 10px !important;
+  }
+}
+
 
 
 
