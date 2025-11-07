@@ -466,13 +466,17 @@ button:hover {
   text-align: center;
 }
 
-/* ===== STUDIES SECTION (ugyanolyan mint WEAKNESSES) ===== */
+/* ===== STUDIES SECTION – teljes szélesség, háttérrel ===== */
 .section3 {
   width: 100%;
   margin: 0;
-  background: transparent; /* háttér nem a szekcióban van */
-  text-align: center;
   padding: 80px 20px;
+  text-align: center;
+  background-image: url("pics/road.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 /* Címsor */
@@ -488,7 +492,7 @@ button:hover {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
 }
 
-/* Kártyák tartója */
+/* Kártyák konténer */
 .section3 .col-container {
   display: flex;
   justify-content: center;
@@ -510,7 +514,7 @@ button:hover {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* Szövegek a kártyákban */
+/* Szöveg */
 .section3 .col h3 {
   font-size: 26px;
   font-weight: bold;
@@ -536,9 +540,7 @@ button:hover {
     width: 100%;
   }
   .section3 h2 {
-    font-size: 36px;
-  }
-}
+    font-size:
 
 
 /* ===== WORK EXPERIENCES (SECTION4) ===== */
@@ -1049,6 +1051,7 @@ img[src*="logoaronija"] {
     margin-top: 0 !important;
   }
 }
+
 
 
 
