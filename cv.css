@@ -1398,31 +1398,10 @@ img[src*="logoaronija"] {
     border-top: 1px solid #d0f5b8;
   }
 
-  /* Hero ne csússzon a logó alá */
-  .hero-image {
-    margin-top: 80px !important;
-  }
-}
-
-/* TABLET (max 992px) */
-@media (min-width: 769px) and (max-width: 992px) {
-
-  .header1 {
-    padding: 10px 25px !important;
-  }
-
-  .header1 a.logo img {
-    width: 70px !important;
-  }
-
-  .menu-toggle {
-    font-size: 32px !important;
-  }
-}
-/* ===== HERO JAVÍTÁS CSAK MOBIL + TABLET ===== */
+/* ===== HERO FIX – MOBIL + TABLET (100% működő verzió) ===== */
 @media (max-width: 992px) {
-
   .hero-image {
+    position: relative !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
@@ -1430,40 +1409,46 @@ img[src*="logoaronija"] {
     background-position: center center !important;
     background-repeat: no-repeat !important;
 
-    height: 45vh !important;         /* arányosan kisebb kép */
-    min-height: 300px !important;
+    height: 320px !important;       /* fix magasság, nem csúszik szét */
+    width: 100% !important;
     margin: 0 !important;
     padding: 0 !important;
     border: none !important;
   }
 
   .hero-text {
-    position: relative !important;
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
     text-align: center !important;
-    z-index: 2 !important;
-    width: 90% !important;
-    margin: 0 auto !important;
     color: #EAF7E0 !important;
+    width: 90% !important;
+    z-index: 10 !important;
   }
 
-  .hero-text h1,
+  .hero-text h1 {
+    font-size: 22px !important;
+    line-height: 1.3 !important;
+    margin: 6px 0 !important;
+  }
+
   .hero-text h2 {
-    font-size: clamp(18px, 4vw, 26px) !important;
+    font-size: 18px !important;
     line-height: 1.3 !important;
     margin: 4px 0 !important;
   }
 
-  /* az About me rész közvetlenül utána kezdődjön */
   .section1 {
     margin-top: 0 !important;
-    padding-top: 40px !important;
+    padding-top: 20px !important;
   }
 
-  /* eltávolítja az esetleges fehér-sárga részt */
   body, html {
-    background-color: #B6F39A !important;
+    background-color: #F2F4D7 !important; /* egységes háttér, nincs sáv */
   }
 }
+
 
 
 
