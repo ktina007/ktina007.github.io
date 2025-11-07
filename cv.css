@@ -1399,56 +1399,6 @@ img[src*="logoaronija"] {
   }
    }
 
-/* ===== HERO FIX – MOBIL + TABLET (100% működő verzió) ===== */
-@media (max-width: 992px) {
-  .hero-image {
-    position: relative !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    background-size: cover !important;
-    background-position: center center !important;
-    background-repeat: no-repeat !important;
-
-    height: 320px !important;       /* fix magasság, nem csúszik szét */
-    width: 100% !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    border: none !important;
-  }
-
-  .hero-text {
-    position: absolute !important;
-    top: 50% !important;
-    left: 50% !important;
-    transform: translate(-50%, -50%) !important;
-    text-align: center !important;
-    color: #EAF7E0 !important;
-    width: 90% !important;
-    z-index: 10 !important;
-  }
-
-  .hero-text h1 {
-    font-size: 22px !important;
-    line-height: 1.3 !important;
-    margin: 6px 0 !important;
-  }
-
-  .hero-text h2 {
-    font-size: 18px !important;
-    line-height: 1.3 !important;
-    margin: 4px 0 !important;
-  }
-
-  .section1 {
-    margin-top: 0 !important;
-    padding-top: 20px !important;
-  }
-
-  body, html {
-    background-color: #F2F4D7 !important; /* egységes háttér, nincs sáv */
-  }
-}
 /* ===== HERO TELJES KITÖLTÉS MOBILON + TABLETEN ===== */
 @media (max-width: 992px) {
   .hero-image {
@@ -1491,6 +1441,7 @@ img[src*="logoaronija"] {
     padding-top: 0 !important;
   }
 }
+
 
 
 
