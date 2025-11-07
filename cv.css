@@ -1,350 +1,54 @@
-@charset "utf-8";
-
-/* ===== GLOBAL RESET ===== */
-* {
-  box-sizing: border-box;
-}
-
-html, body {
-  margin: 0;
-  padding: 0;
-  max-width: 100%;
-  overflow-x: hidden;
-  height: 100%;
-  background-color: #F2F4D7;
-}
-
-/* ===== HEADER ===== */
-.header1 {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 70px;
-  padding: 8px 20px;
-  background-color: #B6F39A;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  z-index: 999;
-  text-align: center;
-}
-
-.header1 a {
-  text-decoration: none;
-  font-family: 'Shadows Into Light', cursive;
-  color: black;
-  font-size: 22px;
-  padding: 6px 10px;
-}
-
-.header1 a.logo img {
-  width: 55px;
-  height: auto;
-  border-radius: 50%;
-  display: block;
-  vertical-align: middle;
-}
-
-.header1 a:hover {
-  background-color: #F0EF7A;
-  color: black;
-}
-
-.header1-right {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  margin: 0;
-}
-
-.menu-toggle {
-  display: none;
-  background: none;
-  border: none;
-  font-size: 28px;
-  cursor: pointer;
-}
-
-/* ===== HERO SECTION ===== */
-.hero-image {
-  margin: 0 !important;
-  padding: 0 !important;
-  width: 100%;
-  height: 60vh;
-  display: block;
-  background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("pics/homeoffice1.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: relative;
-}
-
-.hero-text {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #C8F4BC;
-}
-
-.hero-text h1, .hero-text h2 {
-  font-size: clamp(26px, 3vw, 38px);
-  line-height: 1.25;
-}
-
-/* ===== GENERAL CONTAINERS ===== */
-.container {
-  padding: 64px;
-}
-
-.row {
-  margin: 0 -5px;
-}
-
-.row::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* 66/33 Columns */
-.column-66 {
-  width: 66.6666%;
-  padding: 20px;
-  font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  float: left;
-  text-align: center;
-  background-color: #B6F39A;
-  font-size: large;
-}
-
-.column-33 {
-  width: 33.3333%;
-  padding: 20px;
-  float: left;
-  font-size: 1.05vw;
-}
-
-/* 3-column layout */
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 50px;
-}
-
-/* 4-column layout */
-.column1 {
-  float: left;
-  width: 25%;
-  padding: 0 5px;
-}
-
-/* Avatar */
-.avatar {
-  vertical-align: middle;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-}
-
-/* ===== ROAD BACKGROUND BLOCK ===== */
-.col-container {
-  display: table;
-  width: 100%;
-  background-attachment: fixed;
-  background-size: cover;
-  color: #000;
-  text-align: center;
-  font-size: 1.6vw;
-  padding: 120px 40px;
-}
-
-.col {
-  display: table-cell;
-  background-image: linear-gradient(180deg, rgba(219, 249, 205, 0.2) 0%, rgba(182, 243, 154, 0.5) 100%);
-  padding: 40px 20px;
-  border-radius: 6px;
-}
-
-/* ===== STUDIES SECTION ===== */
-.section3 {
-  width: 100%;
-  margin: 0;
-  padding: 100px 20px;
-  text-align: center;
-  background-image: url("pics/road.jpg");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  overflow: hidden;
-}
-
-.section3 h2 {
-  font-family: 'Shadows Into Light', cursive;
-  font-size: 48px;
-  color: black;
-  background-color: rgba(235, 255, 215, 0.6);
-  display: inline-block;
-  padding: 20px 40px;
-  border-radius: 18px;
-  margin-bottom: 60px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
-}
-
-.section3 .col-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 40px;
-  width: 100%;
-  max-width: 1400px;
-  margin: 0 auto;
-  background: none !important;
-}
-
-.section3 .col {
-  background-color: rgba(214, 255, 189, 0.8);
-  width: 22%;
-  min-width: 260px;
-  padding: 25px 20px;
-  border-radius: 18px;
-  text-align: center;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
-
-.section3 .col h3 {
-  font-size: 26px;
-  font-weight: bold;
-  margin-bottom: 10px;
-  color: black;
-}
-
-.section3 .col p {
-  font-size: 20px;
-  line-height: 1.4;
-  color: black;
-}
-
-/* ===== WORK EXPERIENCES ===== */
-.section4 {
-  width: 100%;
-  margin: 0;
-  background-color: #A5E58E;
-  border-radius: 0;
-  padding: 40px 0;
-  text-align: center;
-}
-
-.section4 h2 {
-  font-family: 'Shadows Into Light', cursive;
-  font-size: 48px;
-  margin: 20px 0 40px;
-  color: black;
-}
-
-.section4 .row {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 40px;
-}
-
-.section4 .column-66, .section4 .column-33 {
-  width: 50%;
-  text-align: center;
-  float: none;
-}
-
-.section4 img {
-  max-width: 90%;
-  height: auto;
-  border-radius: 10px;
-}
-/* ===== RESPONSIVE STYLES ===== */
-
-/* Tablet (max 992px) */
+/* ===== EGYSÉGES MOBIL + TABLET VÉGLEGES JAVÍTÁS ===== */
 @media (max-width: 992px) {
-  /* HERO */
+  /* HERO középre */
   .hero-text {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 90%;
-    padding: 10px 20px;
     text-align: center;
+    padding: 10px 20px;
   }
 
-  /* Section címek */
-  .section3 h2,
-  .section4 h2,
-  #section-weaknesses .weak-title {
-    font-size: 36px !important;
+  /* SECTION4 (Work Experiences) */
+  .section4 h2 {
+    font-size: 34px !important;
     margin-bottom: 25px;
   }
 
-  /* Zöld dobozok tágasabbak, középen */
   .section4 .column-66,
-  .section4 .column-33,
-  .section5 .column-66,
-  .section5 .column-33 {
+  .section4 .column-33 {
     width: 100% !important;
     max-width: 600px !important;
     margin: 0 auto 25px auto !important;
     padding: 25px 20px !important;
     border-radius: 20px;
-    background-color: rgba(182, 243, 154, 0.8);
+    background-color: rgba(182, 243, 154, 0.85);
   }
 
-  /* Studies, Weaknesses, Virtues kártyák */
+  /* Studies és Weaknesses egységesítés */
   .section3 .col,
   .weak-card {
     width: 45%;
     min-width: 280px;
+    background-color: rgba(214, 255, 189, 0.85);
+    border-radius: 18px;
     margin-bottom: 25px;
+  }
+
+  /* Címek */
+  .section3 h2,
+  .section4 h2,
+  .weak-title {
+    font-size: 36px !important;
   }
 }
 
-/* Mobil (max 768px) */
+/* ===== MOBILNÉZET (max 768px) ===== */
 @media (max-width: 768px) {
   body {
     padding-top: 100px !important;
-  }
-
-  /* HEADER */
-  .header1 {
-    flex-wrap: wrap;
-    padding: 10px;
-    height: auto;
-  }
-
-  .header1 a {
-    font-size: 16px;
-    padding: 6px;
-  }
-
-  .menu-toggle {
-    display: block;
-    color: black;
-  }
-
-  .header1-right {
-    display: none;
-    flex-direction: column;
-    background-color: #B6F39A;
-    width: 100%;
-    padding: 10px 0;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    text-align: center;
-  }
-
-  .header1-right.show {
-    display: flex;
   }
 
   /* HERO */
@@ -359,12 +63,11 @@ html, body {
     transform: none !important;
     padding: 25px 15px;
     width: 90%;
-    margin: 0 auto;
     text-align: center;
     font-size: 18px;
   }
 
-  /* Sections egymás alatt */
+  /* SECTION egységes beállítás */
   section,
   .section1, .section2, .section3, .section4, .section5, #section-weaknesses {
     display: block;
@@ -373,20 +76,17 @@ html, body {
     text-align: center !important;
   }
 
-  /* Címek */
   section h2, section h3, .weak-title {
     font-size: 26px !important;
     margin-bottom: 20px !important;
   }
 
-  /* Szövegek */
   section p {
     font-size: 18px !important;
     line-height: 1.6 !important;
-    margin-bottom: 12px !important;
   }
 
-  /* Kártyák és zöld hátterek */
+  /* Zöld dobozok, kártyák */
   .col, .weak-card, .section4 .column-33, .section4 .column-66, .section5 .column-33, .section5 .column-66 {
     width: 100% !important;
     max-width: 520px !important;
@@ -394,10 +94,9 @@ html, body {
     padding: 25px 20px !important;
     border-radius: 20px !important;
     background-color: rgba(214, 255, 189, 0.85) !important;
-    text-align: center;
   }
 
-  /* Family képek */
+  /* Family */
   .row.family-row {
     flex-wrap: wrap;
     gap: 30px;
@@ -410,7 +109,7 @@ html, body {
   }
 }
 
-/* Kis mobil (max 480px) */
+/* ===== KIS MOBIL (max 480px) ===== */
 @media (max-width: 480px) {
   .hero-text h1,
   .hero-text h2 {
@@ -419,7 +118,7 @@ html, body {
 
   .section3 h2,
   .section4 h2,
-  #section-weaknesses .weak-title {
+  .weak-title {
     font-size: 24px !important;
   }
 
