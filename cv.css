@@ -466,79 +466,81 @@ button:hover {
   text-align: center;
 }
 
-/* ===== STUDIES SECTION - WEAKNESSES STÍLUSHOZ IGAZÍTVA ===== */
+/* ===== STUDIES SECTION (ugyanolyan mint WEAKNESSES) ===== */
 .section3 {
-    width: 100%;
-    margin: 0;
-    background-image: url("pics/road.jpg"); /* ugyanaz a háttér, mint a Weaknesses */
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    padding: 80px 20px;
-    text-align: center;
+  width: 100%;
+  margin: 0;
+  background-image: url("pics/road.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  text-align: center;
+  padding: 80px 20px;
 }
 
 /* Címsor */
 .section3 h2 {
-    font-family: 'Shadows Into Light', cursive;
-    font-size: 48px;
-    color: black;
-    background-color: rgba(235, 255, 215, 0.6);
-    display: inline-block;
-    padding: 20px 40px;
-    border-radius: 18px;
-    margin-bottom: 50px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 48px;
+  color: black;
+  background-color: rgba(235, 255, 215, 0.6);
+  display: inline-block;
+  padding: 20px 40px;
+  border-radius: 18px;
+  margin-bottom: 50px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
 }
 
-/* Konténer */
+/* Tartalomdobozok konténer */
 .section3 .col-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 40px;
-    width: 100%;
-    max-width: 1400px;
-    margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 /* Kártyák */
 .section3 .col {
-    background-color: rgba(214, 255, 189, 0.75);
-    width: 22%;
-    min-width: 260px;
-    padding: 25px 20px;
-    border-radius: 18px;
-    text-align: center;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  background-color: rgba(214, 255, 189, 0.75);
+  width: 22%;
+  min-width: 260px;
+  padding: 25px 20px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* Kártya szövegek */
+/* Szövegek a kártyákban */
 .section3 .col h3 {
-    font-size: 26px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: black;
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: black;
 }
+
 .section3 .col p {
-    font-size: 18px;
-    line-height: 1.4;
-    color: black;
+  font-size: 18px;
+  line-height: 1.4;
+  color: black;
 }
 
 /* ===== RESPONSIVE ===== */
 @media(max-width: 992px) {
-    .section3 .col {
-        width: 45%;
-    }
+  .section3 .col {
+    width: 45%;
+  }
 }
+
 @media(max-width: 600px) {
-    .section3 .col {
-        width: 100%;
-    }
-    .section3 h2 {
-        font-size: 36px;
-    }
+  .section3 .col {
+    width: 100%;
+  }
+  .section3 h2 {
+    font-size: 36px;
+  }
 }
 
 
@@ -1050,6 +1052,7 @@ img[src*="logoaronija"] {
     margin-top: 0 !important;
   }
 }
+
 
 
 
