@@ -1445,6 +1445,27 @@ img[src*="logoaronija"] {
     background-color: #F2F4D7 !important; /* egységes háttér, nincs sáv */
   }
 }
+/* ===== FAMILY ROW FIX – laptop kijelzőhöz igazítva ===== */
+.row.family-row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+.row.family-row .column img {
+  width: 100%;
+  max-width: 380px;
+  height: auto;
+  border-radius: 16px;
+  display: block;
+  margin: 0 auto 20px;
+}
+
 
 
 
