@@ -1489,6 +1489,46 @@ img[src*="logoaronija"] {
     margin: 0 auto 20px auto !important; /* középre igazítás */
   }
 }
+/* ===== FAMILY PHOTOS – 3 kép egymás mellett laptopon ===== */
+@media (min-width: 992px) {
+  .row.family-row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: nowrap;         /* ne törjön új sorba */
+    gap: 40px;                 /* térköz a képek között */
+    max-width: 1300px;         /* középre igazítás, képernyőhöz illeszkedve */
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .row.family-row .column {
+    width: 30%;                /* három oszlop egymás mellett */
+    text-align: center;
+  }
+
+  .row.family-row .column img {
+    width: 100%;
+    max-width: 360px;          /* ne legyen túl nagy */
+    height: auto;
+    border-radius: 16px;
+    display: block;
+    margin: 0 auto 20px;
+  }
+}
+
+/* ===== TABLET és MOBIL – egymás alatt ===== */
+@media (max-width: 991px) {
+  .row.family-row {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .row.family-row .column {
+    width: 100%;
+  }
+}
+
 
 
 
