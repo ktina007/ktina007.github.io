@@ -1576,22 +1576,20 @@ img[src*="logoaronija"] {
     margin: 0 auto !important;
   }
 }
-/* ===== STUDIES KÁRTYÁK TABLETEN (2 egymás mellett) ===== */
-@media (min-width: 768px) and (max-width: 992px) {
+/* ===== STUDIES TABLET FIX – KÉT DOBOZ EGYMÁS MELLETT ===== */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
   .section3 .col-container {
     display: flex !important;
+    flex-wrap: wrap !important;
     justify-content: center !important;
     align-items: flex-start !important;
-    flex-wrap: wrap !important;
     gap: 40px !important;
-    width: 100% !important;
-    max-width: 1200px !important;
-    margin: 0 auto !important;
   }
 
   .section3 .col {
-    flex: 0 1 45% !important;     /* két doboz egymás mellett */
+    width: 45% !important;
     min-width: 320px !important;
+    margin-bottom: 30px !important;
     background-color: rgba(214, 255, 189, 0.9) !important;
     border-radius: 18px !important;
     padding: 25px 20px !important;
@@ -1599,9 +1597,9 @@ img[src*="logoaronija"] {
   }
 
   .section3 h2 {
-    width: 100% !important;
     text-align: center !important;
-    font-size: 42px !important;
+    width: 100% !important;
+    font-size: 40px !important;
     margin-bottom: 30px !important;
   }
 }
