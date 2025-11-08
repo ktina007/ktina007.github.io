@@ -606,7 +606,7 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 80px;
+  gap: 40px;
   flex-wrap: nowrap;
 }
 
@@ -1489,6 +1489,7 @@ img[src*="logoaronija"] {
     margin: 0 auto 20px auto !important; /* középre igazítás */
   }
 }
+
 
 
 
