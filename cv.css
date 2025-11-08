@@ -1461,10 +1461,11 @@ img[src*="logoaronija"] {
   width: 100%;
   max-width: 380px;
   height: auto;
-  border-radius: 16px;
+  border-radius: 14px;
   display: block;
-  margin: 0 auto 20px;
+  margin: 0 auto 15px;
 }
+
 
 
 
