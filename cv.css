@@ -1080,7 +1080,15 @@ img[src*="logoaronija"] {
     margin-bottom: 20px !important;
     background-color: rgba(214,255,189,0.9) !important;
   }
+  /* === STUDIES HÁTTÉRKÉP JAVÍTÁS === */
+.section3 {
+  background-attachment: scroll !important; /* ne fixen álljon */
+  background-size: contain !important;      /* teljes kép beleférjen */
+  background-repeat: no-repeat !important;  /* ne ismétlődjön */
+  background-position: center top !important; /* felülről látszódjon */
 }
+}
+
 
 
 
