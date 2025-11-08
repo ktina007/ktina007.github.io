@@ -1530,24 +1530,6 @@ img[src*="logoaronija"] {
 }
 /* ===== STUDIES SECTION TABLET FIX (csak tablet 768–992px között) ===== */
 @media (min-width: 768px) and (max-width: 992px) {
-  .section3 .col-container {
-    display: flex !important;
-    justify-content: center !important;
-    align-items: flex-start !important;
-    flex-wrap: wrap !important;
-    gap: 40px !important;
-  }
-
-  .section3 .col {
-    width: 45% !important;      /* két doboz egymás mellett */
-    min-width: 320px !important;
-    margin-bottom: 30px !important;
-  }
-
-  .section3 h2 {
-    font-size: 42px !important;
-    margin-bottom: 40px !important;
-  }
 
   /* az egyéb részek középre igazítva maradjanak */
   .section4, .section5, #section-weaknesses {
@@ -1603,6 +1585,7 @@ img[src*="logoaronija"] {
     margin-bottom: 30px !important;
   }
 }
+
 
 
 
