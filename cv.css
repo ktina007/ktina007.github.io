@@ -880,7 +880,6 @@ img[src*="logoaronija"] {
   }
 
   /* Kártyák */
-  .section3 .col,
   .weak-card {
     width: 100% !important;
     margin-bottom: 20px !important;
@@ -1031,6 +1030,7 @@ img[src*="logoaronija"] {
     margin-bottom: 25px !important;
   }
 }
+
 
 
 
