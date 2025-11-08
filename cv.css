@@ -980,6 +980,29 @@ img[src*="logoaronija"] {
     max-width: 360px !important;
   }
 }
+/* ===== HERO KÉP MÉRET JAVÍTÁS TABLETEN ===== */
+@media (min-width: 768px) and (max-width: 992px) {
+  .hero-image {
+    height: 40vh !important;          /* kisebb magasság */
+    background-size: cover !important;
+    background-position: center center !important;
+  }
+
+  .hero-text {
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    text-align: center !important;
+    width: 90% !important;
+  }
+
+  .hero-text h1,
+  .hero-text h2 {
+    font-size: 22px !important;       /* kisebb, nem csúszik le */
+    line-height: 1.3 !important;
+  }
+}
+
 
 
 
