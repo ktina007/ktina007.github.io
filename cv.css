@@ -617,7 +617,7 @@ button:hover {
 }
 
 .row.family-row .column img {
-  width: 500px;
+  width: 450px;
   height: auto;
   border-radius: 16px;
   display: block;
@@ -1445,6 +1445,7 @@ img[src*="logoaronija"] {
     background-color: #F2F4D7 !important; /* egységes háttér, nincs sáv */
   }
 }
+
 
 
 
