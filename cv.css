@@ -1116,7 +1116,7 @@ img[src*="logoaronija"] {
   }
 
   .row.family-row .column img {
-    width: 80% !important;
+    width:33.33% !important;
     height: auto !important;
   }
 
@@ -1489,6 +1489,7 @@ img[src*="logoaronija"] {
     margin: 0 auto 20px auto !important; /* középre igazítás */
   }
 }
+
 
 
 
