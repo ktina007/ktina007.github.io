@@ -470,7 +470,7 @@ button:hover {
 .section3 {
   width: 100%;
   margin: 0;
-  padding: 100px 20px;
+  padding: 40px 20px;
   text-align: center;
   background-image: url("pics/road.jpg");
   background-size: cover;
@@ -489,7 +489,7 @@ button:hover {
   display: inline-block;
   padding: 20px 40px;
   border-radius: 18px;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
 }
 
@@ -1489,6 +1489,7 @@ img[src*="logoaronija"] {
     margin: 0 auto 20px auto !important; /* középre igazítás */
   }
 }
+
 
 
 
