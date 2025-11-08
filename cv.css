@@ -1080,14 +1080,21 @@ img[src*="logoaronija"] {
     margin-bottom: 20px !important;
     background-color: rgba(214,255,189,0.9) !important;
   }
-  /* === STUDIES HÁTTÉRKÉP JAVÍTÁS === */
+/* === STUDIES RÉSZ – HÁTTÉR IGÉNY SZERINT (ugyanúgy, mint Weaknesses) === */
 .section3 {
-  background-attachment: scroll !important;
+  background-image: url("pics/road.jpg") !important;
   background-size: cover !important;
-  background-position: top center !important;
+  background-position: center center !important;
+  background-attachment: fixed !important; /* ugyanaz, mint Weaknesses */
+  background-repeat: no-repeat !important;
+}
+}
+@media (max-width: 992px) {
+  .section3 {
+    background-attachment: scroll !important;
+  }
 }
 
-}
 
 
 
