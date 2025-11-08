@@ -1450,7 +1450,7 @@ img[src*="logoaronija"] {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 40px;
+  gap: 20px;
   flex-wrap: wrap;
   margin: 0 auto;
   max-width: 1200px;
@@ -1489,6 +1489,7 @@ img[src*="logoaronija"] {
     margin: 0 auto 20px auto !important; /* középre igazítás */
   }
 }
+
 
 
 
