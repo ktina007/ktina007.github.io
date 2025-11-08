@@ -1558,33 +1558,36 @@ img[src*="logoaronija"] {
     margin: 0 auto !important;
   }
 }
-/* ===== STUDIES TABLET FIX – KÉT DOBOZ EGYMÁS MELLETT ===== */
-@media only screen and (min-width: 768px) and (max-width: 992px) {
+
+/* ===== STUDIES TABLET FIX (végleges, működő) ===== */
+@media (min-width: 768px) and (max-width: 992px) {
   .section3 .col-container {
-    display: flex !important;
+    display: flex !important;            /* a table beállítást felülírja */
     flex-wrap: wrap !important;
     justify-content: center !important;
     align-items: flex-start !important;
     gap: 40px !important;
+    width: 100% !important;
   }
 
   .section3 .col {
-    width: 45% !important;
-    min-width: 320px !important;
+    flex: 0 1 45% !important;            /* két doboz egymás mellett */
+    min-width: 300px !important;
     margin-bottom: 30px !important;
-    background-color: rgba(214, 255, 189, 0.9) !important;
+    background-color: rgba(214,255,189,0.9) !important;
     border-radius: 18px !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15) !important;
     padding: 25px 20px !important;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
   }
 
   .section3 h2 {
-    text-align: center !important;
     width: 100% !important;
+    text-align: center !important;
     font-size: 40px !important;
     margin-bottom: 30px !important;
   }
 }
+
 
 
 
