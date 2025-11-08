@@ -1587,6 +1587,33 @@ img[src*="logoaronija"] {
     margin-bottom: 30px !important;
   }
 }
+/* ===== CLEAN TABLET FIX — STUDIES két doboz egymás mellett ===== */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .section3 .col-container {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: flex-start !important;
+    gap: 30px !important;
+  }
+
+  .section3 .col {
+    width: 45% !important;
+    margin: 10px !important;
+    background-color: rgba(214,255,189,0.9) !important;
+    border-radius: 18px !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15) !important;
+    padding: 25px 20px !important;
+  }
+
+  .section3 h2 {
+    width: 100% !important;
+    text-align: center !important;
+    font-size: 40px !important;
+    margin-bottom: 20px !important;
+  }
+}
+
 
 
 
