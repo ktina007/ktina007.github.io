@@ -814,18 +814,6 @@ img[src*="logoaronija"] {
     margin: 10px 0 !important;
   }
 
-  /* STUDIES két doboz egymás mellett */
-  .section3 .col-container {
-    display: flex !important;
-    justify-content: center !important;
-    flex-wrap: wrap !important;
-    gap: 40px !important;
-  }
-  .section3 .col {
-    flex: 0 1 45% !important;
-    margin-bottom: 30px !important;
-  }
-
   /* PLEASE HIRE ME egymás alatt */
   .section5 {
     flex-direction: column !important;
@@ -885,7 +873,6 @@ img[src*="logoaronija"] {
   /* SECTIONS egymás alatt */
   .section1,
   .section2,
-  .section3,
   .section4,
   .section5 {
     display: block !important;
@@ -941,8 +928,6 @@ img[src*="logoaronija"] {
     max-width: 360px !important;
   }
 }
-/* === HERO RÉSZ VÉGLEGES JAVÍTÁS (tablet + mobil) === */
-/* === HERO RÉSZ ABSZOLÚT VÉGLEGES BEÁLLÍTÁS === */
 
 /* TABLET nézet (768–992px) */
 @media only screen and (min-width: 768px) and (max-width: 992px) {
@@ -996,6 +981,55 @@ img[src*="logoaronija"] {
     color: #C8F4BC !important;
   }
 }
+/* === STUDIES RÉSZ VÉGLEGES JAVÍTÁS === */
+
+/* --- TABLET nézet (768–992px) --- */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .section3 .col-container {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 30px !important;
+    width: 100% !important;
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+  }
+
+  .section3 .col {
+    flex: 0 1 45% !important;       /* 2 oszlop egymás mellett */
+    background-color: rgba(214,255,189,0.9) !important;
+    border-radius: 18px !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15) !important;
+    padding: 25px 20px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .section3 h2 {
+    width: 100% !important;
+    text-align: center !important;
+    font-size: 40px !important;
+    margin-bottom: 20px !important;
+  }
+}
+
+/* --- MOBIL nézet (max 767px) --- */
+@media only screen and (max-width: 767px) {
+  .section3 .col-container {
+    display: block !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+  }
+
+  .section3 .col {
+    width: 100% !important;
+    margin-bottom: 25px !important;
+  }
+
+  .section3 h2 {
+    font-size: 32px !important;
+  }
+}
+
 
 
 
