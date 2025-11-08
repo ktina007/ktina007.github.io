@@ -795,18 +795,6 @@ img[src*="logoaronija"] {
     font-size: 18px;
   }
 
-  /* HERO */
-  .hero-image {
-    height: 45vh !important;
-    background-position: center center !important;
-  }
-
-  .hero-text h1,
-  .hero-text h2 {
-    font-size: 24px !important;
-    text-align: center !important;
-  }
-
   /* SECTIONS */
   .section1,
   .section2,
@@ -893,25 +881,6 @@ img[src*="logoaronija"] {
     text-align: center !important;
   }
 
-  /* HERO */
-  .hero-image {
-    height: 35vh !important;
-    background-position: center top !important;
-  }
-
-  .hero-text {
-    position: center !important;
-    transform: none !important;
-    padding: 15px !important;
-    text-align: center !important;
-  }
-
-  .hero-text h1,
-  .hero-text h2 {
-    font-size: 20px !important;
-    line-height: 1.3 !important;
-    text-align: center !important;
-  }
 
   /* SECTIONS egymás alatt */
   .section1,
@@ -950,14 +919,6 @@ img[src*="logoaronija"] {
 
 /* --- MINI MOBIL (max-width: 600px) --- */
 @media (max-width: 600px) {
-  .hero-image {
-    height: 35vh !important;
-  }
-
-  .hero-text {
-    font-size: 18px !important;
-  }
-
   .section4 h2 {
     font-size: 26px !important;
   }
@@ -980,15 +941,18 @@ img[src*="logoaronija"] {
     max-width: 360px !important;
   }
 }
-/* ===== HERO KÉP MÉRET JAVÍTÁS TABLETEN ===== */
+/* === HERO RÉSZ VÉGLEGES JAVÍTÁS (tablet + mobil) === */
+
+/* TABLET (768px–992px) */
 @media (min-width: 768px) and (max-width: 992px) {
   .hero-image {
-    height: 40vh !important;          /* kisebb magasság */
+    height: 38vh !important;
     background-size: cover !important;
     background-position: center center !important;
   }
 
   .hero-text {
+    position: absolute !important;
     top: 50% !important;
     left: 50% !important;
     transform: translate(-50%, -50%) !important;
@@ -998,10 +962,36 @@ img[src*="logoaronija"] {
 
   .hero-text h1,
   .hero-text h2 {
-    font-size: 22px !important;       /* kisebb, nem csúszik le */
+    font-size: 22px !important;
     line-height: 1.3 !important;
+    color: #C8F4BC !important;
   }
 }
+
+/* MOBIL (max-width: 768px) */
+@media (max-width: 768px) {
+  .hero-image {
+    height: 32vh !important;
+    background-size: cover !important;
+    background-position: center top !important;
+  }
+
+  .hero-text {
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    width: 92% !important;
+    text-align: center !important;
+  }
+
+  .hero-text h1,
+  .hero-text h2 {
+    font-size: 18px !important;
+    line-height: 1.2 !important;
+  }
+}
+
 
 
 
