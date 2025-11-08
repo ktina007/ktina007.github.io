@@ -803,6 +803,7 @@ img[src*="logoaronija"] {
   .hero-text h1,
   .hero-text h2 {
     font-size: 24px !important;
+    text-align: center !important;
   }
 
   /* SECTIONS */
@@ -977,6 +978,7 @@ img[src*="logoaronija"] {
     max-width: 360px !important;
   }
 }
+
 
 
 
