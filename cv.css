@@ -900,7 +900,7 @@ img[src*="logoaronija"] {
   }
 
   .hero-text {
-    position: relative !important;
+    position: center !important;
     transform: none !important;
     padding: 15px !important;
     text-align: center !important;
@@ -980,6 +980,7 @@ img[src*="logoaronija"] {
     max-width: 360px !important;
   }
 }
+
 
 
 
