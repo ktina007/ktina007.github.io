@@ -980,106 +980,7 @@ img[src*="logoaronija"] {
     color: #C8F4BC !important;
   }
 }
-/* === STUDIES SECTION — HÁTTÉRKÉP FIX JAVÍTÁS === */
 
-/* TABLET (768–992px) */
-@media only screen and (min-width: 768px) and (max-width: 992px) {
-  .section3 {
-    background-attachment: scroll !important; /* ne legyen fix */
-    background-size: cover !important;
-    background-position: center center !important;
-    padding: 40px 10px !important;
-  }
-
-  .section3 .col-container {
-    display: flex !important;
-    flex-wrap: wrap !important;
-    justify-content: center !important;
-    align-items: flex-start !important;
-    gap: 30px !important;
-    width: 100% !important;
-    max-width: 1200px !important;
-    margin: 0 auto !important;
-  }
-
-  .section3 .col {
-    flex: 0 1 45% !important; /* két oszlop egymás mellett */
-    background-color: rgba(214,255,189,0.9) !important;
-    border-radius: 18px !important;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15) !important;
-    padding: 25px 20px !important;
-  }
-}
-
-/* MOBIL (max 767px) */
-@media only screen and (max-width: 767px) {
-  .section3 {
-    background-attachment: scroll !important;
-    background-size: cover !important;
-    background-position: center center !important;
-    padding: 30px 10px !important;
-  }
-}
-/* === STUDIES RÉSZ VÉGLEGES RENDBEHOZÁS === */
-
-/* TABLET (768–992px) – 2 oszlop */
-@media only screen and (min-width: 768px) and (max-width: 992px) {
-  .section3 {
-    background-attachment: scroll !important;
-    background-position: center center !important;
-    background-size: cover !important;
-    padding: 40px 20px !important;
-  }
-
-/* MOBIL (max 767px) – 1 oszlop */
-@media only screen and (max-width: 767px) {
-  .section3 {
-    background-attachment: scroll !important;
-    padding: 30px 10px !important;
-  }
-}
-/* === STUDIES RÉSZ – VÉGLEGES RENDBEHOZÁS === */
-
-/* TABLET (768–992px): 2 oszlop */
-@media only screen and (min-width: 768px) and (max-width: 992px) {
-  .section3 {
-    background-attachment: scroll !important;
-    padding: 40px 20px !important;
-  }
-
-  .section3 .col-container {
-    display: flex !important;
-    flex-wrap: wrap !important;
-    justify-content: center !important;
-    gap: 30px !important;
-  }
-
-  .section3 .col {
-    flex: 0 1 45% !important;
-    background-color: rgba(214,255,189,0.85) !important;
-    padding: 25px 20px !important;
-    border-radius: 18px !important;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15) !important;
-  }
-}
-
-/* MOBIL (max 767px): 1 oszlop */
-@media only screen and (max-width: 767px) {
-  .section3 {
-    background-attachment: scroll !important;
-    padding: 20px 10px !important;
-  }
-
-  .section3 .col-container {
-    display: block !important;
-    width: 100% !important;
-  }
-
-  .section3 .col {
-    width: 100% !important;
-    margin-bottom: 20px !important;
-    background-color: rgba(214,255,189,0.9) !important;
-  }
 /* === STUDIES SECTION – AZONOS BEÁLLÍTÁS, MINT WEAKNESSES === */
 .section3 {
   background-image: url("pics/road.jpg") !important;
@@ -1095,6 +996,7 @@ img[src*="logoaronija"] {
     background-attachment: scroll !important;
   }
 }
+
 
 
 
