@@ -1002,11 +1002,68 @@ img[src*="logoaronija"] {
   transform: translateZ(0);
   backface-visibility: hidden;
 }
+/* === PROOVING POOR DOG + PROFESSIONAL SKILLS – VÉGLEGES JAVÍTÁS === */
 
+/* TABLET (768–992px) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  /* Szövegméret */
+  .section2,
+  .section5 {
+    font-size: 18px !important;
+    line-height: 1.6 !important;
+  }
 
+  .section2 h2,
+  .section2 h3,
+  .section5 h2,
+  .section5 h3 {
+    font-size: 28px !important;
+  }
 
+  /* Zöld dobozok (Please Hire Me) */
+  .section5 .panel-group,
+  .section5 .column-33 {
+    padding: 40px !important;
+    font-size: 20px !important;
+  }
 
+  .section5 .panel-heading h3 {
+    font-size: 30px !important;
+  }
+}
 
+/* MOBIL (max 767px) */
+@media only screen and (max-width: 767px) {
+  /* Szövegméret */
+  .section2,
+  .section5 {
+    font-size: 17px !important;
+    line-height: 1.6 !important;
+  }
+
+  .section2 h2,
+  .section2 h3,
+  .section5 h2,
+  .section5 h3 {
+    font-size: 24px !important;
+  }
+
+  /* Zöld dobozok mobilon */
+  .section5 .panel-group,
+  .section5 .column-33 {
+    padding: 35px !important;
+    font-size: 18px !important;
+  }
+
+  .section5 .panel-heading h3 {
+    font-size: 26px !important;
+  }
+
+  .section5 .column-33 img {
+    width: 85% !important;
+    max-width: 420px !important;
+  }
+}
 
 
 
