@@ -1528,6 +1528,55 @@ img[src*="logoaronija"] {
     width: 100%;
   }
 }
+/* ===== STUDIES SECTION TABLET FIX (csak tablet 768–992px között) ===== */
+@media (min-width: 768px) and (max-width: 992px) {
+  .section3 .col-container {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: flex-start !important;
+    flex-wrap: wrap !important;
+    gap: 40px !important;
+  }
+
+  .section3 .col {
+    width: 45% !important;      /* két doboz egymás mellett */
+    min-width: 320px !important;
+    margin-bottom: 30px !important;
+  }
+
+  .section3 h2 {
+    font-size: 42px !important;
+    margin-bottom: 40px !important;
+  }
+
+  /* az egyéb részek középre igazítva maradjanak */
+  .section4, .section5, #section-weaknesses {
+    text-align: center !important;
+  }
+}
+/* ===== PLEASE HIRE ME - TABLET FIX ===== */
+@media (min-width: 768px) and (max-width: 992px) {
+  .section5 {
+    flex-direction: column !important; /* egymás alatt tablet nézetben */
+    align-items: center !important;
+  }
+
+  .section5 .column-66,
+  .section5 .column-33 {
+    width: 100% !important;
+    max-width: 700px !important;
+    margin: 0 auto 25px auto !important;
+  }
+
+  .section5 .column-33 img {
+    width: 80% !important;
+    max-width: 400px !important;
+    height: auto !important;
+    display: block !important;
+    margin: 0 auto !important;
+  }
+}
+
 
 
 
