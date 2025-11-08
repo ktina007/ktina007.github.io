@@ -1082,12 +1082,13 @@ img[src*="logoaronija"] {
   }
   /* === STUDIES HÁTTÉRKÉP JAVÍTÁS === */
 .section3 {
-  background-attachment: scroll !important; /* ne fixen álljon */
-  background-size: contain !important;      /* teljes kép beleférjen */
-  background-repeat: no-repeat !important;  /* ne ismétlődjön */
-  background-position: center top !important; /* felülről látszódjon */
+  background-attachment: scroll !important;
+  background-size: cover !important;
+  background-position: top center !important;
 }
+
 }
+
 
 
 
