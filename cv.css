@@ -1465,6 +1465,23 @@ img[src*="logoaronija"] {
   display: block;
   margin: 0 auto 15px;
 }
+/* ===== HERO IMAGE FIX – kisebb magasság tableten és mobilon ===== */
+
+/* Tablet (max 992px) */
+@media (max-width: 992px) {
+  .hero-image {
+    height: 45vh !important;
+    background-position: center center !important;
+  }
+}
+/* Mobil (max 600px) */
+@media (max-width: 600px) {
+  .hero-image {
+    height: 35vh !important;
+    background-position: center top !important;
+  }
+}
+
 
 
 
