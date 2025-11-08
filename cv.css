@@ -1080,13 +1080,14 @@ img[src*="logoaronija"] {
     margin-bottom: 20px !important;
     background-color: rgba(214,255,189,0.9) !important;
   }
-/* === STUDIES RÉSZ – HÁTTÉR IGÉNY SZERINT (ugyanúgy, mint Weaknesses) === */
+/* === STUDIES SECTION – AZONOS BEÁLLÍTÁS, MINT WEAKNESSES === */
 .section3 {
   background-image: url("pics/road.jpg") !important;
   background-size: cover !important;
   background-position: center center !important;
-  background-attachment: fixed !important; /* ugyanaz, mint Weaknesses */
+  background-attachment: fixed !important;
   background-repeat: no-repeat !important;
+  padding: 60px 20px !important;
 }
 }
 @media (max-width: 992px) {
@@ -1094,6 +1095,7 @@ img[src*="logoaronija"] {
     background-attachment: scroll !important;
   }
 }
+
 
 
 
