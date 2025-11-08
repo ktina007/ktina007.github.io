@@ -996,6 +996,13 @@ img[src*="logoaronija"] {
     background-attachment: scroll !important;
   }
 }
+/* === STUDIES – UGRÁLÁS JAVÍTÁS === */
+.section3 {
+  will-change: background-position;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
 
 
 
