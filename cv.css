@@ -1481,6 +1481,16 @@ img[src*="logoaronija"] {
     background-position: center top !important;
   }
 }
+/* ===== BUSINESS OWNER – mobilon szélesebb ===== */
+@media (max-width: 600px) {
+  .section5 .column-33 {
+    width: 95% !important;     /* 95% széles lesz a kijelzőn */
+    max-width: none !important; /* ne korlátozza fix méret */
+    margin: 0 auto 20px auto !important; /* középre igazítás */
+  }
+}
+
+
 
 
 
