@@ -942,13 +942,16 @@ img[src*="logoaronija"] {
   }
 }
 /* === HERO RÉSZ VÉGLEGES JAVÍTÁS (tablet + mobil) === */
+/* === HERO RÉSZ ABSZOLÚT VÉGLEGES BEÁLLÍTÁS === */
 
-/* TABLET (768px–992px) */
-@media (min-width: 768px) and (max-width: 992px) {
+/* TABLET nézet (768–992px) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
   .hero-image {
-    height: 38vh !important;
+    height: 40vh !important;
     background-size: cover !important;
-    background-position: center center !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    overflow: hidden !important;
   }
 
   .hero-text {
@@ -956,8 +959,8 @@ img[src*="logoaronija"] {
     top: 50% !important;
     left: 50% !important;
     transform: translate(-50%, -50%) !important;
-    text-align: center !important;
     width: 90% !important;
+    text-align: center !important;
   }
 
   .hero-text h1,
@@ -968,12 +971,13 @@ img[src*="logoaronija"] {
   }
 }
 
-/* MOBIL (max-width: 768px) */
-@media (max-width: 768px) {
+/* MOBIL nézet (max 767px) */
+@media only screen and (max-width: 767px) {
   .hero-image {
-    height: 32vh !important;
+    height: 33vh !important;
     background-size: cover !important;
     background-position: center top !important;
+    overflow: hidden !important;
   }
 
   .hero-text {
@@ -989,8 +993,11 @@ img[src*="logoaronija"] {
   .hero-text h2 {
     font-size: 18px !important;
     line-height: 1.2 !important;
+    color: #C8F4BC !important;
   }
 }
+
+
 
 
 
