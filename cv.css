@@ -930,33 +930,48 @@ img[src*="logoaronija"] {
     font-size: 16px !important;
   }
 }
+/* ===== FAMILY SECTION – MOBIL ÉS TABLET ===== */
 @media (max-width: 1024px) {
+  .section-family {
+    width: 100vw !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+  }
+
   .family-row {
-    display: flex;
-    flex-direction: column !important;  /* egymás alá helyezi a képeket */
-    align-items: center !important;      /* középre igazítja */
-    justify-content: center;
-    gap: 25px;                           /* távolság a képek között */
-    width: 100%;
-    margin: 0 auto;
+    display: flex !important;
+    flex-direction: column !important;   /* egymás alá teszi a képeket */
+    align-items: center !important;       /* középre igazítja */
+    justify-content: center !important;
+    gap: 30px !important;                 /* távolság */
+    width: 100% !important;
+    margin: 0 auto !important;
   }
 
   .family-row .column {
-    width: 90% !important;               /* képek ne lógjanak ki */
-    text-align: center;
+    width: 90% !important;
+    text-align: center !important;
   }
 
   .family-row img {
-    width: 100% !important;              /* a képek kitöltik a dobozt */
-    height: auto;
-    border-radius: 12px;
+    width: 100% !important;
+    height: auto !important;
+    border-radius: 12px !important;
+    display: block;
   }
 
   .family-row h3 {
-    text-align: center;
+    text-align: center !important;
     margin-bottom: 10px;
   }
 }
+
+
 
 
 
