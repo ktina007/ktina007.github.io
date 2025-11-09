@@ -943,20 +943,21 @@ img[src*="logoaronija"] {
     margin-bottom: 10px;
   }
 }
+/* ====== VIRTUES (ZÖLD RÉSZ) – TELJES SZÉLESSÉG FIX ====== */
 @media only screen and (max-width: 1024px) {
   html, body {
     margin: 0 !important;
     padding: 0 !important;
-    width: 100% !important;
     overflow-x: hidden !important;
+    background-color: #F2F4D7 !important; /* hogy ne torzítsa az oldal többi részét */
   }
 
-  /* Teljes zöld háttér a széléig */
+  /* A globális padding kiiktatása */
   .container {
+    padding: 0 !important;
+    margin: 0 !important;
     width: 100vw !important;
     max-width: 100vw !important;
-    margin: 0 !important;
-    padding: 0 !important;
     position: relative !important;
     left: 50% !important;
     right: 50% !important;
@@ -966,20 +967,17 @@ img[src*="logoaronija"] {
     box-sizing: border-box !important;
   }
 
-  /* Fehér szövegblokk eltávolítva – teljes zöldre igazítva */
+  /* A szöveg rendben maradjon */
   .container > .row {
-    background-color: transparent !important; /* ne legyen fehér keret */
-    width: 100% !important;                  /* ne 90%, hanem teljes */
-    margin: 0 !important;
+    width: 100% !important;
+    margin: 0 auto !important;
     padding: 20px 15px !important;
-    border-radius: 0 !important;             /* sarkok se legyenek lekerekítve */
-    box-sizing: border-box;
+    background: transparent !important;
   }
 
   .column-33,
   .column-66 {
     width: 100% !important;
-    max-width: 100% !important;
     padding: 10px 15px !important;
   }
 
@@ -988,9 +986,9 @@ img[src*="logoaronija"] {
   .column-66 h4,
   .column-33 p,
   .column-66 p {
-    text-align: left !important;
     font-size: 1.2rem !important;
     line-height: 1.7 !important;
+    text-align: left !important;
   }
 
   .column-33 h2 {
@@ -998,6 +996,8 @@ img[src*="logoaronija"] {
     margin-bottom: 10px !important;
   }
 }
+
+
 
 
 
