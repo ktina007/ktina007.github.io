@@ -782,5 +782,70 @@ button:hover {
     color: #C8F4BC !important;
   }
 }
+/* =======================================================
+   ====== SUITABILITY SECTION – SÁRGA DOBOZOK ======
+======================================================= */
+.column1 {
+  float: left;
+  width: 25%;
+  padding: 0 5px;
+}
+
+.card {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  padding: 16px;
+  text-align: center;
+  background-image: url("pics/yellowb.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: black;
+  font-size: 1.4vw;
+  border-radius: 10px;
+}
+
+.card h3 {
+  font-size: 28px;
+  margin: 10px 0;
+}
+
+.card p {
+  margin: 8px 0;
+}
+
+.fa {
+  font-size: 2vw;
+}
+
+/* Mobilra és tabletre */
+@media (max-width: 992px) {
+  .column1 {
+    width: 50% !important;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .column1 {
+    width: 100% !important;
+  }
+  .card {
+    font-size: 18px !important;
+    padding: 20px !important;
+  }
+  .card h3 {
+    font-size: 22px !important;
+  }
+}
+
+/* =======================================================
+   ====== ARONIJA LOGO MÉRET JAVÍTÁS ======
+======================================================= */
+img[src*="logoaronija"] {
+  max-width: 250px !important;
+  height: auto !important;
+  display: block;
+  margin: 30px auto !important;
+}
+
 
 
