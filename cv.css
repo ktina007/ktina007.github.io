@@ -945,35 +945,43 @@ img[src*="logoaronija"] {
 }
 @media only screen and (max-width: 1024px) {
   html, body {
-    overflow-x: hidden !important; /* ne lógjon ki semmi oldalra */
-  }
-
-  .container {
-    width: 100vw !important;       /* teljes szélesség */
     margin: 0 !important;
     padding: 0 !important;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
-    background-color: #B6F39A;     /* zöld háttér (állítsd, ha más kell) */
+    width: 100% !important;
+    overflow-x: hidden !important;
   }
 
+  /* ===== TELJES SZÉLESSÉGŰ ZÖLD HÁTTÉR ===== */
+  .container {
+    width: 100vw !important;        /* teljes viewport szélesség */
+    max-width: 100vw !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    position: relative !important;
+    left: 50% !important;
+    right: 50% !important;
+    margin-left: -50vw !important;
+    margin-right: -50vw !important;
+    background-color: #B6F39A !important; /* zöld háttér */
+    box-sizing: border-box;
+  }
+
+  /* ===== SZÖVEG FEHÉR DOBOZBAN ===== */
   .container > .row {
     display: block !important;
-    background-color: #fff;        /* fehér szövegrész */
-    width: 90% !important;         /* hogy a szöveg ne tapadjon a széléhez */
-    margin: 0 auto !important;     /* középre hozza a szöveget */
+    background-color: #fff !important;
+    width: 90% !important;
+    margin: 0 auto !important;
     padding: 20px 15px !important;
     box-sizing: border-box;
+    border-radius: 10px; /* opcionális, szebb hatás */
   }
 
   .column-33,
   .column-66 {
+    width: 100% !important;
     max-width: 100% !important;
     flex: 0 0 100% !important;
-    width: 100% !important;
     padding: 10px 15px !important;
   }
 
@@ -983,7 +991,7 @@ img[src*="logoaronija"] {
   .column-33 p,
   .column-66 p {
     text-align: left !important;
-    font-size: 1.2rem !important;      /* olvasható betűméret */
+    font-size: 1.2rem !important;
     line-height: 1.7 !important;
   }
 
@@ -992,6 +1000,8 @@ img[src*="logoaronija"] {
     margin-bottom: 10px !important;
   }
 }
+
+
 
 
 
