@@ -264,6 +264,159 @@ body {
   border-radius: 10px;
 }
 
+/* ====== TAB BUTTONS ====== */
+.tablink {
+  background-color: #F0EF7A;
+  color: black;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 15px 30px;
+  margin: 5px;
+  font-size: 24px;
+  font-family: 'Shadows Into Light', cursive;
+  border-radius: 10px;
+  display: inline-block;
+  width: 220px;
+  text-align: center;
+}
+
+.tablink:hover {
+  background-color: #d4ff8a;
+  transform: scale(1.05);
+  transition: 0.2s;
+}
+
+.tablink.active {
+  background-color: #B6F39A;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.tabcontent {
+  color: black;
+  display: none;
+  width: 100%;
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 20px 40px;
+  text-align: center;
+}
+
+#Cleaner,
+#Waitress,
+#Shop,
+#Taxist {
+  background-color: #B6F39A;
+}
+
+/* =======================================================
+   ====== FAMILY PHOTOS ======
+======================================================= */
+.family-row-title {
+  width: 100%;
+  text-align: center;
+  font-size: 42px;
+  margin: 60px 0 40px;
+  font-family: 'Shadows Into Light', cursive;
+  font-weight: bold;
+}
+
+.row.family-row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: nowrap;
+}
+
+.row.family-row .column {
+  width: auto;
+  text-align: center;
+  padding: 0;
+}
+
+.row.family-row .column img {
+  width: 450px;
+  height: auto;
+  border-radius: 16px;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+.row.family-row h3 {
+  font-size: 28px;
+  margin-bottom: 25px;
+}
+
+/* =======================================================
+   ====== WEAKNESSES SECTION ======
+======================================================= */
+#section-weaknesses {
+  width: 100%;
+  padding: 60px 20px;
+  background-image: url("pics/road.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  text-align: center;
+}
+
+.weak-title {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 48px;
+  color: black;
+  background-color: rgba(235, 255, 215, 0.6);
+  display: inline-block;
+  padding: 20px 40px;
+  border-radius: 18px;
+  margin-bottom: 30px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+}
+
+.weak-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.weak-card {
+  background-color: rgba(214, 255, 189, 0.75);
+  width: 22%;
+  min-width: 260px;
+  padding: 25px 20px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  font-size: 18px;
+}
+
+.weak-card h3 {
+  font-size: 26px;
+  margin-bottom: 15px;
+  color: black;
+}
+
+.weak-card p {
+  font-size: 18px;
+  padding: 0 5px;
+  color: black;
+}
+
+.icons {
+  margin: 12px 0;
+}
+
+.icons img {
+  width: 65px;
+  height: auto;
+  display: inline-block;
+  margin: 0 4px;
+}
+
 /* =======================================================
    ====== SECTION 5 – PLEASE HIRE ME ======
 ======================================================= */
@@ -273,8 +426,9 @@ body {
   align-items: center;
   padding: 80px 40px;
   gap: 40px;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* hogy tableten törhessen */
 }
+
 
 .section5 .column-66 {
   width: 55%;
@@ -322,6 +476,90 @@ body {
   margin-top: 20px;
 }
 
+/* =======================================================
+   ====== SECTION 6 – CONTACT FORM ======
+======================================================= */
+section#section6 {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #d5f7bc;
+}
+
+section#section6 .container2 {
+  max-width: 600px;
+  margin: auto;
+  background: #ffffffaa;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px #00000020;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin: 10px 0 6px;
+  font-size: 18px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 18px;
+  border: 2px solid #009933;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: inherit;
+  outline: none;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #006622;
+  box-shadow: 0 0 6px #00662255;
+}
+
+button {
+  background-color: #009933;
+  color: white;
+  padding: 14px 26px;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+button:hover {
+  background-color: #006622;
+  transform: scale(1.05);
+}
+
+/* =======================================================
+   ====== FOOTER ======
+======================================================= */
+.footer {
+  text-align: center;
+  background-color: #B6F39A;
+  color: #000;
+  font-family: 'Shadows Into Light', cursive;
+  padding: 10px 0;
+}
+
+.made-by {
+  text-align: center;
+  font-size: 14px;
+  color: #3c3c3c;
+  margin: 12px 0 20px;
+  font-family: 'Shadows Into Light', cursive;
+  opacity: 0.9;
+}
+
+.made-by strong {
+  color: #008000;
+  font-weight: bold;
+}
 /* =======================================================
    ====== MEDIA QUERIES ======
 ======================================================= */
@@ -388,29 +626,20 @@ body {
     margin: 10px 0 !important;
   }
 
-  /* ✅ JAVÍTOTT SECTION5 BLOKK */
   .section5 {
-    display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
-    justify-content: center !important;
-    gap: 40px !important;
-    padding: 60px 25px !important;
   }
-
-  .section5 .column-66 {
-    width: 95% !important;
-    margin: 0 auto 20px auto !important;
-  }
-
-  .section5 .column-33 {
-    width: 95% !important;
-    margin: 0 auto !important;
-  }
-
+.section5 {
+  display: flex;
+  flex-direction: column; /* <<< EZ a kulcs */
+  align-items: center;
+  padding: 80px 40px;
+  gap: 40px;
+}
   .section5 .column-33 img {
     width: 80% !important;
-    max-width: 420px !important;
+    max-width: 400px !important;
   }
 
   /* FAMILY PHOTOS tablet elrendezés */
@@ -428,6 +657,206 @@ body {
   }
 }
 
+/* --- MOBIL (max-width: 768px) --- */
+@media (max-width: 768px) {
+  body {
+    padding-top: 100px !important;
+  }
+
+  .header1 {
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding: 10px 15px !important;
+    height: auto !important;
+  }
+
+  .header1 a.logo img {
+    width: 60px !important;
+  }
+
+  .menu-toggle {
+    font-size: 30px !important;
+  }
+
+  .header1-right {
+    flex-direction: column !important;
+    width: 100% !important;
+    text-align: center !important;
+  }
+
+  /* Szekciók egymás alatt */
+  .section1,
+  .section2,
+  .section4,
+  .section5 {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  /* Kártyák */
+  .weak-card {
+    width: 100% !important;
+    margin-bottom: 20px !important;
+  }
+
+  /* Hire Me szélesebb */
+  .section5 .column-33 {
+    width: 95% !important;
+    margin: 0 auto 20px auto !important;
+  }
+
+  /* Family képek */
+  .row.family-row img {
+    width: 90% !important;
+    max-width: 260px !important;
+  }
+
+  .footer {
+    font-size: 14px !important;
+    padding: 10px !important;
+  }
+}
+
+/* --- MINI MOBIL (max-width: 600px) --- */
+@media (max-width: 600px) {
+  .section4 h2 {
+    font-size: 26px !important;
+  }
+}
+
+/* --- LAPTOPON FAMILY PHOTO 3x1 --- */
+@media (min-width: 992px) {
+  .row.family-row {
+    flex-wrap: nowrap !important;
+    gap: 40px !important;
+    max-width: 1300px !important;
+    margin: 0 auto;
+  }
+
+  .row.family-row .column {
+    width: 30% !important;
+  }
+
+  .row.family-row .column img {
+    max-width: 360px !important;
+  }
+}
+
+/* --- HERO kép TABLET --- */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .hero-image {
+    height: 40vh !important;
+    background-size: cover !important;
+    background-position: center !important;
+  }
+
+  .hero-text {
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    width: 90% !important;
+    text-align: center !important;
+  }
+
+  .hero-text h1,
+  .hero-text h2 {
+    font-size: 22px !important;
+    line-height: 1.3 !important;
+    color: #C8F4BC !important;
+  }
+}
+
+/* --- HERO kép MOBIL --- */
+@media only screen and (max-width: 767px) {
+  .hero-image {
+    height: 33vh !important;
+    background-size: cover !important;
+    background-position: center top !important;
+  }
+
+  .hero-text {
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    width: 92% !important;
+  }
+
+  .hero-text h1,
+  .hero-text h2 {
+    font-size: 18px !important;
+    line-height: 1.2 !important;
+    color: #C8F4BC !important;
+  }
+}
 /* =======================================================
-   ====== (A TÖBBI RÉSZ VÁLTOZATLAN)
+   ====== SUITABILITY SECTION – SÁRGA DOBOZOK ======
 ======================================================= */
+.column1 {
+  float: left;
+  width: 25%;
+  padding: 0 5px;
+}
+
+.card {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  padding: 16px;
+  text-align: center;
+  background-image: url("pics/yellowb.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: black;
+  font-size: 1.4vw;
+  border-radius: 10px;
+}
+
+.card h3 {
+  font-size: 28px;
+  margin: 10px 0;
+}
+
+.card p {
+  margin: 8px 0;
+}
+
+.fa {
+  font-size: 2vw;
+}
+
+/* Mobilra és tabletre */
+@media (max-width: 992px) {
+  .column1 {
+    width: 50% !important;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .column1 {
+    width: 100% !important;
+  }
+  .card {
+    font-size: 18px !important;
+    padding: 20px !important;
+  }
+  .card h3 {
+    font-size: 22px !important;
+  }
+}
+
+/* =======================================================
+   ====== ARONIJA LOGO MÉRET JAVÍTÁS ======
+======================================================= */
+img[src*="logoaronija"] {
+  max-width: 250px !important;
+  height: auto !important;
+  display: block;
+  margin: 30px auto !important;
+}
+
+
+
+
+
+
