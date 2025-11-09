@@ -943,17 +943,17 @@ img[src*="logoaronija"] {
     margin-bottom: 10px;
   }
 }
-@media (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
   .container > .row {
-    display: block;
+    display: block !important;
   }
 
   .column-33,
   .column-66 {
-    max-width: 100%;
-    flex: 0 0 100%;
-    width: 100%;
-    padding: 10px 15px;
+    max-width: 100% !important;
+    flex: 0 0 100% !important;
+    width: 100% !important;
+    padding: 15px 20px !important;
   }
 
   .column-33 h2,
@@ -961,15 +961,17 @@ img[src*="logoaronija"] {
   .column-66 h4,
   .column-33 p,
   .column-66 p {
-    text-align: left;          /* vagy center, ha úgy tetszik */
-    font-size: 1.1rem;         /* kicsit nagyobb szöveg */
-    line-height: 1.6;          /* kényelmesebb olvasás */
+    text-align: left !important;
+    font-size: 1.2rem !important;      /* jól látható méret */
+    line-height: 1.7 !important;       /* kényelmes olvasás */
   }
 
   .column-33 h2 {
-    font-size: 1.4rem;         /* a főcím is nagyobb */
+    font-size: 1.6rem !important;      /* a főcím nagyobb */
+    margin-bottom: 10px !important;
   }
 }
+
 
 
 
