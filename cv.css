@@ -1145,6 +1145,30 @@ img[src*="logoaronija"] {
     overflow-x: hidden !important;
   }
 }
+/* === TABLET FIX – SECTION4 TELJES SZÉLESSÉGRE 768–1024PX KÖZÖTT === */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .section4,
+  .section4 .container,
+  .section4 .row {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  .section4 {
+    background-color: #B6F39A !important;
+    overflow-x: hidden !important;
+  }
+
+  html, body {
+    overflow-x: hidden !important;
+  }
+}
+
 
 
 
