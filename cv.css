@@ -850,6 +850,70 @@ img[src*="logoaronija"] {
   display: block;
   margin: 30px auto !important;
 }
+/* ===== SECTION5 JAVÍTÁS – MOBIL ÉS TABLET ===== */
+@media (max-width: 992px) {
+  .section5 {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 30px !important;
+    padding: 60px 20px !important;
+  }
+
+  .section5 .column-66,
+  .section5 .column-33 {
+    width: 95% !important;
+    max-width: 600px !important;
+    float: none !important;
+    margin: 0 auto 20px auto !important;
+    text-align: center !important;
+  }
+
+  .section5 .panel-group {
+    padding: 25px !important;
+    border-radius: 20px !important;
+  }
+
+  .section5 .panel-heading h3 {
+    font-size: 28px !important;
+    line-height: 1.2 !important;
+    text-align: center !important;
+    word-wrap: break-word !important;
+  }
+
+  .section5 .panel-body p {
+    font-size: 18px !important;
+    line-height: 1.5 !important;
+  }
+
+  .section5 .column-33 img {
+    width: 80% !important;
+    max-width: 350px !important;
+    margin: 20px auto !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .section5 {
+    padding: 40px 15px !important;
+  }
+
+  .section5 .column-66,
+  .section5 .column-33 {
+    width: 100% !important;
+    max-width: 95% !important;
+  }
+
+  .section5 .panel-heading h3 {
+    font-size: 24px !important;
+  }
+
+  .section5 .panel-body p {
+    font-size: 16px !important;
+  }
+}
+
 
 
 
