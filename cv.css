@@ -448,17 +448,17 @@ body {
   padding: 12px;
   margin-bottom: 20px;
   text-decoration: underline;
-  font-size: 1.5vw;
+  font-size: 1.4vw;
 }
 
 .section5 .panel-heading h3 {
-  font-size: 40px;
+  font-size: 36px;
   margin: 0;
 }
 
 .section5 .panel-body p {
-  font-size: 24px;
-  line-height: 1.4;
+  font-size: 22px;
+  line-height: 1.2;
   font-weight: 500;
 }
 
@@ -850,6 +850,7 @@ img[src*="logoaronija"] {
   display: block;
   margin: 30px auto !important;
 }
+
 
 
 
