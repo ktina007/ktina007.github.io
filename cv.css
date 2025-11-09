@@ -931,28 +931,34 @@ img[src*="logoaronija"] {
   }
 }
 @media (max-width: 1024px) {
-  .family-photos {
+  .family-row {
     display: flex;
-    flex-direction: column !important;
-    align-items: center !important;
-    justify-content: center !important;
-    gap: 30px; /* kis térköz a képek között */
+    flex-direction: column !important;  /* egymás alá helyezi a képeket */
+    align-items: center !important;      /* középre igazítja */
+    justify-content: center;
+    gap: 25px;                           /* távolság a képek között */
     width: 100%;
     margin: 0 auto;
   }
 
-  .family-photos img {
-    width: 90% !important; /* képek mérete mobilra */
+  .family-row .column {
+    width: 90% !important;               /* képek ne lógjanak ki */
+    text-align: center;
+  }
+
+  .family-row img {
+    width: 100% !important;              /* a képek kitöltik a dobozt */
     height: auto;
     border-radius: 12px;
   }
 
-  .family-photos h2, 
-  .family-photos h3, 
-  .family-photos h4 {
+  .family-row h3 {
     text-align: center;
+    margin-bottom: 10px;
   }
 }
+
+
 
 
 
