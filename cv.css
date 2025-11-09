@@ -850,27 +850,35 @@ img[src*="logoaronija"] {
   display: block;
   margin: 30px auto !important;
 }
-/* ===== SECTION5 JAVÍTÁS – MOBIL ÉS TABLET ===== */
+/* ===== SECTION5 – TELJES SZÉLESSÉG MOBILON ÉS TABLETEN ===== */
 @media (max-width: 992px) {
   .section5 {
+    width: 100vw !important;
+    margin: 0 !important;
+    padding: 60px 0 !important;
+    position: relative !important;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
     justify-content: center !important;
     gap: 30px !important;
-    padding: 60px 20px !important;
+    box-sizing: border-box !important;
   }
 
   .section5 .column-66,
   .section5 .column-33 {
-    width: 95% !important;
-    max-width: 600px !important;
+    width: 100% !important;
+    max-width: none !important;
     float: none !important;
     margin: 0 auto 20px auto !important;
     text-align: center !important;
   }
 
   .section5 .panel-group {
+    width: 100% !important;
     padding: 25px !important;
     border-radius: 20px !important;
   }
@@ -888,21 +896,27 @@ img[src*="logoaronija"] {
   }
 
   .section5 .column-33 img {
-    width: 80% !important;
-    max-width: 350px !important;
+    width: 85% !important;
+    max-width: 400px !important;
     margin: 20px auto !important;
+    display: block !important;
   }
 }
 
 @media (max-width: 768px) {
   .section5 {
-    padding: 40px 15px !important;
+    width: 100vw !important;
+    margin: 0 !important;
+    padding: 40px 0 !important;
+    transform: translateX(-50%);
+    left: 50%;
+    right: 50%;
   }
 
   .section5 .column-66,
   .section5 .column-33 {
     width: 100% !important;
-    max-width: 95% !important;
+    max-width: none !important;
   }
 
   .section5 .panel-heading h3 {
@@ -913,6 +927,7 @@ img[src*="logoaronija"] {
     font-size: 16px !important;
   }
 }
+
 
 
 
