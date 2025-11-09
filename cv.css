@@ -944,8 +944,29 @@ img[src*="logoaronija"] {
   }
 }
 @media only screen and (max-width: 1024px) {
+  html, body {
+    overflow-x: hidden !important; /* ne lógjon ki semmi oldalra */
+  }
+
+  .container {
+    width: 100vw !important;       /* teljes szélesség */
+    margin: 0 !important;
+    padding: 0 !important;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    background-color: #B6F39A;     /* zöld háttér (állítsd, ha más kell) */
+  }
+
   .container > .row {
     display: block !important;
+    background-color: #fff;        /* fehér szövegrész */
+    width: 90% !important;         /* hogy a szöveg ne tapadjon a széléhez */
+    margin: 0 auto !important;     /* középre hozza a szöveget */
+    padding: 20px 15px !important;
+    box-sizing: border-box;
   }
 
   .column-33,
@@ -953,7 +974,7 @@ img[src*="logoaronija"] {
     max-width: 100% !important;
     flex: 0 0 100% !important;
     width: 100% !important;
-    padding: 15px 20px !important;
+    padding: 10px 15px !important;
   }
 
   .column-33 h2,
@@ -962,15 +983,17 @@ img[src*="logoaronija"] {
   .column-33 p,
   .column-66 p {
     text-align: left !important;
-    font-size: 1.2rem !important;      /* jól látható méret */
-    line-height: 1.7 !important;       /* kényelmes olvasás */
+    font-size: 1.2rem !important;      /* olvasható betűméret */
+    line-height: 1.7 !important;
   }
 
   .column-33 h2 {
-    font-size: 1.6rem !important;      /* a főcím nagyobb */
+    font-size: 1.6rem !important;
     margin-bottom: 10px !important;
   }
 }
+
+
 
 
 
