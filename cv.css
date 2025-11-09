@@ -931,8 +931,9 @@ img[src*="logoaronija"] {
   }
 }
 /* ===== FAMILY SECTION – MOBIL ÉS TABLET ===== */
+/* ===== FAMILY SECTION – MOBIL + TABLET ===== */
 @media (max-width: 1024px) {
-  .section-family {
+  section.section-family {
     width: 100vw !important;
     margin: 0 !important;
     padding: 0 !important;
@@ -943,33 +944,34 @@ img[src*="logoaronija"] {
     margin-right: -50vw;
   }
 
-  .family-row {
+  section.section-family .row.family-row {
     display: flex !important;
-    flex-direction: column !important;   /* egymás alá teszi a képeket */
-    align-items: center !important;       /* középre igazítja */
+    flex-direction: column !important;  /* egymás alá teszi */
+    align-items: center !important;
     justify-content: center !important;
-    gap: 30px !important;                 /* távolság */
+    gap: 30px !important;
     width: 100% !important;
     margin: 0 auto !important;
   }
 
-  .family-row .column {
+  section.section-family .row.family-row .column {
     width: 90% !important;
     text-align: center !important;
   }
 
-  .family-row img {
+  section.section-family .row.family-row img {
     width: 100% !important;
     height: auto !important;
     border-radius: 12px !important;
     display: block;
   }
 
-  .family-row h3 {
+  section.section-family .row.family-row h3 {
     text-align: center !important;
     margin-bottom: 10px;
   }
 }
+
 
 
 
