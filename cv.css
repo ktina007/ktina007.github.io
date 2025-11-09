@@ -134,7 +134,7 @@ body {
   width: 33.3333%;
   padding: 20px;
   float: left;
-  font-size: 1.05vw;
+  font-size: 1.5vw;
 }
 
 /* =======================================================
@@ -850,6 +850,7 @@ img[src*="logoaronija"] {
   display: block;
   margin: 30px auto !important;
 }
+
 
 
 
