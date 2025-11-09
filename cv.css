@@ -951,30 +951,33 @@ img[src*="logoaronija"] {
     overflow-x: hidden !important;
   }
 
-  /* ===== TELJES SZÉLESSÉGŰ ZÖLD HÁTTÉR ===== */
+  /* ===== TELJES SZÉLESSÉG KIKÉNYSZERÍTÉSE ===== */
+  .section-virtues, 
+  .virtues-section,
   .container {
-    width: 100vw !important;        /* teljes viewport szélesség */
+    position: relative !important;
+    width: 100vw !important;
     max-width: 100vw !important;
     margin: 0 !important;
-    padding: 0 !important;
-    position: relative !important;
     left: 50% !important;
     right: 50% !important;
     margin-left: -50vw !important;
     margin-right: -50vw !important;
+    padding: 0 !important;
     background-color: #B6F39A !important; /* zöld háttér */
-    box-sizing: border-box;
+    box-sizing: border-box !important;
   }
 
-  /* ===== SZÖVEG FEHÉR DOBOZBAN ===== */
-  .container > .row {
-    display: block !important;
-    background-color: #fff !important;
+  /* ===== FEHÉR SZÖVEGBLOKK BELÜL ===== */
+  .container > .row,
+  .section-virtues > .row,
+  .virtues-section > .row {
+    background-color: #ffffff !important;
     width: 90% !important;
     margin: 0 auto !important;
     padding: 20px 15px !important;
+    border-radius: 10px;
     box-sizing: border-box;
-    border-radius: 10px; /* opcionális, szebb hatás */
   }
 
   .column-33,
@@ -1000,6 +1003,8 @@ img[src*="logoaronija"] {
     margin-bottom: 10px !important;
   }
 }
+
+
 
 
 
