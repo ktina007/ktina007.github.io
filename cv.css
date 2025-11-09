@@ -996,6 +996,89 @@ img[src*="logoaronija"] {
     margin-bottom: 10px !important;
   }
 }
+/* ===== HERO JAVÍTÁS – SZÖVEG KÖZÉPRE ===== */
+@media only screen and (max-width: 1024px) {
+  .hero-image {
+    height: 50vh !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .hero-text {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    transform: none !important;
+    text-align: center !important;
+    color: #C8F4BC !important;
+    padding: 20px !important;
+  }
+
+  .hero-text h1 {
+    font-size: 22px !important;
+    line-height: 1.3 !important;
+  }
+
+  .hero-text h2 {
+    font-size: 18px !important;
+    line-height: 1.2 !important;
+  }
+}
+
+/* ===== WORK EXPERIENCES – KÉP ALÁ, DOBOZ KÖZÉPRE ===== */
+@media only screen and (max-width: 1024px) {
+  .section4 {
+    display: flex !important;
+    flex-direction: column !important; /* egymás alá */
+    align-items: center !important;    /* középre hozza */
+    justify-content: center !important;
+    text-align: center !important;
+    background-color: #A5E58E !important;
+    padding: 40px 20px !important;
+  }
+
+  .section4 .row {
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 25px !important;
+    width: 100% !important;
+  }
+
+  .section4 .column-66,
+  .section4 .column-33 {
+    width: 100% !important;
+    max-width: 700px !important; /* középre limitálva */
+    margin: 0 auto !important;
+    float: none !important;
+    padding: 20px !important;
+  }
+
+  .section4 img {
+    display: block !important;
+    width: 90% !important;
+    height: auto !important;
+    margin: 10px auto 0 auto !important;
+    border-radius: 10px !important;
+  }
+
+  .tabcontent {
+    text-align: center !important;
+    background: rgba(255, 255, 255, 0.7) !important;
+    padding: 20px !important;
+    border-radius: 15px !important;
+  }
+
+  .tabcontent h2, 
+  .tabcontent h3, 
+  .tabcontent p {
+    color: black !important;
+  }
+}
+
 
 
 
