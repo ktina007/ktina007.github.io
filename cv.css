@@ -15,7 +15,6 @@ body {
   overflow-x: hidden;
   height: 100%;
   background-color: #F2F4D7;
-  scroll-behavior: smooth;
 }
 
 /* =======================================================
@@ -61,7 +60,6 @@ body {
   display: flex;
   align-items: center;
   gap: 6px;
-  transition: all 0.3s ease-in-out;
 }
 
 /* ===== HAMBURGER MENU ===== */
@@ -78,7 +76,7 @@ body {
 ======================================================= */
 .hero-image {
   width: 100%;
-  height: 70vh;
+  height: 60vh;
   display: block;
   background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("pics/homeoffice1.jpg");
   background-size: cover;
@@ -313,99 +311,89 @@ body {
 }
 
 /* =======================================================
-   ====== FAMILY PHOTOS ======
+   ====== SECTION 5 – PLEASE HIRE ME ======
 ======================================================= */
-.family-row-title {
-  width: 100%;
-  text-align: center;
-  font-size: 42px;
-  margin: 60px 0 40px;
-  font-family: 'Shadows Into Light', cursive;
-  font-weight: bold;
-}
-
-.row.family-row {
+.section5 {
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 40px;
   gap: 40px;
-  flex-wrap: nowrap;
-  overflow-x: auto;
+  flex-wrap: wrap; /* hogy tableten törhessen */
 }
 
-.row.family-row .column {
-  width: auto;
+.section5 .column-66 {
+  width: 55%;
+  float: none;
+}
+
+.section5 .panel-group {
+  background: rgba(200, 255, 200, 0.7);
+  border-radius: 30px;
+  padding: 30px;
   text-align: center;
-  padding: 0;
 }
 
-.row.family-row .column img {
-  width: 450px;
-  height: auto;
-  border-radius: 16px;
-  display: block;
-  margin: 0 auto 20px;
+.section5 .panel-heading {
+  background: #74cf6b;
+  border-radius: 20px;
+  padding: 12px;
+  margin-bottom: 20px;
+  text-decoration: underline;
+  font-size: 1.7vw;
 }
 
-.row.family-row h3 {
-  font-size: 28px;
-  margin-bottom: 25px;
+.section5 .panel-heading h3 {
+  font-size: 40px;
+  margin: 0;
+}
+
+.section5 .panel-body p {
+  font-size: 26px;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+.section5 .column-33 {
+  width: 40%;
+  float: none;
+  background: rgba(200, 255, 200, 0.7);
+  border-radius: 30px;
+  padding: 30px;
+  text-align: center;
+}
+
+.section5 .column-33 img {
+  width: 70%;
+  margin-top: 20px;
 }
 
 /* =======================================================
-   ====== WEAKNESSES SECTION ======
+   ====== JAVÍTOTT MEDIA .SECTION5 TABLET/MOBIL ======
 ======================================================= */
-#section-weaknesses {
-  width: 100%;
-  padding: 60px 20px;
-  background-image: url("pics/road.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  text-align: center;
+@media (max-width: 992px) {
+  .section5 {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 30px !important;
+    padding: 60px 25px !important;
+  }
+
+  .section5 .column-66 {
+    width: 95% !important;
+    margin: 0 auto 20px auto !important;
+  }
+
+  .section5 .column-33 {
+    width: 95% !important;
+    margin: 0 auto !important;
+  }
+
+  .section5 .column-33 img {
+    width: 80% !important;
+    max-width: 400px !important;
+  }
 }
 
-.weak-title {
-  font-family: 'Shadows Into Light', cursive;
-  font-size: 48px;
-  color: black;
-  background-color: rgba(235, 255, 215, 0.6);
-  display: inline-block;
-  padding: 20px 40px;
-  border-radius: 18px;
-  margin-bottom: 30px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
-}
-
-.weak-container {
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-  flex-wrap: wrap;
-  width: 100%;
-  max-width: 1400px;
-  margin: auto;
-}
-
-.weak-card {
-  background-color: rgba(214, 255, 189, 0.75);
-  width: 22%;
-  min-width: 260px;
-  padding: 25px 20px;
-  border-radius: 18px;
-  text-align: center;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  font-size: 18px;
-}
-
-.weak-card h3 {
-  font-size: 26px;
-  margin-bottom: 15px;
-  color: black;
-}
-
-.weak-card p {
-  font-size: 18px;
-  padding: 0 5px;
-  color: black;
-}
