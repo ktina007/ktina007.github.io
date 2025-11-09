@@ -951,9 +951,7 @@ img[src*="logoaronija"] {
     overflow-x: hidden !important;
   }
 
-  /* ===== TELJES SZÉLESSÉG KIKÉNYSZERÍTÉSE ===== */
-  .section-virtues, 
-  .virtues-section,
+  /* ===== TELJES SZÉLESSÉGŰ ZÖLD HÁTTÉR ===== */
   .container {
     position: relative !important;
     width: 100vw !important;
@@ -964,14 +962,12 @@ img[src*="logoaronija"] {
     margin-left: -50vw !important;
     margin-right: -50vw !important;
     padding: 0 !important;
-    background-color: #B6F39A !important; /* zöld háttér */
+    background-color: #B6F39A !important;
     box-sizing: border-box !important;
   }
 
   /* ===== FEHÉR SZÖVEGBLOKK BELÜL ===== */
-  .container > .row,
-  .section-virtues > .row,
-  .virtues-section > .row {
+  .container > .row {
     background-color: #ffffff !important;
     width: 90% !important;
     margin: 0 auto !important;
@@ -1003,6 +999,8 @@ img[src*="logoaronija"] {
     margin-bottom: 10px !important;
   }
 }
+
+
 
 
 
