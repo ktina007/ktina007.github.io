@@ -859,7 +859,8 @@ img[src*="logoaronija"] {
     position: relative !important;
     left: 50%;
     right: 50%;
-    transform: translateX(-50%);
+    margin-left: -50vw !important;
+    margin-right: -50vw !important;
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
@@ -908,9 +909,11 @@ img[src*="logoaronija"] {
     width: 100vw !important;
     margin: 0 !important;
     padding: 40px 0 !important;
-    transform: translateX(-50%);
+    position: relative !important;
     left: 50%;
     right: 50%;
+    margin-left: -50vw !important;
+    margin-right: -50vw !important;
   }
 
   .section5 .column-66,
@@ -927,6 +930,7 @@ img[src*="logoaronija"] {
     font-size: 16px !important;
   }
 }
+
 
 
 
