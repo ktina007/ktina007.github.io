@@ -7,8 +7,7 @@
   box-sizing: border-box;
 }
 
-html,
-body {
+html, body {
   margin: 0;
   padding: 0;
   max-width: 100%;
@@ -77,18 +76,15 @@ body {
 .hero-image {
   width: 100%;
   height: 60vh;
-  display: block;
-  background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("pics/homeoffice1.jpg");
+  background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("pics/homeoffice1.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
-  margin: 0 !important;
-  padding: 0 !important;
 }
 
 .hero-text {
-  text-align: center !important;
+  text-align: center;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -96,45 +92,30 @@ body {
   color: #C8F4BC;
 }
 
-.hero-text h1,
-.hero-text h2 {
+.hero-text h1, .hero-text h2 {
   font-size: clamp(26px, 3vw, 38px);
   line-height: 1.25;
-  text-align: center;
 }
 
 /* =======================================================
    ====== ALAP ELRENDEZÉS ======
 ======================================================= */
-.container {
-  padding: 64px;
-}
-
-.row {
-  margin: 0 -5px;
-}
-
-.row::after {
-  content: "";
-  display: table;
-  clear: both;
-}
+.container { padding: 64px; }
 
 .column-66 {
   width: 66.6666%;
   padding: 20px;
-  font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
   float: left;
-  text-align: center;
   background-color: #B6F39A;
+  font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: large;
+  text-align: center;
 }
 
 .column-33 {
   width: 33.3333%;
   padding: 20px;
   float: left;
-  font-size: 1.05vw;
 }
 
 /* =======================================================
@@ -154,18 +135,12 @@ body {
   background-color: #B6F39A;
   border-radius: 10px;
   padding: 30px;
-  float: none;
 }
 
 .section1 .column-33 img {
   width: 100%;
   max-width: 360px;
   border-radius: 10px;
-}
-
-.section1 h3 {
-  text-align: center;
-  margin-bottom: 20px;
 }
 
 /* =======================================================
@@ -180,82 +155,35 @@ body {
   gap: 40px;
 }
 
-.section2 .column-33,
-.section2 .column-66 {
+.section2 .column-33, .section2 .column-66 {
   background-color: #B6F39A;
   border-radius: 10px;
   padding: 30px;
-  float: none;
 }
 
 .section2 .column-33 img {
   width: 100%;
   max-width: 300px;
   margin: 15px auto;
-  display: block;
   border-radius: 10px;
+  display: block;
 }
 
-.section2 h2,
-.section2 h3 {
-  text-align: center;
-}
-
-/* ===== SKILL BAROK ===== */
-.container2 {
-  width: 100%;
-  background-color: #F7F6A7;
-}
-
-.skills {
-  text-align: right;
-  padding-top: 1px;
-  padding-bottom: 1px;
-  color: white;
-}
-
-.mel { width: 100%; background-color: #f44336; }
-.kids { width: 80%; background-color: #2196F3; }
-.coffee { width: 65%; background-color: #D3CB07; }
-.car { width: 20%; background-color: #10E71B; }
 /* =======================================================
    ====== SECTION 4 – WORK EXPERIENCES ======
 ======================================================= */
 .section4 {
   width: 100%;
-  margin: 0;
   background-color: #A5E58E;
-  border-radius: 0;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding: 40px 0;
   text-align: center;
 }
 
 .section4 h2 {
   font-family: 'Shadows Into Light', cursive;
   font-size: 48px;
-  margin: 20px 0 40px;
   color: black;
-}
-
-.section4 .row {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 40px;
-}
-
-.section4 .column-66,
-.section4 .column-33 {
-  width: 50%;
-  text-align: center;
-  float: none;
-}
-
-.section4 .column-66 {
-  width: 100%;
-  max-width: 1100px;
-  margin: 0 auto;
+  margin-bottom: 30px;
 }
 
 .section4 img {
@@ -264,92 +192,8 @@ body {
   border-radius: 10px;
 }
 
-/* ====== TAB BUTTONS ====== */
-.tablink {
-  background-color: #F0EF7A;
-  color: black;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 15px 30px;
-  margin: 5px;
-  font-size: 24px;
-  font-family: 'Shadows Into Light', cursive;
-  border-radius: 10px;
-  display: inline-block;
-  width: 220px;
-  text-align: center;
-}
-
-.tablink:hover {
-  background-color: #d4ff8a;
-  transform: scale(1.05);
-  transition: 0.2s;
-}
-
-.tablink.active {
-  background-color: #B6F39A;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-}
-
-.tabcontent {
-  color: black;
-  display: none;
-  width: 100%;
-  max-width: 950px;
-  margin: 0 auto;
-  padding: 20px 40px;
-  text-align: center;
-}
-
-#Cleaner,
-#Waitress,
-#Shop,
-#Taxist {
-  background-color: #B6F39A;
-}
-
 /* =======================================================
-   ====== FAMILY PHOTOS ======
-======================================================= */
-.family-row-title {
-  width: 100%;
-  text-align: center;
-  font-size: 42px;
-  margin: 60px 0 40px;
-  font-family: 'Shadows Into Light', cursive;
-  font-weight: bold;
-}
-
-.row.family-row {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 40px;
-  flex-wrap: nowrap;
-}
-
-.row.family-row .column {
-  width: auto;
-  text-align: center;
-  padding: 0;
-}
-
-.row.family-row .column img {
-  width: 450px;
-  height: auto;
-  border-radius: 16px;
-  display: block;
-  margin: 0 auto 20px;
-}
-
-.row.family-row h3 {
-  font-size: 28px;
-  margin-bottom: 25px;
-}
-
-/* =======================================================
-   ====== WEAKNESSES SECTION ======
+   ====== WEAKNESSES ======
 ======================================================= */
 #section-weaknesses {
   width: 100%;
@@ -357,64 +201,23 @@ body {
   background-image: url("pics/road.jpg");
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
   text-align: center;
-}
-
-.weak-title {
-  font-family: 'Shadows Into Light', cursive;
-  font-size: 48px;
-  color: black;
-  background-color: rgba(235, 255, 215, 0.6);
-  display: inline-block;
-  padding: 20px 40px;
-  border-radius: 18px;
-  margin-bottom: 30px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
 }
 
 .weak-container {
   display: flex;
   justify-content: center;
-  gap: 25px;
   flex-wrap: wrap;
-  width: 100%;
-  max-width: 1400px;
-  margin: auto;
+  gap: 25px;
 }
 
 .weak-card {
-  background-color: rgba(214, 255, 189, 0.75);
+  background-color: rgba(214,255,189,0.75);
   width: 22%;
   min-width: 260px;
   padding: 25px 20px;
   border-radius: 18px;
-  text-align: center;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  font-size: 18px;
-}
-
-.weak-card h3 {
-  font-size: 26px;
-  margin-bottom: 15px;
-  color: black;
-}
-
-.weak-card p {
-  font-size: 18px;
-  padding: 0 5px;
-  color: black;
-}
-
-.icons {
-  margin: 12px 0;
-}
-
-.icons img {
-  width: 65px;
-  height: auto;
-  display: inline-block;
-  margin: 0 4px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
 /* =======================================================
@@ -422,373 +225,43 @@ body {
 ======================================================= */
 .section5 {
   display: flex;
-  flex-direction: column; /* <<< EZ a kulcs */
+  justify-content: space-between;
   align-items: center;
   padding: 80px 40px;
   gap: 40px;
+  flex-wrap: wrap;
 }
 
-
-.section5 .column-66 {
-  width: 55%;
-  float: none;
-}
-
-.section5 .panel-group {
-  background: rgba(200, 255, 200, 0.7);
-  border-radius: 30px;
-  padding: 30px;
-  text-align: center;
-}
-
-.section5 .panel-heading {
-  background: #74cf6b;
-  border-radius: 20px;
-  padding: 12px;
-  margin-bottom: 20px;
-  text-decoration: underline;
-  font-size: 1.7vw;
-}
-
-.section5 .panel-heading h3 {
-  font-size: 40px;
-  margin: 0;
-}
-
-.section5 .panel-body p {
-  font-size: 26px;
-  line-height: 1.6;
-  font-weight: 500;
-}
+.section5 .column-66 { width: 55%; }
 
 .section5 .column-33 {
   width: 40%;
-  float: none;
-  background: rgba(200, 255, 200, 0.7);
+  text-align: center;
+  background: rgba(200,255,200,0.7);
   border-radius: 30px;
   padding: 30px;
-  text-align: center;
 }
 
 .section5 .column-33 img {
   width: 70%;
+  max-width: 280px;
   margin-top: 20px;
 }
 
-/* =======================================================
-   ====== SECTION 6 – CONTACT FORM ======
-======================================================= */
-section#section6 {
-  padding: 40px 20px;
-  text-align: center;
-  background-color: #d5f7bc;
-}
-
-section#section6 .container2 {
-  max-width: 600px;
-  margin: auto;
-  background: #ffffffaa;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 0 15px #00000020;
-}
-
-label {
+/* ====== ARONIJA LOGO ====== */
+img[src*="logoaronija"] {
+  max-width: 220px !important;
+  height: auto !important;
   display: block;
-  font-weight: bold;
-  margin: 10px 0 6px;
-  font-size: 18px;
+  margin: 25px auto !important;
 }
 
-input,
-textarea {
-  width: 100%;
-  padding: 12px;
-  margin-bottom: 18px;
-  border: 2px solid #009933;
-  border-radius: 8px;
-  font-size: 16px;
-  font-family: inherit;
-  outline: none;
-}
-
-input:focus,
-textarea:focus {
-  border-color: #006622;
-  box-shadow: 0 0 6px #00662255;
-}
-
-button {
-  background-color: #009933;
-  color: white;
-  padding: 14px 26px;
-  border: none;
-  font-size: 18px;
-  cursor: pointer;
-  border-radius: 8px;
-  font-weight: bold;
-  transition: 0.2s;
-}
-
-button:hover {
-  background-color: #006622;
-  transform: scale(1.05);
-}
-
-/* =======================================================
-   ====== FOOTER ======
-======================================================= */
-.footer {
-  text-align: center;
-  background-color: #B6F39A;
-  color: #000;
-  font-family: 'Shadows Into Light', cursive;
-  padding: 10px 0;
-}
-
-.made-by {
-  text-align: center;
-  font-size: 14px;
-  color: #3c3c3c;
-  margin: 12px 0 20px;
-  font-family: 'Shadows Into Light', cursive;
-  opacity: 0.9;
-}
-
-.made-by strong {
-  color: #008000;
-  font-weight: bold;
-}
-/* =======================================================
-   ====== MEDIA QUERIES ======
-======================================================= */
-
-/* --- TABLET (max-width: 992px) --- */
-@media (max-width: 992px) {
-  /* HEADER */
-  .header1 {
-    flex-wrap: wrap !important;
-    justify-content: space-between !important;
-    align-items: center !important;
-    padding: 10px 20px !important;
-  }
-
-  .header1 a.logo img {
-    width: 70px !important;
-  }
-
-  .menu-toggle {
-    display: block !important;
-    font-size: 30px !important;
-    background: none;
-    border: none;
-    cursor: pointer;
-    margin-left: auto !important;
-  }
-
-  .header1-right {
-    display: none;
-    flex-direction: column;
-    background-color: #B6F39A;
-    width: 100%;
-    text-align: center;
-    position: absolute;
-    top: 100%;
-    left: 0;
-  }
-
-  .header1-right.show {
-    display: flex !important;
-  }
-
-  .header1-right a {
-    padding: 12px 0;
-    font-size: 18px;
-  }
-
-  /* SECTIONS: oszlopok egymás alatt */
-  .section1,
-  .section2,
-  .section5 {
-    flex-direction: column !important;
-    align-items: center !important;
-    text-align: center !important;
-  }
-
-  .section1 .column-66,
-  .section1 .column-33,
-  .section2 .column-66,
-  .section2 .column-33,
-  .section5 .column-66,
-  .section5 .column-33 {
-    width: 100% !important;
-    margin: 10px 0 !important;
-  }
-
-  .section5 {
-    flex-direction: column !important;
-    align-items: center !important;
-  }
-.section5 {
-  display: flex;
-  flex-direction: column; /* <<< EZ a kulcs */
-  align-items: center;
-  padding: 80px 40px;
-  gap: 40px;
-}
-  .section5 .column-33 img {
-    width: 80% !important;
-    max-width: 400px !important;
-  }
-
-  /* FAMILY PHOTOS tablet elrendezés */
-  .row.family-row {
-    flex-wrap: wrap !important;
-    gap: 30px !important;
-  }
-
-  .row.family-row .column {
-    width: 45% !important;
-  }
-
-  .footer {
-    font-size: 16px !important;
-  }
-}
-
-/* --- MOBIL (max-width: 768px) --- */
 @media (max-width: 768px) {
-  body {
-    padding-top: 100px !important;
-  }
-
-  .header1 {
-    flex-direction: row !important;
-    justify-content: space-between !important;
-    align-items: center !important;
-    padding: 10px 15px !important;
-    height: auto !important;
-  }
-
-  .header1 a.logo img {
-    width: 60px !important;
-  }
-
-  .menu-toggle {
-    font-size: 30px !important;
-  }
-
-  .header1-right {
-    flex-direction: column !important;
-    width: 100% !important;
-    text-align: center !important;
-  }
-
-  /* Szekciók egymás alatt */
-  .section1,
-  .section2,
-  .section4,
-  .section5 {
-    display: block !important;
-    width: 100% !important;
-  }
-
-  /* Kártyák */
-  .weak-card {
-    width: 100% !important;
-    margin-bottom: 20px !important;
-  }
-
-  /* Hire Me szélesebb */
-  .section5 .column-33 {
-    width: 95% !important;
-    margin: 0 auto 20px auto !important;
-  }
-
-  /* Family képek */
-  .row.family-row img {
-    width: 90% !important;
-    max-width: 260px !important;
-  }
-
-  .footer {
-    font-size: 14px !important;
-    padding: 10px !important;
+  img[src*="logoaronija"] {
+    max-width: 300px !important;
   }
 }
 
-/* --- MINI MOBIL (max-width: 600px) --- */
-@media (max-width: 600px) {
-  .section4 h2 {
-    font-size: 26px !important;
-  }
-}
-
-/* --- LAPTOPON FAMILY PHOTO 3x1 --- */
-@media (min-width: 992px) {
-  .row.family-row {
-    flex-wrap: nowrap !important;
-    gap: 40px !important;
-    max-width: 1300px !important;
-    margin: 0 auto;
-  }
-
-  .row.family-row .column {
-    width: 30% !important;
-  }
-
-  .row.family-row .column img {
-    max-width: 360px !important;
-  }
-}
-
-/* --- HERO kép TABLET --- */
-@media only screen and (min-width: 768px) and (max-width: 992px) {
-  .hero-image {
-    height: 40vh !important;
-    background-size: cover !important;
-    background-position: center !important;
-  }
-
-  .hero-text {
-    position: absolute !important;
-    top: 50% !important;
-    left: 50% !important;
-    transform: translate(-50%, -50%) !important;
-    width: 90% !important;
-    text-align: center !important;
-  }
-
-  .hero-text h1,
-  .hero-text h2 {
-    font-size: 22px !important;
-    line-height: 1.3 !important;
-    color: #C8F4BC !important;
-  }
-}
-
-/* --- HERO kép MOBIL --- */
-@media only screen and (max-width: 767px) {
-  .hero-image {
-    height: 33vh !important;
-    background-size: cover !important;
-    background-position: center top !important;
-  }
-
-  .hero-text {
-    top: 50% !important;
-    left: 50% !important;
-    transform: translate(-50%, -50%) !important;
-    width: 92% !important;
-  }
-
-  .hero-text h1,
-  .hero-text h2 {
-    font-size: 18px !important;
-    line-height: 1.2 !important;
-    color: #C8F4BC !important;
-  }
-}
 /* =======================================================
    ====== SUITABILITY SECTION – SÁRGA DOBOZOK ======
 ======================================================= */
@@ -804,57 +277,86 @@ button:hover {
   text-align: center;
   background-image: url("pics/yellowb.png");
   background-size: cover;
-  background-repeat: no-repeat;
   color: black;
-  font-size: 1.4vw;
+  font-size: 1.6vw;
   border-radius: 10px;
 }
 
-.card h3 {
-  font-size: 28px;
-  margin: 10px 0;
+.card h3 { font-size: 28px; margin: 10px 0; }
+
+/* =======================================================
+   ====== CONTACT FORM ======
+======================================================= */
+section#section6 {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #d5f7bc;
 }
 
-.card p {
-  margin: 8px 0;
+/* =======================================================
+   ====== FOOTER ======
+======================================================= */
+.footer {
+  text-align: center;
+  background-color: #B6F39A;
+  font-family: 'Shadows Into Light', cursive;
+  padding: 10px 0;
 }
 
-.fa {
-  font-size: 2vw;
-}
+/* =======================================================
+   ====== MEDIA QUERIES ======
+======================================================= */
 
-/* Mobilra és tabletre */
+/* TABLET */
 @media (max-width: 992px) {
-  .column1 {
-    width: 50% !important;
-    margin-bottom: 20px;
+  .header1 { flex-wrap: wrap; justify-content: space-between; }
+  .section1, .section2, .section5 {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
   }
+  .section1 .column-66,
+  .section1 .column-33,
+  .section2 .column-66,
+  .section2 .column-33,
+  .section5 .column-66,
+  .section5 .column-33 {
+    width: 100% !important;
+    margin: 10px 0 !important;
+  }
+
+  .section5 .column-33 img {
+    width: 80% !important;
+    max-width: 350px !important;
+  }
+
+  .column1 { width: 50% !important; margin-bottom: 20px; }
 }
 
-@media (max-width: 600px) {
-  .column1 {
-    width: 100% !important;
+/* MOBIL */
+@media (max-width: 768px) {
+  body { padding-top: 100px !important; }
+
+  .section5 .column-33 {
+    width: 95% !important;
+    margin: 0 auto 20px auto !important;
   }
+
+  .column1 { width: 100% !important; }
   .card {
     font-size: 18px !important;
     padding: 20px !important;
   }
-  .card h3 {
-    font-size: 22px !important;
-  }
+  .card h3 { font-size: 22px !important; }
 }
 
-/* =======================================================
-   ====== ARONIJA LOGO MÉRET JAVÍTÁS ======
-======================================================= */
-img[src*="logoaronija"] {
-  max-width: 250px !important;
-  height: auto !important;
-  display: block;
-  margin: 30px auto !important;
+/* HERO KÉP MÉRETEK */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .hero-image { height: 40vh !important; }
+  .hero-text h1, .hero-text h2 { font-size: 22px !important; }
 }
 
-
-
-
-
+@media only screen and (max-width: 767px) {
+  .hero-image { height: 33vh !important; }
+  .hero-text h1, .hero-text h2 { font-size: 18px !important; }
+}
