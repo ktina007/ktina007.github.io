@@ -1037,6 +1037,14 @@ img[src*="logoaronija"] {
     overflow-x: hidden !important;
   }
 
+@media only screen and (max-width: 1024px) {
+  html, body {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    overflow-x: hidden !important;
+  }
+
   /* ==== SECTION 4 – TELJES SZÉLESSÉG + ELRENDEZÉS ==== */
   .section4 {
     display: flex !important;
@@ -1101,6 +1109,8 @@ img[src*="logoaronija"] {
     box-sizing: border-box;
   }
 }
+
+
 
 
 
