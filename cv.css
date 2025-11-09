@@ -422,11 +422,12 @@ body {
 ======================================================= */
 .section5 {
   display: flex;
-  justify-content: space-between;
-  align-items: stretch;
+  flex-direction: column; /* <<< EZ a kulcs */
+  align-items: center;
   padding: 80px 40px;
   gap: 40px;
 }
+
 
 .section5 .column-66 {
   width: 55%;
@@ -450,13 +451,13 @@ body {
 }
 
 .section5 .panel-heading h3 {
-  font-size: 38px;
+  font-size: 40px;
   margin: 0;
 }
 
 .section5 .panel-body p {
-  font-size: 24px;
-  line-height: 1.5;
+  font-size: 26px;
+  line-height: 1.6;
   font-weight: 500;
 }
 
@@ -628,7 +629,13 @@ button:hover {
     flex-direction: column !important;
     align-items: center !important;
   }
-
+.section5 {
+  display: flex;
+  flex-direction: column; /* <<< EZ a kulcs */
+  align-items: center;
+  padding: 80px 40px;
+  gap: 40px;
+}
   .section5 .column-33 img {
     width: 80% !important;
     max-width: 400px !important;
@@ -846,6 +853,7 @@ img[src*="logoaronija"] {
   display: block;
   margin: 30px auto !important;
 }
+
 
 
 
