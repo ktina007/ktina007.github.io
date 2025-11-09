@@ -1128,6 +1128,24 @@ img[src*="logoaronija"] {
     box-sizing: border-box !important;
   }
 }
+/* === SECTION 4 VÉGSŐ FIX – CONTAINER PADDING KIKAPCSOLÁSA === */
+@media only screen and (max-width: 1024px) {
+  .section4 .container {
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .section4 {
+    width: 100% !important;
+    max-width: 100% !important;
+    background-color: #B6F39A !important;
+    margin: 0 !important;
+    overflow-x: hidden !important;
+  }
+}
+
 
 
 
