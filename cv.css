@@ -448,7 +448,7 @@ body {
   padding: 12px;
   margin-bottom: 20px;
   text-decoration: underline;
-  font-size: 1.7vw;
+  font-size: 1.5vw;
 }
 
 .section5 .panel-heading h3 {
@@ -457,8 +457,8 @@ body {
 }
 
 .section5 .panel-body p {
-  font-size: 26px;
-  line-height: 1.6;
+  font-size: 24px;
+  line-height: 1.4;
   font-weight: 500;
 }
 
@@ -626,10 +626,6 @@ button:hover {
     margin: 10px 0 !important;
   }
 
-  .section5 {
-    flex-direction: column !important;
-    align-items: center !important;
-  }
 .section5 {
   display: flex;
   flex-direction: column; /* <<< EZ a kulcs */
@@ -854,6 +850,7 @@ img[src*="logoaronija"] {
   display: block;
   margin: 30px auto !important;
 }
+
 
 
 
