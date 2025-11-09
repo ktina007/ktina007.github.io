@@ -1028,7 +1028,7 @@ img[src*="logoaronija"] {
   }
 }
 
-/* ===== WORK EXPERIENCES – KÉP ALÁ, DOBOZ KÖZÉPRE ===== */
+/* ===== WORK EXPERIENCES (SECTION 4) – VÉGLEGES FIX ===== */
 @media only screen and (max-width: 1024px) {
   html, body {
     margin: 0 !important;
@@ -1037,15 +1037,7 @@ img[src*="logoaronija"] {
     overflow-x: hidden !important;
   }
 
-@media only screen and (max-width: 1024px) {
-  html, body {
-    margin: 0 !important;
-    padding: 0 !important;
-    width: 100% !important;
-    overflow-x: hidden !important;
-  }
-
-  /* ==== SECTION 4 – TELJES SZÉLESSÉG + ELRENDEZÉS ==== */
+  /* SECTION 4 teljes szélességre és rendbe téve */
   .section4 {
     display: flex !important;
     flex-direction: column !important;
@@ -1059,7 +1051,7 @@ img[src*="logoaronija"] {
     right: 50% !important;
     margin-left: -50vw !important;
     margin-right: -50vw !important;
-    background-color: #B6F39A !important; /* zöld háttér */
+    background-color: #B6F39A !important;
     box-sizing: border-box !important;
     padding: 40px 20px !important;
   }
@@ -1109,15 +1101,6 @@ img[src*="logoaronija"] {
     box-sizing: border-box;
   }
 }
-
-
-
-
-
-
-
-
-
 
 
 
