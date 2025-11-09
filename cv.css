@@ -638,16 +638,6 @@ button:hover {
     max-width: 400px !important;
   }
 
-  /* FAMILY PHOTOS tablet elrendezés */
-  .row.family-row {
-    flex-wrap: wrap !important;
-    gap: 30px !important;
-  }
-
-  .row.family-row .column {
-    width: 45% !important;
-  }
-
   .footer {
     font-size: 16px !important;
   }
@@ -702,12 +692,6 @@ button:hover {
     margin: 0 auto 20px auto !important;
   }
 
-  /* Family képek */
-  .row.family-row img {
-    width: 90% !important;
-    max-width: 260px !important;
-  }
-
   .footer {
     font-size: 14px !important;
     padding: 10px !important;
@@ -718,24 +702,6 @@ button:hover {
 @media (max-width: 600px) {
   .section4 h2 {
     font-size: 26px !important;
-  }
-}
-
-/* --- LAPTOPON FAMILY PHOTO 3x1 --- */
-@media (min-width: 992px) {
-  .row.family-row {
-    flex-wrap: nowrap !important;
-    gap: 40px !important;
-    max-width: 1300px !important;
-    margin: 0 auto;
-  }
-
-  .row.family-row .column {
-    width: 30% !important;
-  }
-
-  .row.family-row .column img {
-    max-width: 360px !important;
   }
 }
 
@@ -930,14 +896,20 @@ img[src*="logoaronija"] {
     font-size: 16px !important;
   }
 }
-/* ===== FAMILY SECTION – MOBIL + TABLET FINOMÍTOTT ===== */
+/* ===== FAMILY SECTION – VÉGLEGES JAVÍTÁS ===== */
 @media (max-width: 1024px) {
+  html, body {
+    overflow-x: hidden !important; /* Teljes oldalnál tilos az oldalirányú túllógás */
+  }
+
   .section-family {
-    width: 100% !important;          /* maradjon a képernyőn belül */
+    width: 100% !important;          /* Ne 100vw, mert az okozza a túllógást */
+    max-width: 100% !important;
     margin: 0 auto !important;
     padding: 0 !important;
-    overflow-x: hidden;              /* ne lógjon ki semmi */
-    background-color: #B6F39A;       /* ha volt háttérszíned, tartsuk meg */
+    box-sizing: border-box;
+    overflow-x: hidden !important;
+    background-color: #B6F39A;       /* Csak ha van zöld háttered */
   }
 
   .family-row {
@@ -949,16 +921,18 @@ img[src*="logoaronija"] {
     width: 100% !important;
     max-width: 100% !important;
     margin: 0 auto !important;
-    overflow-x: hidden !important;
+    box-sizing: border-box;
   }
 
   .family-row .column {
     width: 90% !important;
     text-align: center !important;
+    margin: 0 auto !important;
   }
 
   .family-row img {
     width: 100% !important;
+    max-width: 100% !important;
     height: auto !important;
     border-radius: 12px !important;
     display: block;
@@ -969,6 +943,7 @@ img[src*="logoaronija"] {
     margin-bottom: 10px;
   }
 }
+
 
 
 
